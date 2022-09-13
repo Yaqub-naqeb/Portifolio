@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .dv:hover .list{
   color: #42b3e4db;
@@ -20,3 +21,11 @@
 .list{
   padding-left: 1rem;
 }
+.box:hover{
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.681);
+  
+}
+
+
+

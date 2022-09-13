@@ -15,16 +15,16 @@ const About = () => {
      <p className='text-[2.2rem] text-[#ADD6E8] absolute top-20 left-[49.5%]'>Me</p>
      </div>
 {/* content */}
-<div className='flex lg:flex-row md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14 pt-[15rem] md:pt-[10rem]  md:p-[5rem] p-[3rem]   lg:p-[180px]'>
+<div className='flex lg:flex-row md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14 lg:pt-[20rem] md:pt-[10rem]  pt-[15rem] px-[3rem]  md:px-[5rem]    lg:px-[180px]'>
 {/* img */}
 <div className='self-center'>
-    <img src={xom} className='lg:w-[30rem] md:w-[20rem] rounded-md' alt="" />
+    <img src={xom} className='lg:w-[30rem]  md:w-[20rem] rounded-md' alt="" />
 </div >
-{/*description*/}<div className='lg:px-[5rem] lg:text-left md:text-left text-justify  lg:w-[95%] md:w-[95%]  w-[110%]'>
+{/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%]'>
 
-<p className='text-[#ADD6E8] text-[4rem] font-medium '>Hello!</p>
+<p className='text-[#ADD6E8] text-[4rem]  font-medium '>Hello!</p>
 
-<p className='text-[#ADD6E8] leading-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in perspiciatis ut eligendi, repudiandae magnam! Deserunt impedit porro molestias unde quam nihil officia vel dicta earum ipsa, laboriosam nulla eius.
+<p className='text-[#ADD6E8] leading-7 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in perspiciatis ut eligendi, repudiandae magnam! Deserunt impedit porro molestias unde quam nihil officia vel dicta earum ipsa, laboriosam nulla eius.
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam quisquam, alias corporis recusandae eius consequatur eveniet suscipit est atque ipsa blanditiis libero distinctio deserunt. Magnam repudiandae illum eos commodi.
 </p>
 <br />

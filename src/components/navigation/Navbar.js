@@ -17,7 +17,7 @@ const Navbar = () => {
 
 
   return (
-    <div className={`fixed right-0 ${un ? 'z-50':'z-40' }`}>
+    <div  className={`fixed right-0 ${un ? 'z-50':'z-40' }`}>
 
 <button
 onClick={()=>Under(!un)} className={`fixed z-50  text-[#ADD6E8] right-5 top-[50px] ${un ?  '  rotate-90 duration-500':'  rotate-0 duration-300'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
@@ -26,7 +26,7 @@ onClick={()=>Under(!un)} className={`fixed z-50  text-[#ADD6E8] right-5 top-[50p
 </button>
 
 {/* blur */}
-<div className={un ?'backdrop-blur-[0.06rem] bg-[#ffffff80] top-0 right-0 h-[100vh] w-[100vw] absolute  ':'' }/>
+<div className={un ?'backdrop-blur-[0.1rem] bg-[#e4e4e480] top-0 right-0 h-[100vh] w-[100vw] absolute  ':'' } onClick={()=>Under(false)}/>
 {/* nav */}
       <motion.nav  
 animate={un ? "open" : "closed"}
@@ -50,9 +50,6 @@ className={`${un?'open duration-1000  ':'close hidden'}`}>
   
   
   '/>
-
-  
-
 <ul 
 className='bg-[#ADD6E8]
 overflow-hidden
@@ -60,42 +57,41 @@ lg:w-[16.8rem]
 md:w-[13.3rem] w-[11.2rem]
 fixed
  lg:top-[7rem] lg:right-[5rem] 
-
  md:top-[7rem] md:right-[5rem] 
  top-[7rem] right-[8rem] 
-
-
-
  pr-[5rem] pt-[6rem] 
 pb-[2rem] flex flex-col 
  gap-3 align-text-bottom
-
-
  lg:pt-[9rem] lg:pr-[5rem] lg:pb-8
 lg:text-[2rem]
 md:text-[1.5rem]
-
-
-
-
-
-
-
-
  '>
 
 
-    <li className=' dv w-[190%]'> <HashLink  to={'#home'} smooth  scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })}  className=' hover:text-[#2a90bc] w-full list text-[#fff] '>Home</HashLink> </li>
+    <li className=' dv w-[190%]'> <HashLink 
+    onClick={()=>Under(false)}
+    to={'#home'} smooth    className=' hover:text-[#2a90bc] w-full list text-[#fff] '>Home</HashLink> </li>
        {/*  */}
-       <li className='dv w-[190%]'> <HashLink className= ' hover:text-[#2a90bc] text-[#fff] list' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })} to={'#about'}>About Me</HashLink> </li>
+       <li className='dv w-[190%]'> <HashLink
+       onClick={()=>Under(false)}
+       className= ' hover:text-[#2a90bc] text-[#fff] list' smooth  to={'#about'}>About Me</HashLink> </li>
+ 
+   {/*  */}
+   <li className='dv w-[190%]'> <HashLink
+    onClick={()=>Under(false)}
+    className='hover:text-[#2a90bc] text-[#fff] list' smooth to={'#skills'}>Skills</HashLink> </li>
+
+
+    {/*  */}
+    <li className='  dv  w-[190%]  ' > <HashLink
+    onClick={()=>Under(false)}
+    smooth className=' hover:text-[#2a90bc] text-[#fff] list' to={'#projects'}>Projects</HashLink> </li>
+ 
  
     {/*  */}
-    <li className='  dv  w-[190%]  ' > <HashLink smooth className=' hover:text-[#2a90bc] text-[#fff] list' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })} to={'#projects'}>Projects</HashLink> </li>
- 
-    {/*  */}
-    <li className='dv w-[190%]'> <HashLink className='hover:text-[#2a90bc] text-[#fff] list' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })} to={'#'}>Skills</HashLink> </li>
-    {/*  */}
-    <li className='dv w-[190%]'> <HashLink className='hover:text-[#2a90bc] text-[#fff] list' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'start' })} to={'#'}>Contacts</HashLink> </li>
+    <li className='dv w-[190%]'> <HashLink
+    onClick={()=>Under(false)}
+    className='hover:text-[#2a90bc] text-[#fff] list' smooth to={'#'}>Contacts</HashLink> </li>
  
 </ul>
       </motion.nav>

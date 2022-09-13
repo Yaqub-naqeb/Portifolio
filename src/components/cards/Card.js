@@ -42,15 +42,15 @@ const Card = () => {
 
 
 {/* 02 */}
-<div className='flex align-middle gap-4'>
+<div className='flex  align-middle gap-4'>
   <div className='rounded-full w-7 h-7 translate-y-[5rem] bg-[#9c9c9c34]'>  </div> 
   <div className='justify-self-end text-[5.4rem] font-semibold text-[#a4d3e776]'>02</div>
   </div>
 
 
-      {/* first card */}
+      {/* Second card */}
 
-    <div className='flex flex-wrap gap-[4rem] align-middle justify-center mb-[6rem]'>
+    <div className='flex  flex-wrap gap-[4rem] align-middle justify-center mb-[6rem]'>
 
 {/* description */}
 <div className=' lg:text-center self-start '>
@@ -68,7 +68,7 @@ const Card = () => {
 
 </div>
 {/* img */}
-<div>
+<div className=''>
 <img src={imageThree} className='lg:w-[40rem] md:w-[35rem] lg:translate-x-20 ' alt="" />
 </div>
     </div>
