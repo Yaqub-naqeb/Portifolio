@@ -46,7 +46,7 @@ className={`${un?'open duration-1000  ':'close hidden'}`}>
   
   lg:right-[4.3rem] 
   md:right-[4.3rem] 
-  right-[7.3rem] 
+  right-[2.3rem] 
   border-[#add6e851]
   
   
@@ -59,7 +59,7 @@ md:w-[13.3rem] w-[11.2rem]
 fixed
  lg:top-[7rem] lg:right-[5rem] 
  md:top-[7rem] md:right-[5rem] 
- top-[7rem] right-[8rem] 
+ top-[7rem] right-[3rem] 
  pr-[5rem] pt-[6rem] 
 pb-[2rem] flex flex-col 
  gap-3 align-text-bottom
