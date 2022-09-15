@@ -5,6 +5,7 @@ import Projects from '../../pages/Projects'
 import Skills from '../../pages/Skills'
 import Navbar from '../navigation/Navbar'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade} from "react-scroll-motion";
+import Contacts from '../../pages/Contacts'
 
 const Rout = () => {
 
@@ -24,6 +25,7 @@ const Rout = () => {
   <About/>
 <Skills/>
 <Projects/>
+<Contacts/>
 </ScrollContainer>
 
 

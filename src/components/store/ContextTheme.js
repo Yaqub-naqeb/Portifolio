@@ -17,13 +17,13 @@ return {...state,un:action.payload};
 export function ContextTheme(props) {
   const [state, distpatch] = useReducer(themeReducer, {
    
-    mode: "bg-gray-900",
+    mode: "white",
 un:'false'
   });
 
 
 //
-  const colorMode = (mode) => {
+  const darkMode = (mode) => {
     distpatch({ type: "CHANGE_MODE", payload: mode });
   };
 //
@@ -42,7 +42,7 @@ const Under=(un)=>{
 
 
   return (
-    <themeContext.Provider value={{ ...state, colorMode,Under}}>
+    <themeContext.Provider value={{ ...state, darkMode,Under}}>
       {props.children}
     </themeContext.Provider>
   );

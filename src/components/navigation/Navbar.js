@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { HashLink } from 'react-router-hash-link';
 
 import '../../App.css'
@@ -13,6 +13,7 @@ const variants = {
 const Navbar = () => {
 
   const {un,Under}=useTheme();
+  console.log(un);
  
 
 
