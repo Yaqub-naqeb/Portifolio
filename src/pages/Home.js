@@ -14,7 +14,7 @@ const Home = () => {
 
 
   return (
-    <div id='home' className='h-[100vh] bg-black w-[100vw] overflow-y-hidden   -z-50 '>
+    <div id='home' className='h-[100vh]  w-[100vw] overflow-y-hidden   -z-50 '>
 
 {/* the blue rectaingul */}
         <div className='  -z-50 absolute top-[43px] left-0 lg:w-[168px] lg:h-[56px]
