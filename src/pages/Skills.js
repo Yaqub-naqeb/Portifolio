@@ -13,7 +13,7 @@ import Tailwind from '../components/imgs/skills/Tailwind_CSS_Logo.svg.png'
 import '../App.css'
 const Skills = () => {
   return (
-    <div id='skills' className='h-full relative'>
+    <div id='skills' className=' h-full relative'>
 
       {/* MySkills  */}
       <div >
@@ -29,10 +29,16 @@ const Skills = () => {
 
 
 <div className=' grid lg:px-[5rem] md:px-[4rem]  containar md:grid-cols-3 grid-cols-2 lg:grid-cols-4 pt-[20rem] place-items-center pr-3 gap-y-[3rem] '>
+
+
 {/* html */}
-<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={Html} className='w-[4rem] ml-[31%] ' alt="" />
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle  justify-center bg-[#F0F7FB] w-[11rem]  text-center'><img src={Html} className='w-[4rem] ml-[31%] ' alt="" />
 <p className='self-left font-medium   '>Html</p>
+<div className='hd'></div>
 </div>
+
+
+
 {/* Css */}
 <div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={Css} className='w-[4rem] ml-[31%]' alt="" />
 <p className='self-left font-medium'>Css</p>

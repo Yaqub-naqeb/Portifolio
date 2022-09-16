@@ -16,7 +16,6 @@ const Navbar = () => {
   console.log(un);
  
 
-
   return (
     <div  className={`fixed right-0 ${un ? 'z-50':'z-40' }`}>
 

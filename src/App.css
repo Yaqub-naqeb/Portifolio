@@ -23,9 +23,16 @@
 }
 .box:hover{
   transition: all 0.2s ease-in-out;
-  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.681);
+  box-shadow: inset 0px -5px 0px  #42b3e4db;
+ 
   
 }
+.box:hover img{
+  scale: 1.1;
+}
+
+  
+
 .contact{
   /* background-image: linear-gradient(to top, #add6e8, #c7dff1, #dee8f6, #f1f3fb, #ffffff); */
   background: rgb(255,255,255);
