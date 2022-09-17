@@ -69,8 +69,8 @@ md:text-[1.5rem]
 
 
     <li className=' dv w-[190%]'> <HashLink 
-    onClick={()=>Under(false)}
-    to={'#home'} smooth    className=' hover:text-[#2a90bc] w-full list text-[#fff] '>Home</HashLink> </li>
+    
+    to={'#'} smooth onClick={()=>Under(false)}   className=' hover:text-[#2a90bc] w-full list text-[#fff] '>Home</HashLink> </li>
        {/*  */}
        <li className='dv w-[190%]'> <HashLink
        onClick={()=>Under(false)}

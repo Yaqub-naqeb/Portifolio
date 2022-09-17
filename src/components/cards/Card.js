@@ -33,8 +33,8 @@ const Card = () => {
 <div className='flex m-[2rem] gap-2 text-center text-[#306CC4] font-medium text-[1rem] '>
   <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>React.js</p>
   <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>Firebase</p>
-  <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>TailwindCss</p>
-  <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>Xd</p>
+
+  <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>Figma</p>
 </div>
 
 </div>
@@ -73,12 +73,11 @@ const Card = () => {
   <h1 className='text-center text-[1.5rem] font-medium leading-[4rem] text-[#6c6c6c]'>CINFLIX</h1>
 <div className='leading-6  text-[#a4a3a3]'>
 <p className='lg:px-0 md:px-0  px-[3rem]'>Cinflix is a website that you can find your Movies  </p>
-<p className='lg:px-0 md:px-0   px-[3rem]'>and and watch the trailer of movies or watch it </p>
-{/* <p>tools: React,Firebase,Tailwindcss and XD.</p> */}
+<p className='lg:px-0 md:px-0   px-[3rem]'> and watch the trailer of movies or watch it </p>
 <div className='flex m-[2rem] gap-2 text-center text-[#306CC4] lg:translate-x-8 md:translate-x-8 font-medium text-[1rem] '>
   <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>React.js</p>
   <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>TailwindCss</p>
-  <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>Figma</p>
+  <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>XD</p>
 </div>
 </div>
 
@@ -130,8 +129,8 @@ const Card = () => {
 <div className=' lg:text-center self-start '>
   <h1 className='text-center text-[1.5rem] font-medium leading-[4rem] text-[#6c6c6c]'>HEADSET</h1>
 <div className='leading-6  text-[#a4a3a3e3]'>
-<p className=''>Avibooks is a website that you can find your books  </p>
-<p>and buy it an easy way with some free books</p>
+<p className=''>This website is usefull for finding new headsets</p>
+<p>and buy it an easy way</p>
 {/* <p>tools: React,Firebase,Tailwindcss and XD.</p> */}
 <div className='flex m-[2rem] lg:translate-x-16 md:lg:translate-x-16 gap-2 text-center text-[#306CC4] font-medium text-[1rem] '>
   <p className='px-[.4rem] py-[.2rem] rounded-full bg-[#E9EEFA] '>Html</p>

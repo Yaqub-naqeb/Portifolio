@@ -3,18 +3,15 @@ import Facebook from '../components/imgs/facebook (1).png'
 import Insta from '../components/imgs/instagram.png'
 import LinkedIn from '../components/imgs/linkedin (1).png'
 import GitHub from '../components/imgs/github.png'
-import { useRef } from 'react'
 const Home = () => {
 
 
 
-  const myRef = useRef(null)
 
-  const executeScroll = () => myRef.current.scrollIntoView()
 
 
   return (
-    <div id='home' className='h-[100vh]  w-[100vw] overflow-y-hidden   -z-50 '>
+    <div  className='h-[100vh]  w-[100vw] overflow-y-hidden   -z-50 '>
 
 {/* the blue rectaingul */}
         <div className='  -z-50 absolute top-[43px] left-0 lg:w-[168px] lg:h-[56px]
