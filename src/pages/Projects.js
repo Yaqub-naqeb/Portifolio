@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '../components/cards/Card';
+import { Info } from '../components/cards/Info';
 const Projects = () => {
+  const [obj,setObj]=useState(Info);
   return (
   
-    <div id='projects' className=' z-41 h-full  overflow-hidden  relative '>
+    <div id='projects' className=' pt-[15rem] z-41 h-full  overflow-hidden  relative '>
       {/* my projects */}
  <div >
-        <p className='absolute  top-0 lg:left-[45%]
+        <p className='absolute   top-0 lg:left-[45%]
         md:left-[40%]
         left-[29%]
         
@@ -14,7 +16,9 @@ const Projects = () => {
      <p className='text-[2.2rem] text-[#ADD6E8] absolute top-[6.4rem] lg:left-[46%] md:left-[42%] left-[33%]'>projects</p>
      </div>
 
-<Card/>
+{
+obj.map(info=>(<Card key={info.id} info={info}/>))
+}
 
     </div>
   )

@@ -7,6 +7,7 @@ const About = () => {
     '>
      {/* About me */}
      <div>
+
         <p className='absolute  top-0 lg:left-[40%]
         md:left-[30%]
         left-[17%]
@@ -18,14 +19,18 @@ const About = () => {
 <div className='flex lg:flex-row md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14 lg:pt-[20rem] md:pt-[10rem]  pt-[15rem] px-[3rem]  md:px-[5rem]    lg:px-[180px]'>
 {/* img */}
 <div className='self-center'>
+  
     <img src={xom} className='lg:w-[30rem]  md:w-[20rem] rounded-md' alt="" />
 </div >
 {/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%]'>
 
 <p className='text-[#ADD6E8] text-[4rem]  font-medium '>Hello!</p>
 
-<p className='text-[#ADD6E8] leading-7 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum in perspiciatis ut eligendi, repudiandae magnam! Deserunt impedit porro molestias unde quam nihil officia vel dicta earum ipsa, laboriosam nulla eius.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam quisquam, alias corporis recusandae eius consequatur eveniet suscipit est atque ipsa blanditiis libero distinctio deserunt. Magnam repudiandae illum eos commodi.
+<p className='text-[#ADD6E8] leading-7 '>I am 20 years old  ,And Software engineering student in the 
+3rd stage at university of Koya, I am front-end developer,
+After wasting 1 year of trying find my field in software I start
+learning some basics of Web development  ,and now im so 
+comfortable with it and i'm very exciting to learning new concepts 
 </p>
 <br />
 <p className='text-[#9C9C9C] font-medium text-[1.5rem]'>Let's work together</p>
