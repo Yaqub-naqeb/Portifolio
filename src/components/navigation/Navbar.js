@@ -91,7 +91,7 @@ md:text-[1.5rem]
     {/*  */}
     <li className='dv w-[190%]'> <HashLink
     onClick={()=>Under(false)}
-    className='hover:text-[#2a90bc] text-[#fff] list' smooth to={'#'}>Contacts</HashLink> </li>
+    className='hover:text-[#2a90bc] text-[#fff] list' smooth to={'#contacts'}>Contacts</HashLink> </li>
  
 </ul>
       </motion.nav>

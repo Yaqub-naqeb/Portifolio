@@ -2,7 +2,7 @@ import React from 'react'
 import '../App.css'
 const Contacts = () => {
   return (
-    <div className=' contact bg-slate-400 relative pb-[1rem] lg:px-[10rem] md:px-[4rem]  flex gap-3 justify-center 
+    <div id='contacts' className=' contact bg-slate-400 relative pb-[1rem] lg:px-[10rem] md:px-[4rem]  flex gap-3 justify-center 
     lg:justify-between
     md:justify-between
     align-middle
