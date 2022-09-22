@@ -39,6 +39,7 @@ description:[
     title:'HEADSET',
     img: require('../imgs/prjs/Screenshot (40).png'),
     num:'03',
+    url:'https://github.com/Yaqub-naqeb/Headset',
     tools:[
      {tool:'Html'},
      {tool:'Css'},
