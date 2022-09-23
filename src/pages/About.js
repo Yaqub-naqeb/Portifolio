@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id='about' className={`relative h-full w-[100vw] -z-50
     overflow-hidden
-    ${mode?'':'bg-[#000a]'}
+    ${mode?'':'bg-[#262626]'}
     `}>
      {/* About me */}
      <div>

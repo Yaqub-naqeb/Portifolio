@@ -7,7 +7,7 @@ const Projects = () => {
   const {mode}=useTheme();
   return (
   
-    <div id='projects' className={` pt-[15rem] z-41 h-full  overflow-hidden  relative ${mode?'':'bg-[#000a]'}`}>
+    <div id='projects' className={` pt-[15rem] z-41 h-full  overflow-hidden  relative ${mode?'':'bg-[#262626]'}`}>
       {/* my projects */}
  <div >
         <p className='absolute   top-0 lg:left-[45%]
