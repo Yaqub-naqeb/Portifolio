@@ -6,6 +6,7 @@ const themeReducer = (state, action) => {
   
     case "CHANGE_MODE":
       return { ...state, mode: action.payload };
+      
 case'CHANGE_UNDER':
 return {...state,un:action.payload};
       default:
@@ -17,13 +18,13 @@ return {...state,un:action.payload};
 export function ContextTheme(props) {
   const [state, distpatch] = useReducer(themeReducer, {
    
-    mode: "white",
+    mode: "true",
 un:'false'
   });
 
 
 //
-  const darkMode = (mode) => {
+  const changeMode= (mode) => {
     distpatch({ type: "CHANGE_MODE", payload: mode });
   };
 //
@@ -31,6 +32,8 @@ const Under=(un)=>{
     distpatch({ type: "CHANGE_UNDER", payload: un });
 
 }
+// 
+
 
 
 
@@ -42,7 +45,7 @@ const Under=(un)=>{
 
 
   return (
-    <themeContext.Provider value={{ ...state, darkMode,Under}}>
+    <themeContext.Provider value={{ ...state, changeMode,Under}}>
       {props.children}
     </themeContext.Provider>
   );

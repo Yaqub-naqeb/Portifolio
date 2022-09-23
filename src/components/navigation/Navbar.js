@@ -31,7 +31,7 @@ onClick={()=>Under(!un)} className={`fixed z-50  text-[#ADD6E8] right-5 top-[50p
       <motion.nav  
 animate={un ? "open" : "closed"}
 variants={variants}
-className={`${un?'open duration-1000  ':'close hidden'}`}>
+className={`${un?'open duration-100  ':'close hidden'}`}>
 
 
   {/* chawrchewa */}

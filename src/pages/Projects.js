@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import Card from '../components/cards/Card';
 import { Info } from '../components/cards/Info';
+import useTheme from '../components/store/useTheme';
 const Projects = () => {
   const [obj,setObj]=useState(Info);
+  const {mode}=useTheme();
   return (
   
-    <div id='projects' className=' pt-[15rem] z-41 h-full  overflow-hidden  relative '>
+    <div id='projects' className={` pt-[15rem] z-41 h-full  overflow-hidden  relative ${mode?'':'bg-[#262626]'}`}>
       {/* my projects */}
  <div >
         <p className='absolute   top-0 lg:left-[45%]
