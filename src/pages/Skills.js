@@ -11,9 +11,11 @@ import Tailwind from '../components/imgs/skills/Tailwind_CSS_Logo.svg.png'
 
 
 import '../App.css'
+import useTheme from '../components/store/useTheme'
 const Skills = () => {
+  const {mode}=useTheme();
   return (
-    <div id='skills' className=' h-full relative'>
+    <div id='skills' className={` h-full relative ${mode?'':'bg-[#000a]'}`}>
 
       {/* MySkills  */}
       <div >

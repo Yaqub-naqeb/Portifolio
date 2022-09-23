@@ -1,8 +1,10 @@
 import React from 'react'
 import '../App.css'
+import useTheme from '../components/store/useTheme'
 const Contacts = () => {
+  const {mode}=useTheme();
   return (
-    <div className=' contact bg-slate-400 relative pb-[1rem] lg:px-[10rem] md:px-[4rem]  flex gap-3 justify-center 
+    <div className={` ${mode?'contact':'bg-[#000a]'}   relative pb-[1rem] lg:px-[10rem] md:px-[4rem]  flex gap-3 justify-center 
     lg:justify-between
     md:justify-between
     align-middle
@@ -10,7 +12,7 @@ const Contacts = () => {
    
    
     
-    '>
+    `}>
         {/* copy right  */}
       <div className='text-[#9C9C9C] hover:text-[#000000a9] transition-all duration-300'>
       &copy; Yaqwb Naqeb 

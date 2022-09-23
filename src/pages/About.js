@@ -1,10 +1,13 @@
 import React from 'react'
 import xom from '../components/imgs/prjs/IMG_E0704.JPG'
+import useTheme from '../components/store/useTheme'
 const About = () => {
+  const {mode}=useTheme();
   return (
-    <div id='about' className='relative h-full w-[100vw] -z-50
+    <div id='about' className={`relative h-full w-[100vw] -z-50
     overflow-hidden
-    '>
+    ${mode?'':'bg-[#000a]'}
+    `}>
      {/* About me */}
      <div>
 
