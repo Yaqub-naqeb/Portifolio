@@ -5,13 +5,9 @@ import LinkedIn from '../components/imgs/linkedin (1).png'
 import GitHub from '../components/imgs/github.png'
 // import useColor from './components/UseContext';
 import useTheme from '../components/store/useTheme'
+import { motion } from 'framer-motion'
 const Home = () => {
   const {mode,changeMode}=useTheme();
-
-
-
-  // const [toggle, setToggle] = useState(false)
-
 
 
 
@@ -29,7 +25,7 @@ const Home = () => {
         w-[80px] h-[46px]
          ${mode?'bg-[#ADD6E84F]':'bg-[#add6e896]'}`}>
 
-<div className='z-50 ml-16 mt-3'>
+<div className='z-50 lg:ml-16 md:ml-11 ml-6 lg:mt-3 md:mt-3 mt-2'>
 
 {mode ?
 // dark Icon
@@ -52,9 +48,29 @@ const Home = () => {
         </div>
 {/* Writting */}
         <div className='writting  absolute top-[28%] lg:left-[10%] md:left-[23%] left-10  '>
-          <p className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#ADD6E84F]':'text-[#add6e846]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem]`}>Hello</p>
-          <p className={`   absolute top-[58%] text-[2.5rem] left-[20%] text-[#ADD6E8] `}>I'm Yaqub</p>
-          <p className='text-[#9C9C9C] text-[1.5rem] absolute lg:bottom-2 md:bottom-3 bottom-[-1rem] lg:left-[13%] md:left-[14%] left-[13%]'>Front-end Developer</p>
+          <motion.p 
+          
+          initial={{ y:-100 }}
+          animate={{ y:0 }}
+          transition={{
+          duration:.6
+          }}
+          
+          
+          className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#ADD6E84F]':'text-[#add6e846]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem]`}>Hello</motion.p>
+          <motion.p 
+             initial={{ x:-150 }}
+             animate={{ x:0 }}
+             transition={{
+             duration:1
+             }}
+          
+          
+          className={`   absolute top-[58%] text-[2.5rem] left-[20%] text-[#ADD6E8] `}>I'm Yaqub</motion.p>
+          <motion.p 
+          
+          
+          className='text-[#9C9C9C] text-[1.5rem] absolute lg:bottom-2 md:bottom-3 bottom-[-1rem] lg:left-[13%] md:left-[14%] left-[13%]'>Front-end Developer</motion.p>
            
         </div>
 {/* rectangul with socials */}
