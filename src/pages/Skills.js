@@ -15,7 +15,7 @@ import useTheme from '../components/store/useTheme'
 const Skills = () => {
   const {mode}=useTheme();
   return (
-    <div id='skills' className={` h-full relative ${mode?'':'bg-[#262626]'}`}>
+    <div id='skills' className={` h-[100vh] relative ${mode?'':'bg-[#262626]'}`}>
 
       {/* MySkills  */}
       <div >

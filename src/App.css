@@ -9,7 +9,7 @@
 .dv:hover .list{
   color: #42b3e4db;
   padding-left: 1rem;
-  /* width: 145%; */
+ 
   transition: all ease-in-out 0.2s;
 }
 .dv:hover{
@@ -34,12 +34,9 @@
   
 
 .contact{
-  /* background-image: linear-gradient(to top, #add6e8, #c7dff1, #dee8f6, #f1f3fb, #ffffff); */
   background: rgb(255,255,255);
 background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(173, 214, 232, 0.286) 0%);
 box-shadow: 0rem -1.5rem 1rem rgba(173, 214, 232, 0.281);
 }
-
-
 
 
