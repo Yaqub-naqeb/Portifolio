@@ -7,10 +7,17 @@ import Navbar from '../navigation/Navbar'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade} from "react-scroll-motion";
 import Contacts from '../../pages/Contacts'
 import useTheme from '../store/useTheme'
+import '../../Scroll.css'
 
 const Rout = () => {
 
+
 const {mode}=useTheme();
+
+
+
+
+
   return (
     <div className=''>
 
@@ -19,7 +26,7 @@ const {mode}=useTheme();
   <ScrollPage>
   <Navbar/>
     <Animator animation={mode?batch(Fade()):''}>
-      <span><Home/> </span>
+      <Home/>
     </Animator>
   </ScrollPage>
  
@@ -32,8 +39,10 @@ const {mode}=useTheme();
 
 
 
+
     </div>
   )
 }
+
 
 export default Rout

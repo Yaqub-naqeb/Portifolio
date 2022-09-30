@@ -17,7 +17,8 @@ const Navbar = () => {
  
 
   return (
-    <div  className={`fixed right-0 ${un ? 'z-50':'z-40' }`}>
+    // ${un ? 'z-40':'z-50' }
+    <div  className={`fixed right-0  z-40`}>
 
 <button
 onClick={()=>Under(!un)} className={`fixed z-50  text-[#ADD6E8] right-5 top-[50px] ${un ?  '  rotate-90 duration-500':'  rotate-0 duration-300'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">

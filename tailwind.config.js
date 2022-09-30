@@ -8,10 +8,13 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+   
   
   // variants: {
   //   extend: {
   //     textOpacity: ['white']
   //   }
   // }
+  
 }
+
