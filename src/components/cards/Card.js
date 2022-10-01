@@ -23,12 +23,12 @@ const {mode}=useTheme();
 <div className=' lg:text-center self-start '>
   <h1 className={`text-center text-[1.5rem] font-medium leading-[4rem]  ${mode ?'text-[#6c6c6c]':'text-[#ffffff]'}`}>{info.title}</h1>
 <div className={`leading-6  ${mode?'text-[#969494e3]':'text-[#fcfcfce3]'}`}>
-<p className='lg:px-0 md:px-0   px-[3rem]'>{info.description.map((row,index)=>(<p key={index}>{row.p}</p>))}</p>
+<p className='lg:px-0 md:px-0 md:text-left text-center lg:pl-0 md:pl-0  pl-[1rem]'>{info.description.map((row,index)=>(<p key={index}>{row.p}</p>))}</p>
 
 
 {/* tools */}
 <div className='flex m-[2rem] lg:gap-0 md:gap-2 gap-2 text-center text-[#306CC4] font-medium text-[1rem]  '>
-  {info.tools.map((tol,index)=>(<div key={index} className='lg:px-[.7rem] md:px-[.5rem] px-2 py-[.2rem] rounded-full bg-[#E9EEFA] lg:ml-5 md:ml-2'>{tol.tool}</div>))}
+  {info.tools.map((tol,index)=>(<div key={index} className='lg:px-[.7rem] md:px-[1rem] px-2 py-[.2rem] rounded-full bg-[#E9EEFA] lg:ml-5 md:ml-5'>{tol.tool}</div>))}
 
 </div>
 

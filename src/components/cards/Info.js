@@ -5,7 +5,7 @@ export const Info=[{
     num:'01',
     tools:[
      {tool:'React'},
-     {tool:'firebase'},
+    //  {tool:'firebase'},
      {tool:'Tailwind'},
      {tool:'figma'},
     ],
@@ -24,7 +24,7 @@ description:[
     tools:[
      {tool:'React'},
      {tool:'firebase'},
-     {tool:'JavaScript'},
+    //  {tool:'JavaScript'},
      {tool:'XD'},
     ],
 url:'https://github.com/Abdulbariii/Movie-info',

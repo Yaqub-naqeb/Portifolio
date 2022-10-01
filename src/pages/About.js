@@ -4,7 +4,7 @@ import useTheme from '../components/store/useTheme'
 const About = () => {
   const {mode}=useTheme();
   return (
-    <div id='about' className={`relative h-full w-[100vw]
+    <div id='about' className={`relative h-full w-[100vw] 
    
     overflow-hidden
     ${mode?'':'bg-[#262626]'}
@@ -14,7 +14,7 @@ const About = () => {
 
         <p className='absolute  top-0 lg:left-[40%]
         md:left-[30%]
-        left-[17%]
+        left-[15%]
         
         text-[6rem] font-semibold opacity-[0.6]  text-[#ADD6E84F]'>About</p>
      <p className='text-[2.2rem] text-[#ADD6E8] absolute top-20 left-[49.5%]'>Me</p>
