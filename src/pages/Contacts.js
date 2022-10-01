@@ -4,7 +4,7 @@ import useTheme from '../components/store/useTheme'
 const Contacts = () => {
   const {mode}=useTheme();
   return (
-    <div className={` ${mode?'contact':'bg-[#262626]'}   relative pb-[1rem] lg:px-[10rem] md:px-[4rem]  flex gap-3 justify-center 
+    <div id='contacts' className={` ${mode?'contact':'bg-[#262626]'}   relative pb-[1rem] lg:px-[10rem] md:px-[4rem]  flex gap-3 justify-center 
     lg:justify-between
     md:justify-between
     align-middle
