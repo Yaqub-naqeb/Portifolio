@@ -25,7 +25,7 @@ const Home = () => {
         w-[80px] h-[46px]
          ${mode?'bg-[#ADD6E84F]':'bg-[#505C62]'}`}>
 
-<div className='z-50 lg:ml-16 md:ml-11 ml-6 lg:mt-3 md:mt-3 mt-2'>
+<div className='z-50 lg:ml-16 md:ml-11 ml-6 lg:mt-3 md:mt-3 mt-2 cursor-pointer'>
 
 {mode ?
 // dark Icon

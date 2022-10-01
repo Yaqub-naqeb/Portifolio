@@ -6,6 +6,7 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 .dv:hover .list{
   color: #42b3e4db;
   padding-left: 1rem;
