@@ -10,6 +10,7 @@ export const Info=[{
      {tool:'figma'},
     ],
 url:'https://github.com/Yaqub-naqeb/AviBooks',
+demo:'https://avibooks.vercel.app/',
 description:[
     {p:'Avibooks is a website that you can find your books '},
 {p:'and buy it an easy way with some free books'}
@@ -18,6 +19,7 @@ description:[
 
 {
     id:'2',
+    demo:'',
     title:'CINFLIX',
     img: require('../imgs/prjs/Screenshot (41).png'),
     num:'02',
@@ -36,6 +38,7 @@ description:[
 ,
 {
     id:'3',
+    demo:'',
     title:'HEADSET',
     img: require('../imgs/prjs/Screenshot (40).png'),
     num:'03',
