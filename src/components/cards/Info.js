@@ -19,7 +19,7 @@ description:[
 
 {
     id:'2',
-    demo:'',
+    demo:'https://cinflex.vercel.app/',
     title:'CINFLIX',
     img: require('../imgs/prjs/Screenshot (41).png'),
     num:'02',
