@@ -41,7 +41,7 @@ comfortable with it and i'm very exciting to learning new concepts
 <div className='text-[#9C9C9CA1]'>
 <p className=''>what can i do for you?</p>
 
-<p className=''>Shot an email to Yaqub.009448401@gmail.com</p>
+<a href='mailto:Yaqub.009448401@gmail.com?'  >Shot an email to <span className='font-bold'>Yaqub.009448401@gmail.com</span></a>
 </div>
 </div>
 
