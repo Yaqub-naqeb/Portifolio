@@ -7,12 +7,12 @@ const Skills_name = ({name,percentage}) => {
     <div>
       
 {/* one */}
-    <div  className='font-medium text-[#A5A5A5]'>
+    <div  className='font-medium flex flex-col gap-2 text-[#A5A5A5]'>
 
 
 
 {/* name and percent */}
-<div className='flex justify-between  w-full  '>
+<div className='flex  justify-between  w-full  '>
 <p>{name}</p>
 <p>{percentage}%</p>
 
