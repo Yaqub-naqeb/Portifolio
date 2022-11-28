@@ -51,7 +51,7 @@ const info=[
 {/* icons hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */}
 
 
-<div className='cont gap-x-16 gap-y-20  grid  md:grid-cols-2 lg:grid-cols-2  w-[80%]  md:mt-[10rem] mt-[15rem]  lg:mt-[10rem]  p-5'>
+<div className='cont gap-x-16 gap-y-20  grid  md:grid-cols-2 lg:grid-cols-2  w-[80%]  md:mt-[16rem] mt-[15rem]  lg:mt-[10rem]  p-5'>
 
 
 {info && info.map((skill)=>(<Skills_name  name={skill.name} key={skill.name} percentage={skill.percentage}/>)
