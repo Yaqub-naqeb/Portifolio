@@ -19,7 +19,7 @@ const Skills_name = ({name,percentage}) => {
 </div>
 
 {/* the blood */}
-<div className='bg-[#ADD6E84F]  w-full h-2 rounded-full'> <p className={`rang h-2 w-[${percentage}%] bg-[#ADD6E8]  rounded-full z-50`}></p> </div>
+<div className='bg-[#ADD6E84F] w-[100%] h-2 rounded-full '> <p className={`rang h-2 w-[${percentage}%] bg-[#ADD6E8]  rounded-full `}></p> </div>
 
 
 </div>
