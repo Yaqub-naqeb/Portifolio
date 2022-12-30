@@ -1,5 +1,6 @@
 import React from 'react'
 import xom from '../components/imgs/prjs/IMG_E0704.JPG'
+import My from '../components/My';
 import useTheme from '../components/store/useTheme'
 const About = () => {
   const {mode}=useTheme();
@@ -9,18 +10,12 @@ const About = () => {
     overflow-hidden
     ${mode?'':'bg-[#262626]'}
     `}>
-     {/* About me */}
-     <div>
+    {/* About me  */}
+<My name={'Me'} bg_name={'About'}/>
 
-        <p className='absolute  top-0 lg:left-[40%]
-        md:left-[30%]
-        left-[15%]
-        
-        text-[6rem] font-semibold opacity-[0.6]  text-[#ADD6E84F]'>About</p>
-     <p className='text-[2.2rem] text-[#ADD6E8] absolute top-20 left-[49.5%]'>Me</p>
-     </div>
+
 {/* content */}
-<div className='flex lg:flex-row md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14 lg:pt-[20rem] md:pt-[10rem]  pt-[15rem] px-[3rem]  md:px-[5rem]    lg:px-[180px]'>
+<div className='flex lg:flex-row md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14  px-[3rem]  md:px-[5rem]    lg:px-[180px]'>
 {/* img */}
 <div className='self-center'>
   

@@ -8,16 +8,15 @@ import GitHub from '../components/imgs/skills/Octicons-mark-github.svg.png'
 import Figma from '../components/imgs/skills/figma.png'
 import FiB from '../components/imgs/skills/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f3438302f66697265626173652e706e67.png'
 import Tailwind from '../components/imgs/skills/Tailwind_CSS_Logo.svg.png'
-
-
 import '../App.css'
 import useTheme from '../components/store/useTheme'
+import My from '../components/My'
 const Skills = () => {
   const {mode}=useTheme();
   return (
-    <div id='skills' className={` lg:h-[80vh] relative ${mode?'':'bg-[#262626]'}   mt-[3rem] `}>
+    <div id='skills' className={` lg:h-[60vh] relative ${mode?'':'bg-[#262626]'} `}>
 
-      {/* MySkills  */}
+      {/* MySkills 
       <div >
         <p className='absolute  top-0 lg:left-[45%]
         md:left-[40%]
@@ -25,12 +24,14 @@ const Skills = () => {
         
         text-[8rem] font-semibold opacity-[0.6]  text-[#ADD6E84F]'>My</p>
      <p className='text-[2.4rem] text-[#ADD6E8] absolute top-[6.4rem] lg:left-[48%] md:left-[45%] left-[41%]'>Skills</p>
-     </div>
+     </div> */}
+
+     <My name={'Skills'} bg_name={'My'}/>
 
 
 
 
-<div className=' grid lg:px-[5rem] md:px-[4rem]  containar md:grid-cols-3 grid-cols-2 lg:grid-cols-4 pt-[20rem] place-items-center pr-3 gap-y-[3rem] '>
+<div className=' grid lg:px-[5rem] md:px-[4rem]  containar md:grid-cols-3 grid-cols-2 lg:grid-cols-4  place-items-center pr-3 gap-y-[3rem] '>
 
 
 {/* html */}
