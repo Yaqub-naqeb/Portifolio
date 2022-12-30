@@ -25,7 +25,7 @@ const Projects = () => {
 
 
 
-<div className='mt-[10rem]'>
+<div className='lg:mt-[5rem] md:mt-[8rem] mt-[10rem]'>
   
 {
 obj.map(info=>(<Card key={info.id} info={info}/>))
