@@ -1,5 +1,5 @@
 import React from 'react'
-import xom from '../components/imgs/prjs/IMG_E0704.JPG'
+import xom from '../components/imgs/prjs/me/img_1.jpg'
 import My from '../components/My';
 import useTheme from '../components/store/useTheme'
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
 {/* img */}
 <div className='self-center'>
   
-    <img src={xom} className='lg:w-[30rem]  md:w-[20rem] rounded-md' alt="" />
+    <img src={xom} className='lg:w-[30rem]  md:w-[20rem] rounded-md opacity-95' alt="" />
 </div >
 {/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%]'>
 
