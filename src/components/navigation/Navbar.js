@@ -21,7 +21,7 @@ const Navbar = () => {
     <div  className={`fixed right-0  z-40`}>
 
 <button
-onClick={()=>Under(!un)} className={`fixed z-50  text-[#ADD6E8] right-5 top-[50px] ${un ?  '  rotate-90 duration-500':'  rotate-0 duration-300'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-7 h-7">
+onClick={()=>Under(!un)} className={`fixed z-50  text-[#ADD6E8] right-5 top-[50px] ${un ?  '  rotate-90 duration-500':'  rotate-0 duration-300'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.4" stroke="currentColor" className="w-8 h-8">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 </button>

@@ -10,7 +10,7 @@ const Home = () => {
   const {mode,changeMode}=useTheme();
 
 
-
+// #9cd5ee6e
   return (
     <div  className={`h-[100vh]   w-[100vw] overflow-y-hidden  -z-50 ${mode?'':'bg-[#262626]'}`}>
 
@@ -20,10 +20,10 @@ const Home = () => {
 
 
 {/* the blue rectaingul */}
-        <div className={`  absolute top-[43px] left-0 lg:w-[168px] lg:h-[56px]
+        <div className={` rounded-r-md absolute top-[43px] left-0 lg:w-[168px] lg:h-[56px]
         md:w-[128px] md:h-[56px]
         w-[80px] h-[46px]
-         ${mode?'bg-[#ADD6E84F]':'bg-[#505C62]'}`}>
+         ${mode?'bg-[#9cd5ee43]':'bg-[#505C62]'}`}>
 
 <div className='z-50 lg:ml-16 md:ml-11 ml-6 lg:mt-3 md:mt-3 mt-2 cursor-pointer'>
 
@@ -51,7 +51,7 @@ const Home = () => {
           }}
           
           
-          className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#ADD6E84F]':'text-[#424A4E]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem]`}>Hello</motion.p>
+          className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#9cd5ee76]':'text-[#424A4E]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem]`}>Hello</motion.p>
           <motion.p 
              initial={{ x:-150 }}
              animate={{ x:0 }}
@@ -60,7 +60,7 @@ const Home = () => {
              }}
           
           // #ADD6E8
-          className={`   absolute top-[58%] text-[2.5rem] left-[20%]  ${mode?'text-[#ADD6E8]':'text-[#ADD6E8]'} `}>I'm Yaqub</motion.p>
+          className={`   absolute top-[58%] text-[2.5rem] left-[20%]  ${mode?'text-[#83c3de]':'text-[#ADD6E8]'} `}>I'm Yaqub</motion.p>
           <motion.p 
           
           
@@ -69,7 +69,7 @@ const Home = () => {
         </div>
 {/* rectangul with socials */}
      
-          <div className={`flex z-41 gap-4 absolute bottom-9 lg:pl-[10rem] md:pl-[7rem] pl-[3rem] py-[7px] pr-8 bg-[#ADD6E84F] ${mode?'bg-[#ADD6E84F]':'bg-[#505C62]'}`}>
+          <div className={`flex rounded-r-md z-41 gap-4 absolute bottom-9 lg:pl-[10rem] md:pl-[7rem] pl-[3rem] py-[7px] pr-8 bg-[#ADD6E84F] ${mode?'bg-[#9cd5ee43]':'bg-[#505C62]'}`}>
            
            <a target={'_blank'} rel="noreferrer" href="https://www.facebook.com/yaqubEng" className='hover:brightness-100 '> <img src={Facebook} className='w-[34px] h-[34px]' alt="" /></a>
 
