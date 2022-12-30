@@ -2,7 +2,7 @@ import React from 'react'
 import About from '../../pages/About'
 import Home from '../../pages/Home'
 import Projects from '../../pages/Projects'
-import Skills from '../../pages/Skills_2'
+import Skills from '../../pages/Skills'
 import Navbar from '../navigation/Navbar'
 import { Animator, ScrollContainer, ScrollPage, batch, Fade} from "react-scroll-motion";
 import Contacts from '../../pages/Contacts'
