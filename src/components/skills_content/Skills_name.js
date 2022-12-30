@@ -28,3 +28,38 @@ const Skills_name = ({name,percentage}) => {
 }
 
 export default Skills_name
+
+
+
+{/* Css */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={Css} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>Css</p>
+</div>
+{/* JavaScript */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={Js} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>JavaScript</p>
+</div>
+{/* React */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={react} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>React</p>
+</div>
+{/* Tailwind */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={Tailwind} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>Tailwind</p>
+</div>
+{/* Git */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={Git} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>Git</p>
+</div>
+{/* GitHub */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={GitHub} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>GitHub</p>
+</div>
+{/* Firebase */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={FiB} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>Firebase</p>
+</div>
+{/* Figma */}
+<div className='box ml-4 rounded-md p-2  flex flex-col align-middle hover:inset-4 justify-center bg-[#F0F7FB] w-[11rem] h text-center'><img src={Figma} className='w-[4rem] ml-[31%]' alt="" />
+<p className='self-left font-medium'>Figma</p>
+</div>

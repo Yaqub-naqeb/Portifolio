@@ -17,7 +17,6 @@ const {mode}=useTheme();
   return (
     <div className={`${mode?'':'bg-[#262626]'}`}>
 
-
 <ScrollContainer >
   <ScrollPage>
   <Navbar/>
@@ -25,17 +24,12 @@ const {mode}=useTheme();
       <Home/>
     </Animator>
   </ScrollPage>
- 
-  
 </ScrollContainer>
+
 <About/>
 <Skills/>
 <Projects/>
 <Contacts/>
-
-
-
-
     </div>
   )
 }

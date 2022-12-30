@@ -3,7 +3,7 @@ import React from 'react'
 const My = ({bg_name,name}) => {
   return (
     <div className='my-[3rem]'>
-       {/* MySkills  */}
+       {/* My*/}
        <div className='mb-[2rem]'>
         <p className='text-center
         lg:text-[8rem] md:text-[8rem] text-8xl  font-semibold opacity-[0.6]  text-[#ADD6E84F]'>{bg_name}</p>
