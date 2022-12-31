@@ -38,11 +38,11 @@ description:[
 ,
 {
     id:'3',
-    demo:'',
+    demo:'https://headset22.netlify.app/html/',
     title:'HEADSET',
     img: require('../imgs/prjs/Screenshot (40).png'),
     num:'03',
-    url:'https://headset22.netlify.app/html/',
+    url:'https://github.com/Yaqub-naqeb/Headset',
     tools:[
      {tool:'Html'},
      {tool:'Css'},
