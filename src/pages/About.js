@@ -21,18 +21,19 @@ const About = () => {
   
     <img src={xom} className='lg:w-[30rem]  md:w-[20rem] rounded-md opacity-95' alt="" />
 </div >
-{/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%]'>
+{/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%] '>
 
-<p className='text-[#ADD6E8] text-[4rem]  font-medium '>Hello!</p>
+<p className='text-[#ADD6E8] text-[4rem]  font-medium lg:text-left md:text-left text-center'>Hello!</p>
 
-<p className='text-[#ADD6E8] leading-7 '>I am 20 years old  ,And Software engineering student in the 
+<p className='text-[#ADD6E8] leading-7 
+'>I am 20 years old  ,And Software engineering student in the 
 3rd stage at university of Koya, I am front-end developer,
 After wasting 1 year of trying find my field in software I start
 learning some basics of Web development  ,and now im so 
 comfortable with it and i'm very exciting to learning new concepts 
 </p>
 <br />
-<p className='text-[#9C9C9C] font-medium text-[1.5rem]'>Let's work together</p>
+<p className='text-[#9C9C9C] font-medium text-[1.5rem] '>Let's work together</p>
 <div className='text-[#9C9C9CA1]'>
 <p className=''>what can i do for you?</p>
 
