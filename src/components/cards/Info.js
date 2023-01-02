@@ -3,6 +3,7 @@ export const Info=[{
     title:'AVIBOOKS',
     img: require('../imgs/prjs/Screenshot (39).png'),
     num:'01',
+    style:'',
     tools:[
      {tool:'React'},
     //  {tool:'firebase'},
@@ -23,6 +24,7 @@ description:[
     title:'CINFLIX',
     img: require('../imgs/prjs/Screenshot (41).png'),
     num:'02',
+    style:'flex-row-reverse',
     tools:[
      {tool:'React'},
      {tool:'firebase'},
@@ -42,6 +44,7 @@ description:[
     title:'HEADSET',
     img: require('../imgs/prjs/Screenshot (40).png'),
     num:'03',
+    style:'',
     url:'https://github.com/Yaqub-naqeb/Headset',
     tools:[
      {tool:'Html'},

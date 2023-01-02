@@ -14,7 +14,7 @@ const {mode}=useTheme();
 
       {/* first card */}
 
-    <div className={`flex p-4 hover:shadow-lg duration-200 transition-all shadow-md rounded-lg ${mode ?'bg-[#f5f6f7]':'bg-[#81818183]'} flex-wrap  align-middle justify-around mb-[6rem] `}>
+    <div className={`flex p-4 hover:shadow-lg duration-200 transition-all shadow-md rounded-lg ${mode ?'bg-[#f5f6f7]':'bg-[#81818183]'} flex-wrap  align-middle justify-around mb-[6rem] ${info.style}`}>
 {/* img */}
 <div>
 <img src={info.img} className='lg:w-[35rem] rounded-lg md:w-[35rem] ' alt="" />
