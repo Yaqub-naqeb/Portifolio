@@ -1,5 +1,5 @@
 import React from 'react'
-import xom from '../components/imgs/prjs/me/img_1.jpg'
+import xom from '../components/imgs/IMG_1542_cleanup.JPG'
 import My from '../components/My';
 import useTheme from '../components/store/useTheme'
 const About = () => {
