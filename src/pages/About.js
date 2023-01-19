@@ -36,7 +36,7 @@ comfortable with it and i'm very exciting to learning new concepts
 <p className='text-[#9C9C9C] font-medium text-[1.5rem] '>Let's work together</p>
 <div className='text-[#9C9C9CA1]'>
 <p className=''>what can i do for you?</p>
-
+{/* some optimization */}
 <a href='mailto:Yaqub.009448401@gmail.com?'  >Shot an email to <span className='font-bold'>Yaqub.009448401@gmail.com</span></a>
 </div>
 </div>
