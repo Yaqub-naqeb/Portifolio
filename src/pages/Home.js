@@ -69,7 +69,7 @@ const Home = () => {
         </div>
 {/* rectangul with socials */}
      
-          <div className={`flex rounded-r-md z-41 gap-4 absolute bottom-9 lg:pl-[10rem] md:pl-[7rem] pl-[3rem] py-[7px] pr-8 bg-[#ADD6E84F] ${mode?'bg-[#9cd5ee43]':'bg-[#505C62]'}`}>
+          {/* <div className={`flex rounded-r-md z-41 gap-4 absolute bottom-9 lg:pl-[10rem] md:pl-[7rem] pl-[3rem] py-[7px] pr-8 bg-[#ADD6E84F] ${mode?'bg-[#9cd5ee43]':'bg-[#505C62]'}`}>
            
            <a target={'_blank'} rel="noreferrer" href="https://www.facebook.com/yaqubEng" className='hover:brightness-100 '> <img src={Facebook} className='w-[34px] h-[34px]' alt="" /></a>
 
@@ -81,7 +81,7 @@ const Home = () => {
 <a href="https://github.com/Yaqub-naqeb" target={'_blank'} rel="noreferrer" >
             <img src={GitHub} className='w-[34px] h-[34px]' alt="" /></a>
 
-          </div>
+          </div> */}
 
 
     </div>
