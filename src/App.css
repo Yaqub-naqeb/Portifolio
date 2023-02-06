@@ -22,17 +22,6 @@
 .list{
   padding-left: 1rem;
 }
-.box:hover{
-  transition: all 0.2s ease-in-out;
-  box-shadow: inset 0px -5px 0px  #42b3e4db;
- 
-  
-}
-.box:hover img{
-  scale: 1.1;
-}
-
-  
 
 .contact{
   background: rgb(255,255,255);
