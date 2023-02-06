@@ -3,13 +3,16 @@ import useTheme from '../components/store/useTheme'
 import { motion } from 'framer-motion'
 import Rectangular from '../components/homeComponent/Rectangular'
 import ToggleMode from '../components/homeComponent/ToggleMode'
+import ReactIcon from '../components/imgs/svg/React-icon.svg'
+import ReactIcon1 from '../components/imgs/svg/React-icon-1.svg'
 
 const Home = () => {
   const {mode}=useTheme();
 
 // #9cd5ee6e
   return (
-    <div  className={`h-[100vh]   w-[100vw] overflow-y-hidden  -z-50 ${mode?'':'bg-[#262626]'}`}>
+   <div className=''>
+ <div  className={`h-[100vh]  w-[100vw] overflow-hidden  -z-50 ${mode?'':'bg-[#262626]'}`}>
 
 
 {/* the blue rectaingul */}
@@ -48,7 +51,12 @@ const Home = () => {
         </div>
 {/* rectangul with socials */}
           <Rectangular/>
+
+          
     </div>
+
+
+   </div>
   )
 }
 
