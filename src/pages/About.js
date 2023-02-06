@@ -8,7 +8,8 @@ const About = () => {
     <div id='about' className={`relative h-full w-[100vw] 
    
     overflow-hidden
-    ${mode?'':'bg-[#262626]'}
+    // bg-gradient-to-r from-cyan-500 to-blue-500
+    ${mode?' bg-gradient-to-b from-[#f4fafc84] to-[#ffff]':'bg-[#262626] bg-gradient-to-b from-[#262626] to-[#262626]'}
     `}>
     {/* About me  */}
 <My name={'Me'} bg_name={'About'}/>
@@ -22,8 +23,8 @@ const About = () => {
     <img src={xom} className='lg:w-[30rem]  md:w-[20rem] rounded-md opacity-95' alt="" />
 </div >
 {/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%] '>
-
-<p className='text-[#ADD6E8] text-[4rem]  font-medium lg:text-left md:text-left text-center'>Hello!</p>
+{/* text-[#ADD6E8] */}
+<p className=' text-[#ADD6E8]  text-[4rem]  font-medium lg:text-left md:text-left text-center'>Hello!</p>
 
 <p className='text-[#ADD6E8] leading-7 
 '>I am 20 years old  ,And Software engineering student in the 

@@ -11,14 +11,15 @@ const Home = () => {
 // #9cd5ee6e
   return (
  
- <div  className={`h-[100vh]  w-[100vw] overflow-hidden  -z-50 ${mode?'':'bg-[#262626]'}`}>
+ <div  className={`h-[100vh]    ${mode?'white':'dark'}
+ w-[100vw] overflow-hidden   ${mode?'':'bg-[#262626]'}`}>
 
 
 {/* the blue rectaingul */}
         <div className={` rounded-r-md absolute top-[43px] left-0 lg:w-[168px] lg:h-[56px]
         md:w-[128px] md:h-[56px]
         w-[80px] h-[46px]
-         ${mode?'bg-[#9cd5ee43]':'bg-[#505C62]'}`}>
+         ${mode?'bg-[#9cd5ee43] ':'bg-[#505C62] '}`}>
 <ToggleMode/>
         </div>
 {/* Writting */}
@@ -30,9 +31,9 @@ const Home = () => {
           transition={{
           duration:.6
           }}
-          
-          
-          className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#9cd5ee76]':'text-[#424A4E]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem]`}>Hello</motion.p>
+          // #505C62
+          // 424A4E
+          className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#add6e8d2]':'text-[#333]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem]`}>Hello</motion.p>
           <motion.p 
              initial={{ x:-150 }}
              animate={{ x:0 }}

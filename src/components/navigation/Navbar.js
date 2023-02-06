@@ -12,16 +12,16 @@ const variants = {
   }
 const Navbar = () => {
 
-  const {un,Under}=useTheme();
+  const {un,Under,mode}=useTheme();
   console.log(un);
  
 
   return (
     // ${un ? 'z-40':'z-50' }
     <div  className={`fixed right-0  z-40`}>
-
+{/* text-[#004870] */}
 <button
-onClick={()=>Under(!un)} className={`fixed z-50  text-[#ADD6E8] right-5 top-[50px] ${un ?  '  rotate-90 duration-500':'  rotate-0 duration-300'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.4" stroke="currentColor" className="w-8 h-8">
+onClick={()=>Under(!un)} className={`fixed z-50 ${mode?'text-[#004870]':'text-[#ADD6E8]'}   right-5 top-[50px] ${un ?  '  rotate-90 duration-500':'  rotate-0 duration-300'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.4" stroke="currentColor" className="w-8 h-8">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 </button>

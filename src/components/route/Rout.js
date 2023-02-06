@@ -4,7 +4,7 @@ import Home from '../../pages/Home'
 import Projects from '../../pages/Projects'
 import Skills from '../../pages/Skills'
 import Navbar from '../navigation/Navbar'
-import { Animator, ScrollContainer, ScrollPage, batch, Fade} from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage} from "react-scroll-motion";
 import Contacts from '../../pages/Contacts'
 import useTheme from '../store/useTheme'
 import '../../Scroll.css'
@@ -20,7 +20,7 @@ const {mode}=useTheme();
 <ScrollContainer >
   <ScrollPage>
   <Navbar/>
-    <Animator animation={mode?batch(Fade()):''}>
+    <Animator >
       <Home/>
     </Animator>
   </ScrollPage>

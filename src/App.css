@@ -1,32 +1,62 @@
-.App{
+.App {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-.dv:hover .list{
+.dv:hover .list {
   color: #42b3e4db;
   padding-left: 1rem;
- 
+
   transition: all ease-in-out 0.2s;
 }
-.dv:hover{
+.dv:hover {
   transition: all ease-in-out 0.2s;
 
   background-color: #ffffff53;
-
 }
-.list{
+.list {
   padding-left: 1rem;
 }
 
-.contact{
-  background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(173, 214, 232, 0.286) 0%);
-box-shadow: 0rem -1.5rem 1rem rgba(173, 214, 232, 0.281);
+.contact {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(173, 214, 232, 0.286) 0%
+  );
+  box-shadow: 0rem -1.5rem 1rem rgba(173, 214, 232, 0.281);
 }
 
+.dark {
+  /* background-image: url("../src/components/imgs/Yaqub.jpg"); */
+  background-image: url("../src/components/imgs/yaqubDark.jpg");
 
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  position: absolute;
+
+  background-position: 200%;
+  /* background-size: contain; */
+  /* #F4FAFC */
+  /* 004870 */
+}
+.white {
+  background-image: url("../src/components/imgs/Yaqub.jpg");
+  /* background-image: url("../src/components/imgs/yaqubDark.jpg"); */
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  position: absolute;
+
+  background-position: 200%;
+  /* background-size: contain; */
+  /* #F4FAFC */
+  /* 004870 */
+}
