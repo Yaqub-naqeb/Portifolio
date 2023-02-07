@@ -6,7 +6,7 @@ import ToggleMode from '../components/homeComponent/ToggleMode'
 
 
 const Home = () => {
-  const {mode}=useTheme();
+  const {mode,changeMode}=useTheme();
 
 // #9cd5ee6e
   return (
@@ -16,10 +16,11 @@ const Home = () => {
 
 
 {/* the blue rectaingul */}
-        <div className={` rounded-r-md absolute top-[43px] left-0 lg:w-[168px] lg:h-[56px]
+        <div onClick={()=>changeMode(!mode)} className={`cursor-pointer rounded-r-md absolute top-[43px] left-0 lg:w-[168px] lg:h-[56px]
         md:w-[128px] md:h-[56px]
         w-[80px] h-[46px]
-         ${mode?'bg-[#9cd5ee43] ':'bg-[#505C62] '}`}>
+        
+         ${mode?'bg-[#9cd5ee64] ':'bg-[#505C62] '}`}>
 <ToggleMode/>
         </div>
 {/* Writting */}

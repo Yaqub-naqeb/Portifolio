@@ -1,5 +1,6 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link';
+import classNames from 'classnames';
 
 import '../../App.css'
 
@@ -21,9 +22,14 @@ const Navbar = () => {
     <div  className={`fixed right-0  z-40`}>
 {/* text-[#004870] */}
 <button
-onClick={()=>Under(!un)} className={`fixed z-50 ${mode?'text-[#004870]':'text-[#ADD6E8]'}   right-5 top-[50px] ${un ?  '  rotate-90 duration-500':'  rotate-0 duration-300'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.4" stroke="currentColor" className="w-8 h-8">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-</svg>
+onClick={()=>Under(!un)} className={`fixed z-50    right-5 top-[55px] '}`}>
+
+<div className={classNames(`tham tham-e-squeeze tham-w-6`, { 'tham-active': un })}>
+      <div className="tham-box">
+        <div className={`tham-inner  ${mode?'bg-[#004870]':'bg-[#add6e8c5]'} tham-active`} />
+      </div>
+    </div>
+
 </button>
 
 {/* blur */}

@@ -9,7 +9,8 @@ import git from './svg/gitfinal.svg'
 import github from './svg/github.svg'
 import firebase from './svg/newfirebase.svg'
 import tailwind from './svg/tailwind.svg'
-// import from './svg/'
+
+
 
 export const SkillInfo=[{
     id:'1',

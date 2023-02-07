@@ -33,30 +33,32 @@
 }
 
 .dark {
-  /* background-image: url("../src/components/imgs/Yaqub.jpg"); */
   background-image: url("../src/components/imgs/yaqubDark.jpg");
-
   background-size: cover;
-
   background-repeat: no-repeat;
   position: absolute;
-
   background-position: 200%;
-  /* background-size: contain; */
-  /* #F4FAFC */
-  /* 004870 */
 }
 .white {
   background-image: url("../src/components/imgs/Yaqub.jpg");
-  /* background-image: url("../src/components/imgs/yaqubDark.jpg"); */
 
   background-size: cover;
 
-  background-repeat: no-repeat;
-  position: absolute;
+  background-repeat: no-repeat; 
+position: absolute;
 
   background-position: 200%;
-  /* background-size: contain; */
-  /* #F4FAFC */
-  /* 004870 */
+
+}
+.white {
+  background-image: url("../src/components/imgs/Yaqub.jpg");
+
+  background-size: cover;
+
+
+  background-repeat: no-repeat; 
+position: absolute;
+
+  background-position: 200%;
+
 }
