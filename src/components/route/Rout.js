@@ -8,7 +8,7 @@ import { Animator, ScrollContainer, ScrollPage} from "react-scroll-motion";
 import Contacts from '../../pages/Contacts'
 import useTheme from '../store/useTheme'
 import '../../Scroll.css'
-
+import Img from '../imgs/Yaqub.jpg'
 const Rout = () => {
 
 
@@ -16,20 +16,25 @@ const {mode}=useTheme();
 
   return (
     <div className={`${mode?'':'bg-[#262626]'}`}>
-
+{
+  Img && 
+<>
 <ScrollContainer >
-  <ScrollPage>
-  <Navbar/>
-    <Animator >
-      <Home/>
-    </Animator>
-  </ScrollPage>
-</ScrollContainer>
-
-<About/>
-<Skills/>
-<Projects/>
-<Contacts/>
+    <ScrollPage>
+  
+    <Navbar/>
+      <Animator >
+        <Home/>
+      </Animator>
+    </ScrollPage>
+  </ScrollContainer>
+  
+  <About/>
+  <Skills/>
+  <Projects/>
+  <Contacts/>
+  </>
+}
     </div>
   )
 }

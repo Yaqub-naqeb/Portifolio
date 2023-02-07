@@ -5,6 +5,7 @@ import Rectangular from '../components/homeComponent/Rectangular'
 import ToggleMode from '../components/homeComponent/ToggleMode'
 
 
+
 const Home = () => {
   const {mode,changeMode}=useTheme();
 
