@@ -5,11 +5,12 @@ import useTheme from '../components/store/useTheme'
 const About = () => {
   const {mode}=useTheme();
   return (
-    <div id='about' className={`relative h-full w-[100vw] 
+    // ' bg-gradient-to-b from-[#f4fafc84] to-[#ffff]' to tekal krdnawa
+    <div id='about' className={`relative -translate-y-1 h-full w-[100vw] 
    
     overflow-hidden
     // bg-gradient-to-r from-cyan-500 to-blue-500
-    ${mode?' bg-gradient-to-b from-[#f4fafc84] to-[#ffff]':'bg-[#262626] bg-gradient-to-b from-[#262626] to-[#262626]'}
+    ${mode?'  bg-gradient-to-b from-[#f4fafca1] to-[#ffff] ab':'bg-[#262626] bg-gradient-to-b from-[#262626] to-[#262626]'}
     `}>
     {/* About me  */}
 <My name={'Me'} bg_name={'About'}/>

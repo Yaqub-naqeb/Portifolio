@@ -10,11 +10,6 @@ module.exports = {
   plugins: [require('tailwind-hamburgers')],
    
   
-  // variants: {
-  //   extend: {
-  //     textOpacity: ['white']
-  //   }
-  // }
   
 }
 

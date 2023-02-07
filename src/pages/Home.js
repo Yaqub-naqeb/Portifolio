@@ -24,7 +24,7 @@ const Home = () => {
 <ToggleMode/>
         </div>
 {/* Writting */}
-        <div className='writting  absolute top-[54%] lg:top-[28%] md:top-[28%] lg:left-[10%] md:left-[23%] left-10  '>
+        <div className='writting  absolute top-[54%] lg:top-[28%] md:top-[60%] xl:left-[5%] lg:left-[10%] md:left-[23%] left-10  '>
           <motion.p 
           
           initial={{ y:-100 }}

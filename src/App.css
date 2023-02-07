@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
 }
 
+
 .dv:hover .list {
   color: #42b3e4db;
   padding-left: 1rem;
@@ -39,17 +40,7 @@
   position: absolute;
   background-position: 200%;
 }
-.white {
-  background-image: url("../src/components/imgs/Yaqub.jpg");
-
-  background-size: cover;
-
-  background-repeat: no-repeat; 
-position: absolute;
-
-  background-position: 200%;
-
-}
+/*  */
 .white {
   background-image: url("../src/components/imgs/Yaqub.jpg");
 
@@ -101,4 +92,58 @@ position: absolute;
     background-color: #55a2c5e6;
 
   }
+   .ab{
+    background: #ffff;
+  }
 }
+/* tablet */
+@media only screen and (min-width: 768px) {
+
+
+  .white {
+    background-image: url("../src/components/imgs/Yaqub.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat; 
+    background-position: 50%;
+  
+  }
+  .dark {
+    background-image: url("../src/components/imgs/yaqubDark.jpg");
+  
+    background-size: cover ;
+    background-repeat: no-repeat; 
+    background-position: 50%;
+  }
+  .white .hello{
+    color: #aad3e6;
+  }
+  .dark .hello{
+    color: #4a4a4adc;
+
+  }
+
+  .white .imyaqub{
+    color: #61b1d6;
+
+  }
+  .dark .imyaqub{
+    color: #61b1d6ad;
+
+  }
+  .brgr{
+    background-color: #55a2c5e6;
+
+  }
+
+
+}
+
+/* large desctop */
+@media only screen and (max-width: 1300px) {
+
+.ab{
+  background: #ffff;
+
+}
+}
+
