@@ -53,9 +53,6 @@ const Home = () => {
         </div>
 {/* rectangul with socials */}
           <Rectangular/>
-
-
-
    </div>
   )
 }
