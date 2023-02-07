@@ -11,7 +11,7 @@ const Home = () => {
 // #9cd5ee6e
   return (
  
- <div  className={`h-[100vh]    ${mode?'white':'dark'}
+ <div  className={`h-[100vh]  ${mode?'white':'dark'}
  w-[100vw] overflow-hidden   ${mode?'':'bg-[#262626]'}`}>
 
 
@@ -24,7 +24,7 @@ const Home = () => {
 <ToggleMode/>
         </div>
 {/* Writting */}
-        <div className='writting  absolute top-[28%] lg:left-[10%] md:left-[23%] left-10  '>
+        <div className='writting  absolute top-[54%] lg:top-[28%] md:top-[28%] lg:left-[10%] md:left-[23%] left-10  '>
           <motion.p 
           
           initial={{ y:-100 }}
@@ -34,7 +34,7 @@ const Home = () => {
           }}
           // #505C62
           // 424A4E
-          className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#add6e8d2]':'text-[#333]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem]`}>Hello</motion.p>
+          className={`font-semibold opacity-[0.6] tracking-[4px]    ${mode?'text-[#add6e8d2]':'text-[#333]'}  lg:text-[10rem] md:text-[10rem] text-[7.5rem] hello`}>Hello</motion.p>
           <motion.p 
              initial={{ x:-150 }}
              animate={{ x:0 }}
@@ -43,7 +43,7 @@ const Home = () => {
              }}
           
           // #ADD6E8
-          className={`   absolute top-[58%] text-[2.5rem] left-[20%]  ${mode?'text-[#83c3de]':'text-[#ADD6E8]'} `}>I'm Yaqub</motion.p>
+          className={`   absolute top-[58%] text-[2.5rem] left-[20%] imyaqub  ${mode?'text-[#83c3de]':'text-[#ADD6E8]'} `}>I'm Yaqub</motion.p>
           <motion.p 
           
           

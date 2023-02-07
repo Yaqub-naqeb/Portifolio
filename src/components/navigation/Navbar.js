@@ -24,9 +24,9 @@ const Navbar = () => {
 <button
 onClick={()=>Under(!un)} className={`fixed z-50    right-5 top-[55px] '}`}>
 
-<div className={classNames(`tham tham-e-squeeze tham-w-6`, { 'tham-active': un })}>
+<div className={classNames(`tham tham-e-squeeze md:tham-w-8 tham-w-6 lg:tham-w-8`, { 'tham-active': un })}>
       <div className="tham-box">
-        <div className={`tham-inner  ${mode?'bg-[#004870]':'bg-[#add6e8c5]'} tham-active`} />
+        <div className={`tham-inner  ${mode?'bg-[#004870] brgr':'bg-[#add6e8c5]'} tham-active`} />
       </div>
     </div>
 

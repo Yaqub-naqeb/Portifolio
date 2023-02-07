@@ -62,3 +62,43 @@ position: absolute;
   background-position: 200%;
 
 }
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .white {
+    background-image: url("../src/components/imgs/Yaqub.jpg");
+  
+    background-size: cover ;
+  
+    background-repeat: no-repeat; 
+    background-position: 50%;
+  
+  }
+  .dark {
+    background-image: url("../src/components/imgs/yaqubDark.jpg");
+  
+    background-size: cover ;
+  
+    background-repeat: no-repeat; 
+    background-position: 50%;
+  }
+  .white .hello{
+    color: #9DCFE6;
+  }
+  .dark .hello{
+    color: #4a4a4adc;
+
+  }
+  .white .imyaqub{
+    color: #61b1d6;
+
+  }
+  .dark .imyaqub{
+    color: #61b1d6ad;
+
+  }
+  .brgr{
+    background-color: #55a2c5e6;
+
+  }
+}
