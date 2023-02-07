@@ -1,26 +1,41 @@
+import html from './svg/html.svg'
+import css from './svg/css.svg'
+import scss from './svg/sasss.svg'
+import javaScript from './svg/js.svg'
+import react from './svg/reactsvg.svg'
+import nextjs from './svg/Nextjs.svg'
+import redux from './svg/redaaxxx.svg'
+import git from './svg/gitfinal.svg'
+import github from './svg/github.svg'
+import firebase from './svg/newfirebase.svg'
+import tailwind from './svg/tailwind.svg'
+// import from './svg/'
 
 export const SkillInfo=[{
     id:'1',
     name:'Html',
-    img: require('./imgs/skills/480px-HTML5_Badge.svg.png')},
+    // img: './svg/html.svg',
+    img: html
+
+},
 {
     id:'2',
     name:'Css',
-    img: require('./imgs/skills/CSS3_logo.svg.png')},
+    img: css},
     {
         id:'3',
         name:'TailwindCss',
-        img: require('./imgs/skills/Tailwind_CSS_Logo.svg.png')
+        img: tailwind
     },
     {
         id:'4',
         name:'JavaScript',
-        img: require('./imgs/skills/Unofficial_JavaScript_logo_2.svg.png')
+        img: javaScript
     },
     {
         id:'5',
         name:'React',
-        img: require('./imgs/skills/react.png')
+        img: react
     },
     {
         id:'6',
@@ -30,28 +45,28 @@ export const SkillInfo=[{
     {
         id:'7',
         name:'Redux',
-        img: require('./imgs/skills/redux.png')
+        img:redux
     },
     
     {
         id:'8',
         name:'Git',
-        img: require('./imgs/skills/Git_icon.svg.png')
+        img: git
     },
     {
         id:'9',
         name:'GitHub',
-        img: require('./imgs/skills/Octicons-mark-github.svg.png')
+        img: github
     },
     {
         id:'10',
         name:'Figma',
-        img: require('./imgs/skills/figma.png')
+        img: require('./imgs/skills/blackofigma.png')
     },
    
     {
         id:'11',
         name:'Firebase',
-        img: require('./imgs/skills/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f3438302f66697265626173652e706e67.png')
+        img: require('./imgs/skills/fb-removebg-preview.png')
     },
 ];
