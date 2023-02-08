@@ -11,10 +11,22 @@
 .dv:hover .list {
   color: #42b3e4db;
   padding-left: 1rem;
-  transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.1s;
 }
+ .dvDark:hover .list {
+  color: #add6e8;
+  padding-left: 1rem;
+  transition: all ease-in-out 0.1s;
+}
+
+
+
 .dv:hover {
-  transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.1s;
+  background-color: #ffffff53;
+}
+.dvDark:hover {
+  transition: all ease-in-out 0.1s;
   background-color: #ffffff53;
 }
 .list {
@@ -86,10 +98,10 @@ position: absolute;
     color: #61b1d6ad;
 
   }
-  .brgr{
+  /* .brgr{
     background-color: #55a2c5e6;
 
-  }
+  } */
    .ab{
     background: #ffff;
   }
@@ -145,3 +157,6 @@ position: absolute;
 }
 }
 
+
+/* anm navbar */
+/* @keyframes {} */

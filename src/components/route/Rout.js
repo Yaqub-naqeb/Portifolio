@@ -9,20 +9,21 @@ import Contacts from '../../pages/Contacts'
 import useTheme from '../store/useTheme'
 import '../../Scroll.css'
 import Img from '../imgs/Yaqub.jpg'
+import NewNavbar from '../navigation/NewNavbar'
 const Rout = () => {
 
 
 const {mode}=useTheme();
 
   return (
-    <div className={`${mode?'':'bg-[#262626]'}`}>
+    <div className={`${mode?'sp':'rsh bg-[#262626]'}`}>
 {
   Img && 
 <>
 <ScrollContainer >
     <ScrollPage>
   
-    <Navbar/>
+    <NewNavbar/>
       <Animator >
         <Home/>
       </Animator>

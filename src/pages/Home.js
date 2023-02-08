@@ -5,14 +5,13 @@ import Rectangular from '../components/homeComponent/Rectangular'
 import ToggleMode from '../components/homeComponent/ToggleMode'
 
 
-
 const Home = () => {
   const {mode,changeMode}=useTheme();
 
 // #9cd5ee6e
   return (
  
- <div  className={`h-[100vh]  ${mode?'white':'dark'}
+ <div  className={`h-[100vh]  ${mode?'white ':'dark'}
  w-[100vw] overflow-hidden   ${mode?'':'bg-[#262626]'}`}>
 
 

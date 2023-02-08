@@ -14,12 +14,17 @@
       border-radius: 10px;
   }
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+ .dark ::-webkit-scrollbar-thumb  {
       -webkit-border-radius: 10px;
       border-radius: 10px;
       background: #add6e8da;
       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
   }
+
+ 
+
+
+
   ::-webkit-scrollbar-thumb:window-inactive {
   background: #add6e896;
   }

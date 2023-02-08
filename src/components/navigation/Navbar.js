@@ -14,7 +14,6 @@ const variants = {
 const Navbar = () => {
 
   const {un,Under,mode}=useTheme();
-  console.log(un);
  
 
   return (
