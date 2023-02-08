@@ -20,10 +20,10 @@ const Navbar = () => {
 
   return (
     // ${un ? 'z-40':'z-50' }
-    <div  className={`fixed right-0 w-[90vw]  h-[100vh]  z-10`}>
+    <div  className={`fixed right-0 ${un?'w-[90vw]':'w-fit'}  h-[100vh]  z-30`}>
 {/* text-[#004870] */}
 <button
-onClick={()=>Under(!un)} className={`fixed z-50    right-5 top-[55px] '}`}>
+onClick={()=>Under(!un)} className={`fixed z-40    right-5 top-[55px] '}`}>
 
 <div className={classNames(`tham tham-e-squeeze md:tham-w-8 tham-w-6 lg:tham-w-8`, { 'tham-active': un })}>
       <div className="tham-box">
@@ -34,7 +34,7 @@ onClick={()=>Under(!un)} className={`fixed z-50    right-5 top-[55px] '}`}>
 </button>
 
 {/* blur */}
- <div className={un ?` ${mode?'bg-[#e4e4e480] backdrop-blur-[0.1rem]':'bg-[#53525247] backdrop-blur-[0.2rem]'} top-0 right-0 h-[100vh] w-[100vw] absolute  `:'' } onClick={()=>Under(false)}/> 
+ <div className={un ?` ${mode?'bg-[#e4e4e480] backdrop-blur-[0.1rem]':'bg-[#53525247] backdrop-blur-[0.2rem]'} top-0 right-0 h-[100vh] w-[100vw] absolute `:'hidden' } onClick={()=>Under(false)}/> 
 {/* nav */}
       <motion.nav  
 animate={un ? "open delay" : "closed"}

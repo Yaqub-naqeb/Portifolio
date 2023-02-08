@@ -14,7 +14,7 @@
       border-radius: 10px;
   }
   /* Handle */
- .dark ::-webkit-scrollbar-thumb  {
+  ::-webkit-scrollbar-thumb{
       -webkit-border-radius: 10px;
       border-radius: 10px;
       background: #add6e8da;

@@ -10,7 +10,7 @@ const Rectangular = () => {
 
   return (
     <div>
-      <div className={`flex rounded-r-md z-41 gap-4 absolute bottom-9 lg:pl-[10rem] md:pl-[7rem] pl-[3rem] py-[7px] pr-8  ${mode?'bg-[#9cd5ee64] ':'bg-[#505c628d]'}`}>
+      <div className={`flex rounded-r-md z-48 gap-4 absolute bottom-9 lg:pl-[10rem] md:pl-[7rem] pl-[3rem] py-[7px] pr-8  ${mode?'bg-[#9cd5ee64] ':'bg-[#505c628d]'}`}>
            
            <a target={'_blank'} rel="noreferrer" href="https://www.facebook.com/yaqubEng" className='hover:brightness-100 '> <img src={Facebook} className='w-[34px] h-[34px]' alt="" /></a>
 

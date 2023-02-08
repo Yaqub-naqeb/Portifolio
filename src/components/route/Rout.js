@@ -3,13 +3,12 @@ import About from '../../pages/About'
 import Home from '../../pages/Home'
 import Projects from '../../pages/Projects'
 import Skills from '../../pages/Skills'
-import Navbar from '../navigation/Navbar'
+import NewNavbar from '../navigation/NewNavbar'
 import { Animator, ScrollContainer, ScrollPage} from "react-scroll-motion";
 import Contacts from '../../pages/Contacts'
 import useTheme from '../store/useTheme'
 import '../../Scroll.css'
 import Img from '../imgs/Yaqub.jpg'
-import NewNavbar from '../navigation/NewNavbar'
 const Rout = () => {
 
 
