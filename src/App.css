@@ -8,6 +8,7 @@
 }
 
 
+
 .dv:hover .list {
   color: #42b3e4db;
   padding-left: 1rem;
@@ -88,12 +89,9 @@ position: absolute;
   }
   .dark .hello{
     color: #4a4a4adc;
-
   }
   .white .imyaqub{
-    color: #61b1d6;
-
-  }
+    color: #61b1d6;}
   .dark .imyaqub{
     color: #61b1d6ad;
 
