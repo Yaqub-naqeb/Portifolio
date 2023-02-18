@@ -9,7 +9,7 @@ import useTheme from '../../components/store/useTheme'
 
 const variants = {
     open: { opacity: 1, x: "0%" },
-    closed: { opacity: 0, x: "10%" },
+    closed: { opacity: 0, x: "1%" },
     delay: 5,
 
   }
@@ -34,7 +34,7 @@ onClick={()=>Under(!un)} className={`fixed z-40    right-5 top-[55px] '}`}>
 </button>
 
 {/* blur */}
- <div className={un ?` ${mode?'bg-[#e4e4e480] backdrop-blur-[0.1rem]':'bg-[#53525247] backdrop-blur-[0.2rem]'} top-0 right-0 h-[100vh] w-[100vw] absolute `:'hidden' } onClick={()=>Under(false)}/> 
+ <div className={un ?` ${mode?'bg-[#e4e4e480] backdrop-blur-[0.1rem]':'bg-[#53525247] backdrop-blur-[0.2rem]'} top-0 right-0  h-[100vh] w-[100vw] absolute `:'hidden' } onClick={()=>Under(false)}/> 
 {/* nav */}
       <motion.nav  
 animate={un ? "open delay" : "closed"}
@@ -45,7 +45,7 @@ className={`${un?'open delay':'close hidden'}`}>
 <ul 
 className={`bg-[#ADD6E8]  ${mode?'bg-[#92cae2] ':'bg-[#2d2d2ddf] '}
 overflow-hidden
-fixed right-0
+fixed right-0 lg:pl-5 md:pl-5
  h-[100vh] lg:w-[35%] md:w-[45%] w-screen 
  flex flex-col  py-[8rem] gap-[2rem]
  
