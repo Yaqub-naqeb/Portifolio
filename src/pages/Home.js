@@ -25,7 +25,7 @@ const Home = () => {
         </div>
 {/* Writting */}
     
-      <div className='lg:-translate-y-10 md:translate-y-72 lg:px-20  lg:self-start md:self-center self-center justify-self-end translate-y-28  '>
+      <div className='lg:-translate-y-10  md:translate-y-[17.5rem] lg:px-20  lg:self-start md:self-center self-center justify-self-end translate-y-36  '>
       <Hello/>
       </div>
 {/* rectangul with socials */}
