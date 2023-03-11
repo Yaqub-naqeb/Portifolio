@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import About from '../../pages/About'
 import Home from '../../pages/Home'
 import Projects from '../../pages/Projects'
@@ -9,19 +9,30 @@ import Contacts from '../../pages/Contacts'
 import useTheme from '../store/useTheme'
 import '../../Scroll.css'
 import Img from '../imgs/Yaqub.jpg'
+import Imgrsh from '../imgs/yaqubDark.jpg'
 const Rout = () => {
 
-
+const [isImgLoaded,setIsImgLoaded]=useState(false);
 const {mode}=useTheme();
+const loadHandler=()=>{
+  setTimeout(() => {
+    setIsImgLoaded(true);
+  }, 1000);
+}
 
   return (
     <div className={`${mode?'sp':'rsh bg-[#262626]'}`}>
+
+<img src={`${mode?Img:Imgrsh}`} alt="" onLoad={loadHandler} className={` -z-50 absolute `}/>
+
 {
-  Img && 
+  isImgLoaded && 
 <>
+
 <ScrollContainer >
+
     <ScrollPage>
-  
+
     <NewNavbar/>
       <Animator >
         <Home/>

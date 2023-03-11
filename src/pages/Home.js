@@ -3,6 +3,9 @@ import useTheme from '../components/store/useTheme'
 import Rectangular from '../components/homeComponent/Rectangular'
 import ToggleMode from '../components/homeComponent/ToggleMode'
 import Hello from '../components/homeComponent/Hello'
+import whiteImg from '../components/imgs/Yaqub.jpg'
+import darkImg from '../components/imgs/Yaqub.jpg'
+
 
 
 const Home = () => {
@@ -11,7 +14,8 @@ const Home = () => {
 // #9cd5ee6e
   return (
  
- <div  className={`h-[100vh]  ${mode?'white ':'dark'}
+ <div>
+  <div  className={`h-[100vh] ${mode?'white ':'dark'}
  w-[100vw] overflow-hidden flex flex-col items-start justify-center  ${mode?'':'bg-[#262626]'}`}>
 
 
@@ -31,6 +35,7 @@ const Home = () => {
 {/* rectangul with socials */}
           <Rectangular/>
    </div>
+ </div>
   )
 }
 

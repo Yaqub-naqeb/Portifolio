@@ -9,7 +9,7 @@ const About = () => {
     <div id='about' className={`relative -translate-y-1 h-full w-[100vw] 
    
     overflow-hidden
-    ${mode?'   bg-gradient-to-b from-[#f4fafca1] to-[#ffff] ab':'bg-[#262626] bg-gradient-to-b from-[#262626] to-[#262626]'}
+    ${mode?'   bg-gradient-to-b from-[#F8FCFD] to-[#ffff] ab':'bg-[#262626] bg-gradient-to-b from-[#262626] to-[#262626]'}
     `}>
     {/* About me  */}
 <My name={'Me'} bg_name={'About'}/>
