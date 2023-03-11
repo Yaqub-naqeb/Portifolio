@@ -14,16 +14,12 @@ const Rout = () => {
 
 const [isImgLoaded,setIsImgLoaded]=useState(false);
 const {mode}=useTheme();
-const loadHandler=()=>{
-  setTimeout(() => {
-    setIsImgLoaded(true);
-  }, 1000);
-}
+
 
   return (
     <div className={`${mode?'sp':'rsh bg-[#262626]'}`}>
 
-<img src={`${mode?Img:Imgrsh}`} alt="" onLoad={loadHandler} className={` -z-50 absolute `}/>
+<img src={`${mode?Img:Imgrsh}`} alt="" onLoad={()=>{setIsImgLoaded(true)}} className={` -z-50 absolute `}/>
 
 {
   isImgLoaded && 
