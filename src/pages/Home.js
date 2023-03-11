@@ -12,10 +12,7 @@ const Home = () => {
   const {mode,changeMode}=useTheme();
 
 // #9cd5ee6e
-  return (
- 
- <div>
-  <div  className={`h-[100vh] ${mode?'white ':'dark'}
+  return (  <div  className={` h-[100vh] ${mode?'white ':'dark'}
  w-[100vw] overflow-hidden flex flex-col items-start justify-center  ${mode?'':'bg-[#262626]'}`}>
 
 
@@ -35,7 +32,6 @@ const Home = () => {
 {/* rectangul with socials */}
           <Rectangular/>
    </div>
- </div>
   )
 }
 

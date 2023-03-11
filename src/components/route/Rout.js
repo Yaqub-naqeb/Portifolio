@@ -8,21 +8,19 @@ import { Animator, ScrollContainer, ScrollPage} from "react-scroll-motion";
 import Contacts from '../../pages/Contacts'
 import useTheme from '../store/useTheme'
 import '../../Scroll.css'
-import Img from '../imgs/Yaqub.jpg'
-import Imgrsh from '../imgs/yaqubDark.jpg'
+// import Img from '../imgs/Yaqub.jpg'
+// import Imgrsh from '../imgs/yaqubDark.jpg'
 const Rout = () => {
 
-const [isImgLoaded,setIsImgLoaded]=useState(false);
+// const [isImgLoaded,setIsImgLoaded]=useState(false);
 const {mode}=useTheme();
 
 
   return (
     <div className={`${mode?'sp':'rsh bg-[#262626]'}`}>
 
-<img src={`${mode?Img:Imgrsh}`} alt="" onLoad={()=>{setIsImgLoaded(true)}} className={` -z-50 absolute `}/>
+{/* <img src={`${mode?Img:Imgrsh}`} alt="" onLoad={()=>{setIsImgLoaded(true)}} className={` -z-50 absolute `}/> */}
 
-{
-  isImgLoaded && 
 <>
 
 <ScrollContainer >
@@ -41,7 +39,7 @@ const {mode}=useTheme();
   <Projects/>
   <Contacts/>
   </>
-}
+
     </div>
   )
 }
