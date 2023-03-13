@@ -7,8 +7,8 @@ export const Info=[{
     tools:[
      {tool:'NextJs'},
      {tool:'firebase'},
-     {tool:'Tailwind'},
-     {tool:'figma'},
+    //  {tool:'Tailwind'},
+    //  {tool:'figma'},
      {tool:'ReduxToolkit'},
     ],
 url:'https://github.com/Yaqub-naqeb/LinkPlus',
@@ -16,10 +16,8 @@ demo:'https://friendly-fuse.vercel.app/',
 description:[
     {p:'LinkPlus is a social media platform designed to connect professionals '},
     {p:'and businesses helping them to network and find job opportunities,'},
-
-{p:' Users can create a profile that highlights their professional '},
-{p:' experience, education,and skills, and connect with other professionals'},
-{p:'  in their industry or field of interest.'}
+// {p:' Users can create a profile that highlights their professional '},
+// {p:' experience, education,and skills, and connect with other professionals'},
 ]
 },{
     id:'2',

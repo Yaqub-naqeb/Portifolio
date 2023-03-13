@@ -4,7 +4,7 @@ import useTheme from '../store/useTheme'
 const Card = ({info}) => {
 const {mode}=useTheme();
   return (
-    <div className='flex    flex-col gap-[2rem] justify-center align-middle     pb-[0rem] px-[3rem] md:px-[6rem] lg:px-[10rem]'>
+    <div className='flex    flex-col gap-[2rem] justify-center align-middle     pb-[0rem] px-[1.5rem] md:px-[6rem] lg:px-[10rem]'>
 
 {/* 01 */}
 <div className='flex align-middle gap-4  '>
@@ -23,7 +23,9 @@ const {mode}=useTheme();
 <div className=' lg:text-center self-start '>
   <h1 className={`text-center text-[1.5rem] font-medium leading-[4rem]  ${mode ?'text-[#6c6c6c]':'text-[#ffffff]'}`}>{info.title}</h1>
 <div className={`leading-6  ${mode?'text-[#969494e3]':'text-[#fcfcfce3]'}`}>
-<p className='lg:px-0 md:px-0 md:text-left text-center lg:pl-0 md:pl-0  pl-[1rem]'>{info.description.map((row,index)=>(<p key={index}>{row.p}</p>))}</p>
+<p className='px-4 lg:text-left text-center md:text-center'>
+  {/* lg:px-0 md:px-0 md:text-left text-center lg:pl-0 md:pl-0  pl-[1rem] */}
+  {info.description.map((row,index)=>(<p key={index}>{row.p}</p>))}</p>
 
 
 {/* tools */}
