@@ -1,9 +1,32 @@
 export const Info=[{
     id:'1',
-    title:'AVIBOOKS',
-    img: require('../imgs/prjs/Screenshot (39).png'),
+    title:'LinkPlus',
+    img: require('../imgs/prjs/Screenshot (12).png'),
     num:'01',
     style:'',
+    tools:[
+     {tool:'NextJs'},
+     {tool:'firebase'},
+     {tool:'Tailwind'},
+     {tool:'figma'},
+     {tool:'ReduxToolkit'},
+    ],
+url:'https://github.com/Yaqub-naqeb/LinkPlus',
+demo:'https://friendly-fuse-d43gw00zw-yaqub-naqeb.vercel.app/',
+description:[
+    {p:'LinkPlus is a social media platform designed to connect professionals '},
+    {p:'and businesses helping them to network and find job opportunities,'},
+
+{p:' Users can create a profile that highlights their professional '},
+{p:' experience, education,and skills, and connect with other professionals'},
+{p:'  in their industry or field of interest.'}
+]
+},{
+    id:'2',
+    title:'AVIBOOKS',
+    img: require('../imgs/prjs/Screenshot (39).png'),
+    num:'02',
+    style:'flex-row-reverse',
     tools:[
      {tool:'React'},
     //  {tool:'firebase'},
@@ -19,12 +42,12 @@ description:[
 },
 
 {
-    id:'2',
+    id:'3',
     demo:'https://cinflex.vercel.app/',
     title:'CINFLIX',
     img: require('../imgs/prjs/Screenshot (41).png'),
-    num:'02',
-    style:'flex-row-reverse',
+    num:'03',
+    style:'',
     tools:[
      {tool:'React'},
      {tool:'firebase'},
@@ -39,12 +62,12 @@ description:[
 }
 ,
 {
-    id:'3',
+    id:'4',
     demo:'https://headset22.netlify.app/html/',
     title:'HEADSET',
     img: require('../imgs/prjs/Screenshot (40).png'),
-    num:'03',
-    style:'',
+    num:'04',
+    style:'flex-row-reverse',
     url:'https://github.com/Yaqub-naqeb/Headset',
     tools:[
      {tool:'Html'},
