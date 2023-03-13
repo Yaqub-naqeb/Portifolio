@@ -11,7 +11,7 @@ export const Info=[{
      {tool:'figma'},
      {tool:'ReduxToolkit'},
     ],
-url:'https://github.com/Yaqub-naqeb/LinkPlus',
+url:'https://friendly-fuse.vercel.app/',
 demo:'https://friendly-fuse-d43gw00zw-yaqub-naqeb.vercel.app/',
 description:[
     {p:'LinkPlus is a social media platform designed to connect professionals '},
