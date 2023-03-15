@@ -12,7 +12,7 @@ export const Info=[{
      {tool:'ReduxToolkit'},
     ],
 url:'https://github.com/Yaqub-naqeb/LinkPlus',
-demo:'https://friendly-fuse.vercel.app/',
+demo:'https://link-plus.vercel.app/',
 description:[
     {p:'LinkPlus is a social media platform designed to connect professionals '},
     {p:'and businesses helping them to network and find job opportunities,'},
