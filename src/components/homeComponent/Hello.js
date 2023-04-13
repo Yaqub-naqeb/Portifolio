@@ -21,7 +21,9 @@ const Hello = () => {
              animate={{ x:0 }}
              transition={{
              duration:1
-             }} className={` absolute  bottom-1/4 text-[2.5rem]  imyaqub  ${mode?'text-[#83c3de]':'text-[#ADD6E8]'} `}>I'm Yaqub</motion.p>
+
+             }} className={` absolute  bottom-1/4 text-[2.5rem]  imyaqub  ${mode?'text-[#83c3de]':'text-[#505050]'} `}>I'm Yaqub</motion.p>
+             {/* #ADD6E8 */}
 
           <motion.p className='text-[#9C9C9C] text-[1.5rem]  translate-y-[-1.8rem]'>Front-end Developer</motion.p>
           
@@ -32,7 +34,7 @@ const Hello = () => {
      
     <a href={pdf} download>
 
-    <button className="rounded bg-[#83c3de]  hover:bg-[#9ed3ea] py-2  px-[4rem] lg:px-[5.8rem] text-white  lg:translate-y-[-1rem]  translate-y-[-1.3rem] " > Resume</button>
+    <button className={`rounded ${mode?'bg-[#83c3de]  hover:bg-[#9ed3ea]':'bg-[#53595c]  hover:bg-[#88a3ae]'}  py-2  px-[4rem] lg:px-[5.8rem] text-white  lg:translate-y-[-1rem]  translate-y-[-1.3rem]  `}> Resume</button>
     </a>
 
 
