@@ -12,7 +12,7 @@ const Home = () => {
   const {mode,changeMode}=useTheme();
 
 // #9cd5ee6e
-  return (  <div  className={` min-h-screen py-10 ${mode?'white ':'dark'}
+  return (  <div  className={` min-h-screen  ${mode?'white ':'dark'}
  w-[100vw] overflow-hidden flex flex-col items-start justify-center  ${mode?'':'bg-[#262626]'}`}>
 
 
