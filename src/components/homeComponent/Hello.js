@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import useTheme from '../store/useTheme';
+import pdf from '../../components/Yaqwb-frontend-cv.pdf'
 
 const Hello = () => {
     const {mode}=useTheme();
@@ -29,7 +30,10 @@ const Hello = () => {
 
 
      
-        <button class="rounded bg-[#83c3de]  hover:bg-[#9ed3ea] py-2  px-[4rem] lg:px-[5.8rem] text-white  lg:translate-y-[-1rem]  translate-y-[-1.3rem] "> Resume</button>
+    <a href={pdf} download>
+
+    <button className="rounded bg-[#83c3de]  hover:bg-[#9ed3ea] py-2  px-[4rem] lg:px-[5.8rem] text-white  lg:translate-y-[-1rem]  translate-y-[-1.3rem] " > Resume</button>
+    </a>
 
 
     </div>
