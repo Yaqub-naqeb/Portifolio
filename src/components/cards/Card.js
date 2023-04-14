@@ -23,7 +23,7 @@ const {mode}=useTheme();
 <div className=' lg:text-center self-start '>
   <h1 className={`text-center text-[1.5rem] font-medium leading-[4rem]  ${mode ?'text-[#6c6c6c]':'text-[#ffffff]'}`}>{info.title}</h1>
 <div className={`leading-6  ${mode?'text-[#969494e3]':'text-[#fcfcfce3]'}`}>
-<p className='px-4 lg:text-left text-center md:text-center'>
+<p className=' lg:w-[30vw] md:w-[30vw]  lg:text-left text-left md:text-center'>
   {/* lg:px-0 md:px-0 md:text-left text-center lg:pl-0 md:pl-0  pl-[1rem] */}
   {info.description.map((row,index)=>(<p key={index}>{row.p}</p>))}</p>
 

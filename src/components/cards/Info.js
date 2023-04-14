@@ -3,11 +3,11 @@ export const Info=[{
     title:'LinkPlus',
     img: require('../imgs/prjs/Screenshot (12).png'),
     num:'01',
-    style:'',
+    style:'text-[0.9rem] lg:text-[1rem] md:text-[1rem] px-10 ',
     tools:[
      {tool:'NextJs'},
      {tool:'React'},
-     {tool:'firebase'},
+    //  {tool:'firebase'},
     //  {tool:'Tailwind'},
     //  {tool:'figma'},
      {tool:'ReduxToolkit'},
@@ -15,8 +15,7 @@ export const Info=[{
 url:'https://github.com/Yaqub-naqeb/LinkPlus',
 demo:'https://link-plus.vercel.app/',
 description:[
-    {p:'LinkPlus is a social media platform designed to connect professionals '},
-    {p:'and businesses helping them to network and find job opportunities,'},
+    {p:'LinkPlus is a social media platform designed to connect professionals and businesses helping them to network and find job opportunities'},
 // {p:' Users can create a profile that highlights their professional '},
 // {p:' experience, education,and skills, and connect with other professionals'},
 ]
@@ -34,8 +33,8 @@ description:[
 url:'https://github.com/Yaqub-naqeb/AviBooks',
 demo:'https://avibooks.vercel.app/',
 description:[
-    {p:'Avibooks is a website that you can find your books '},
-{p:'and buy it an easy way with some free books'}
+   
+    {p:'Avibooks is a website that you can find your books and buy it an easy way with some free books '},
 ]
 },
 
@@ -76,9 +75,7 @@ description:[
     ],
 
 description:[
-    {p:'This website is usefull for finding new headsets  '},
-{p:'and buy it easy way '}
-]
+    {p:'This website is all about selling different types of headsets when ever you need a headset for professional or personal use this website has something for you! '},]
 }
 
 
