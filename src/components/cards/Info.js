@@ -6,6 +6,7 @@ export const Info=[{
     style:'',
     tools:[
      {tool:'NextJs'},
+     {tool:'React'},
      {tool:'firebase'},
     //  {tool:'Tailwind'},
     //  {tool:'figma'},
@@ -39,32 +40,32 @@ description:[
 ]
 },
 
+// {
+//     id:'3',
+//     demo:'https://cinflex.vercel.app/',
+//     title:'CINFLIX',
+//     img: require('../imgs/prjs/Screenshot (41).png'),
+//     num:'03',
+//     style:'',
+//     tools:[
+//      {tool:'React'},
+//      {tool:'firebase'},
+//     //  {tool:'JavaScript'},
+//      {tool:'XD'},
+//     ],
+// url:'https://github.com/Abdulbariii/Movie-info',
+// description:[
+//     {p:'Cinflix is a website that you can find your movies '},
+// {p:'and  watch the trailer of movies or watch it'}
+// ]
+// }
+// ,
 {
     id:'3',
-    demo:'https://cinflex.vercel.app/',
-    title:'CINFLIX',
-    img: require('../imgs/prjs/Screenshot (41).png'),
-    num:'03',
-    style:'',
-    tools:[
-     {tool:'React'},
-     {tool:'firebase'},
-    //  {tool:'JavaScript'},
-     {tool:'XD'},
-    ],
-url:'https://github.com/Abdulbariii/Movie-info',
-description:[
-    {p:'Cinflix is a website that you can find your movies '},
-{p:'and  watch the trailer of movies or watch it'}
-]
-}
-,
-{
-    id:'4',
     demo:'https://headset22.netlify.app/html/',
     title:'HEADSET',
     img: require('../imgs/prjs/Screenshot (40).png'),
-    num:'04',
+    num:'03',
     style:'flex-row-reverse',
     url:'https://github.com/Yaqub-naqeb/Headset',
     tools:[
@@ -76,7 +77,7 @@ description:[
 
 description:[
     {p:'This website is usefull for finding new headsets  '},
-{p:'and buy it and easy way '}
+{p:'and buy it easy way '}
 ]
 }
 
