@@ -28,7 +28,7 @@ description:[
     style:'flex-row-reverse',
     tools:[
      {tool:'React'},
-     {tool:'Context AP'},
+     {tool:'Context API'},
      {tool:'Tailwind'},
      {tool:'Figma'},
     ],
