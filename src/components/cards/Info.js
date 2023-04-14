@@ -28,9 +28,9 @@ description:[
     style:'flex-row-reverse',
     tools:[
      {tool:'React'},
-    //  {tool:'firebase'},
+     {tool:'Context AP'},
      {tool:'Tailwind'},
-     {tool:'figma'},
+     {tool:'Figma'},
     ],
 url:'https://github.com/Yaqub-naqeb/AviBooks',
 demo:'https://avibooks.vercel.app/',
@@ -72,6 +72,7 @@ description:[
      {tool:'Html'},
      {tool:'Css'},
      {tool:'JavaScript'},
+     {tool:'XD'},
     
     ],
 
