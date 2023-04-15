@@ -3,7 +3,7 @@ export const Info=[{
     title:'LinkPlus',
     img: require('../imgs/prjs/Screenshot (12).png'),
     num:'01',
-    style:'text-[0.9rem] lg:text-[1rem] md:text-[1rem] px-10 ',
+    style:'',
     tools:[
      {tool:'NextJs'},
      {tool:'React'},
