@@ -79,7 +79,7 @@ description:[
 // ,
 {
     id:'4',
-    demo:'https://headset22.netlify.app/html/',
+    demo:'https://headset23.netlify.app/html/',
     title:'HEADSET',
     img: require('../imgs/prjs/Screenshot (40).png'),
     num:'04',
