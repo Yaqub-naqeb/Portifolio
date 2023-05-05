@@ -11,7 +11,7 @@ const Projects = () => {
      <My name={'Projects'} bg_name={'My'}/>
 <div className=''>
 {
-obj.map(info=>(<Card key={info.id} info={info}/>))
+obj.map(info=>(<Card key={info.id} id={info.id} info={info}/>))
 }
 </div>
 

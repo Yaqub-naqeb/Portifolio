@@ -19,30 +19,12 @@ description:[
 // {p:' Users can create a profile that highlights their professional '},
 // {p:' experience, education,and skills, and connect with other professionals'},
 ]
-},{
-    id:'2',
-    title:'Online Therapist',
-    img: require('../imgs/prjs/Screenshot 2023-05-02 210331.png'),
-    num:'02',
-    style:'flex-row-reverse',
-    tools:[
-     {tool:'Laravel'},
-     {tool:'alpine js'},
-     {tool:'MySql'},
-    ],
-url:'https://github.com/Yaqub-naqeb/-online-therapist',
-demo:'https://github.com/Yaqub-naqeb/-online-therapist',
-description:[
-   
-    {p:'I developed a user-friendly website that helps people schedule doctor appointments and share content. Users can easily create an account, log in, and access their personalized profile to enjoy these features.'},
-    //  My website enhances the experience of both patients and medical professionals, providing them with a simple and convenient way to book appointments and connect with others in the healthcare industry.
-]
 },
 {
-    id:'3',
+    id:'2',
     title:'AVIBOOKS',
     img: require('../imgs/prjs/Screenshot (39).png'),
-    num:'03',
+    num:'02',
     style:'',
     tools:[
      {tool:'React'},
@@ -54,6 +36,25 @@ demo:'https://avibooks.vercel.app/',
 description:[
    
     {p:'Avibooks is a website that you can find your books and buy it an easy way with some free books '},
+]
+},
+{
+    id:'3',
+    title:'Online Therapist',
+    img: require('../imgs/prjs/Screenshot 2023-05-02 210331.png'),
+    num:'03',
+    style:'flex-row-reverse hid',
+    tools:[
+     {tool:'Laravel'},
+     {tool:'alpine js'},
+     {tool:'MySql'},
+    ],
+url:'https://github.com/Yaqub-naqeb/-online-therapist',
+demo:'https://github.com/Yaqub-naqeb/-online-therapist',
+description:[
+   
+    {p:'I developed a user-friendly website that helps people schedule doctor appointments and share content. Users can easily create an account, log in, and access their personalized profile to enjoy these features.'},
+    //  My website enhances the experience of both patients and medical professionals, providing them with a simple and convenient way to book appointments and connect with others in the healthcare industry.
 ]
 },
 
