@@ -14,7 +14,7 @@ const {mode}=useTheme();
 
       {/* first card */}
 
-    <div className={`flex ${id==3?'lg:translate-x-[5rem] md:translate-x-[2rem]  ':''}   lg:w-full md:w-full w-[93vw]   p-4 hover:shadow-lg duration-200 transition-all shadow-md rounded-lg ${mode ?'bg-[#f5f6f7]':'bg-[#81818183]'}  xl:gap-6 xl:flex-nowrap flex-wrap   align-middle justify-around mb-[6rem] ${info.style}`}>
+    <div className={`flex   lg:w-full md:w-full w-[93vw]   p-4 hover:shadow-lg duration-200 transition-all shadow-md rounded-lg ${mode ?'bg-[#f5f6f7]':'bg-[#81818183]'}  xl:gap-6 xl:flex-nowrap flex-wrap   align-middle justify-around mb-[6rem] ${info.style}`}>
 {/* img */}
 <div>
 <img src={info.img} className='lg:w-[35rem] rounded-lg md:w-[35rem] ' alt="" />
