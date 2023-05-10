@@ -18,7 +18,7 @@ const About = () => {
 {/* content */}
 <div className='flex lg:flex-row md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14  px-[3rem]  md:px-[5rem]    lg:px-[180px]'>
 {/* img */}
-<div className='self-center'>
+<div className='self-center cursor-pointer'>
   
     <img src={xom} className='lg:w-[30rem]  md:w-[25rem] rounded-md opacity-95' alt="" />
 </div >
