@@ -54,7 +54,7 @@
 }
 /*  */
 .white {
-  background-image: url("../src/components/imgs/Yaqub.jpg");
+  background-image: url("../src/components/imgs/Yaqub1.jpg");
 
   background-size: cover;
 
@@ -69,7 +69,7 @@ position: absolute;
 /* mobile */
 @media only screen and (max-width: 600px) {
   .white {
-    background-image: url("../src/components/imgs/Yaqub.jpg");
+    background-image: url("../src/components/imgs/Yaqub1.jpg");
   
     background-size: cover ;
   
@@ -110,7 +110,7 @@ position: absolute;
 
 
   .white {
-    background-image: url("../src/components/imgs/Yaqub.jpg");
+    background-image: url("../src/components/imgs/Yaqub1.jpg");
     background-size: cover ;
     background-repeat: no-repeat; 
     background-position: 50%;
