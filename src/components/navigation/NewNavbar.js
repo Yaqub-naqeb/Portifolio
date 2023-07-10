@@ -22,7 +22,7 @@ const Navbar = () => {
     // ${un ? 'z-40':'z-50' }
     <div  className={`fixed right-0 ${un?'w-[90vw]':'w-fit'}  h-[100vh]  z-30`}>
 {/* text-[#004870] */}
-<button
+<button aria-label="burger_button"
 onClick={()=>Under(!un)} className={`fixed z-40    right-5 top-[55px] '}`}>
 
 <div className={classNames(`tham tham-e-squeeze md:tham-w-8 tham-w-6 lg:tham-w-8`, { 'tham-active': un })}>
