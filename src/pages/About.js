@@ -21,7 +21,7 @@ const About = () => {
 {/* img */}
 <div className='self-center cursor-pointer'>
   
-    <img src={xom} className='lg:w-[30rem]  md:w-[25rem] rounded-md opacity-95' alt="" />
+    <img src={xom} className={` ${mode?"":"brightness-90"}   lg:w-[30rem]  md:w-[25rem] rounded-md opacity-95`} alt="" />
 </div >
 {/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%] '>
 {/* text-[#ADD6E8] */}

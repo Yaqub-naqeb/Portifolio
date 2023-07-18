@@ -4,8 +4,12 @@ import useTheme from '../store/useTheme';
 const ToggleMode = () => {
     const {mode}=useTheme();
 
+
+  
+
+
   return (
-    <div className='z-50 lg:ml-16 md:ml-11 ml-6 lg:mt-3 md:mt-3 mt-2 cursor-pointer '>
+    <div className={`z-50 lg:ml-16 md:ml-11 ml-6 lg:mt-3 md:mt-3 mt-2 cursor-pointer `}>
 
     {mode ?
     // dark Icon
