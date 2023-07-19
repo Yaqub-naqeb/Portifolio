@@ -38,7 +38,7 @@ const {mode}=useTheme();
 <div className={`mt-5   flex gap-8 align-middle justify-center text-[1.2rem]`}>
 
  {/* Demo */}
- <a target={'_blank'} rel="noreferrer" href={`${info.demo}`} alt={'Demo'} title='Demo' className={` ${id==3?'hidden ':'flex'} border-2 rounded-full p-2 border-[#ADD6E8] hover:bg-[#ADD6E8] hover:text-[#4d4d4d]  transition-all duration-500  ${mode?'text-[#4d4d4d]':'text-[#ffffff]'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+ <a target={'_blank'} rel="noreferrer" href={`${info.demo}`} alt={'Demo'} title='Demo' className={` ${id==4 ?'hidden ':'flex'} border-2 rounded-full p-2 border-[#ADD6E8] hover:bg-[#ADD6E8] hover:text-[#4d4d4d]  transition-all duration-500  ${mode?'text-[#4d4d4d]':'text-[#ffffff]'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
 </svg>
 
@@ -46,7 +46,7 @@ const {mode}=useTheme();
 
 
   {/* code braket */}
-  <a target={'_blank'} href={info.url} rel="noreferrer" alt='Source code' title='Source code' className={`border-2  rounded-full p-2 border-[#ADD6E8] hover:bg-[#ADD6E8] hover:text-[#4d4d4d] transition-all duration-500  ${mode?'text-[#4d4d4d]':'text-[#ffffff]'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+  <a target={'_blank'} href={info.url} rel="noreferrer" alt='Source code' title='Source code' className={` ${id==1 ?'hidden ':'flex'}         border-2  rounded-full p-2 border-[#ADD6E8] hover:bg-[#ADD6E8] hover:text-[#4d4d4d] transition-all duration-500  ${mode?'text-[#4d4d4d]':'text-[#ffffff]'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
 </svg>
 </a>
