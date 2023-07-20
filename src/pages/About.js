@@ -17,17 +17,18 @@ const About = () => {
 
 
 {/* content */}
-<div className='flex lg:flex-row md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14  px-[3rem]  md:px-[5rem]    lg:px-[180px]'>
+<div className='flex lg:flex-row-reverse items-center md:flex-col flex-col align-middle justify-center sm:gap-7 md:gap-7 gap-14  px-[3rem]  md:px-[5rem] lg:translate-x-[3.4rem]  lg:pr-[240px]'>
 {/* img */}
-<div className='self-center cursor-pointer'>
+<div className='self-center cursor-pointer  lg:-translate-x-6 '>
   
-    <img src={xom} className={` ${mode?"":"brightness-90"}   lg:w-[30rem]  md:w-[25rem] rounded-md opacity-95`} alt="" />
+    <img src={xom} className={` ${mode?"":"brightness-90"}   lg:w-[32rem]  md:w-[25rem] rounded-md opacity-95`} alt="" />
 </div >
-{/*description*/}<div className='lg:px-[5rem]     lg:w-[95%] md:w-[95%]  w-[110%] '>
+{/* lg:w-[95%] md:w-[95%] */}
+{/*description*/}<div className='lg:px-[5rem] xl:translate-x-0 lg:translate-x-2     w-[110%] '>
 {/* text-[#ADD6E8] */}
 <p className=' text-[#ADD6E8]  text-[4rem]  font-medium lg:text-left md:text-left text-center'>Hello!</p>
 
-<p className='text-[#ADD6E8] leading-7 
+<p className='text-[#ADD6E8] leading-7 lg:max-w-[40rem] 
 '>I am 20 years old  ,And Software engineering student in the 
 3rd stage at university of Koya, I am front-end developer,
 After wasting 1 year of trying find my field in software I start
@@ -35,7 +36,7 @@ learning some basics of Web development  ,and now im so
 comfortable with it and i'm very exciting to learning new concepts 
 </p>
 <br />
-<p className='text-[#9C9C9C] font-medium text-[1.5rem] '>Let's work together</p>
+<p className='text-[#9C9C9C] font-medium text-[1.5rem] lg:mt-[3rem] '>Let's work together</p>
 <div className='text-[#9C9C9CA1]'>
 <p className=''>what can i do for you?</p>
 {/* some optimization */}
