@@ -7,7 +7,7 @@ const Projects = () => {
   const [obj]=useState(Info);
   const {mode}=useTheme();
   return (
-    <div id='projects' className={`  lg:pt-[15rem] md:pt-[5rem] pt-[5rem] z-41 h-full  overflow-hidden   ${mode?'':'bg-[#262626]'}`}>
+    <div id='projects' className={`  lg:pt-[22rem] md:pt-[5rem] pt-[5rem] z-41 h-full  overflow-hidden   ${mode?'':'bg-[#262626]'}`}>
      <My name={'Projects'} bg_name={'My'}/>
 <div className=''>
 {
