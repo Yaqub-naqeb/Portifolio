@@ -14,7 +14,7 @@ const Projects = () => {
 obj.map(info=>(<Card key={info.id} id={info.id} info={info}/>))
 }
 </div>
-
+{/* j */}
     </div>
   )
 }
