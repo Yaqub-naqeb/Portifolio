@@ -6,7 +6,7 @@ import useTheme from '../components/store/useTheme'
 const About = () => {
   const {mode}=useTheme();
   return (
-    // ' bg-gradient-to-b from-[#f4fafc84] to-[#ffff]' to tekal krdnawa
+    // ' bg-gradient-to-b kfrom-[#f4fafc84] to-[#ffff]' to tekal krdnawa
     <div id='about' className={`relative -translate-y-1 h-full w-[100vw] 
    
     overflow-hidden
