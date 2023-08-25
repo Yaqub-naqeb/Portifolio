@@ -7,7 +7,7 @@ export const Info = [
     style: "",
     tools: [{ tool: "Laravel" }, { tool: "Bootsrap" }, { tool: "VueJs" }],
     url: "https://github.com/Yaqub-naqeb/LinkPlus",
-    demo: "https://erbilianway.zhmara.com/public/",
+    demo: "https://erbilianway.zhmara.com/public/home",
     description: [
       {
         p: "Erbilian Way, founded in 2016, is a renowned travel company. As part of the Jiasaz Company team, I helped create their captivating website frontend, highlighting their exceptional travel services.",
