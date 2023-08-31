@@ -34,9 +34,6 @@ export const SkillInfo=[{
     name:'Bootsrap',
     img: bootsrap},
 
-
-
-
  
 {
     id:'4',
@@ -59,12 +56,6 @@ export const SkillInfo=[{
         name:'Python',
         img: python
     },
-
-
-
-
-
-
 
 
 
@@ -114,5 +105,10 @@ export const SkillInfo=[{
         id:'16',
         name:'MySql',
         img: require('./imgs/skills/mysql (1).png')
+    },
+    {
+        id:'17',
+        name:'Django',
+        img: require('./imgs/skills/pngegg.png')
     },
 ];

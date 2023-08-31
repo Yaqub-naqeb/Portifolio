@@ -25,7 +25,7 @@ const Hello = () => {
              }} className={` absolute  bottom-1/4 text-[2.5rem]  imyaqub  ${mode?'text-[#83c3de]':'text-[#505050]'} `}>I'm Yaqub</motion.p>
              {/* #ADD6E8 */}
 
-          <motion.p className='text-[#9C9C9C] text-[1.5rem]  translate-y-[-1.8rem]'>Front-end Developer</motion.p>
+          <motion.p className='text-[#9C9C9C] text-[1.5rem]  translate-y-[-1.8rem]'>Full-Stack Developer</motion.p>
           
         </div>
 
