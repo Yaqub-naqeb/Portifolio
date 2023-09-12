@@ -8,7 +8,7 @@
 }
 
 
-
+.lgo{    filter: grayscale(100%);}
 .dv:hover .list {
   color: #42b3e4db;
   padding-left: 1rem;
