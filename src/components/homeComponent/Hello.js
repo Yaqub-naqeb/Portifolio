@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import useTheme from '../store/useTheme';
-import pdf from '../../components/Yaqwb-frontend-cv.pdf'
+import pdf from '../../components/MyCv.pdf'
 
 const Hello = () => {
     const {mode}=useTheme();
