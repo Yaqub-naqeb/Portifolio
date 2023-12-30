@@ -24,7 +24,7 @@ const Rectangular = () => {
           className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
         >
           {" "}
-          <img src={Facebook} className="w-[34px] h-[34px]" alt="" />
+          <img src={Facebook} className="w-[34px] h-[34px]" alt="Facebook" />
         </a>
 
         <a
@@ -35,7 +35,7 @@ const Rectangular = () => {
           className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
         >
           {" "}
-          <img src={Insta} className="w-[34px] h-[34px]" alt="" />
+          <img src={Insta} className="w-[34px] h-[34px]" alt="Instagram" />
         </a>
 
         <a
@@ -43,9 +43,10 @@ const Rectangular = () => {
           rel="noreferrer"
           aria-label="LinkedIn"
           className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
-          href="https://www.linkedin.com/in/yaqub-naqeeb-b9894b238/"
+          href="https://www.linkedin.com/in/yaqwb-naqib-b9894b238/"
+          
         >
-          <img src={LinkedIn} className="w-[34px] h-[34px]" alt="" />
+          <img src={LinkedIn} className="w-[34px] h-[34px]" alt="linkedin" />
         </a>
 
         <a
@@ -55,7 +56,7 @@ const Rectangular = () => {
           className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
           rel="noreferrer"
         >
-          <img src={GitHub} className="w-[34px] h-[34px]" alt="" />
+          <img src={GitHub} className="w-[34px] h-[34px]" alt="Github" />
         </a>
       </div>
     </div>
