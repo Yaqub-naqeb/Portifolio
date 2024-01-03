@@ -29,7 +29,7 @@ const About = () => {
 <p className=' text-[#ADD6E8]  text-[4rem]  font-medium lg:text-left md:text-left text-center'>Hello!</p>
 
 <p className='text-[#ADD6E8] leading-7 lg:max-w-[40rem] 
-'>I am 21 years old and a Software Engineering student in the 4th stage at the University of Koya. I am a Fullstack developer. After wasting 1 year trying to find my field in software, I started learning the basics of web development. Now I'm so comfortable with it and I'm very excited to learn new concepts.
+'>I am 21 years old and a Software Engineering student in the 4th stage at the University of Koya. I am a Frontend developer. After wasting 1 year trying to find my field in software, I started learning the basics of web development. Now I'm so comfortable with it and I'm very excited to learn new concepts.
 </p>
 <br />
 <p className='text-[#9C9C9C] font-medium text-[1.5rem] lg:mt-[3rem] '>Let's work together</p>
