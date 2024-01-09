@@ -17,9 +17,8 @@ return {...state,un:action.payload};
 //
 export function ContextTheme(props) {
   const [state, distpatch] = useReducer(themeReducer, {
-   
-    mode: true,
-un:false
+    mode: false,
+    un:false
   });
 
 
