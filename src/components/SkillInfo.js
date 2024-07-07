@@ -111,4 +111,10 @@ export const SkillInfo=[{
         name:'Django',
         img: require('./imgs/skills/pngegg.png')
     },
+    {
+        id:'18',
+        name:'RemixJs',
+        rounded:true,
+        img: require('./imgs/skills/Remix.jpg')
+    },
 ];
