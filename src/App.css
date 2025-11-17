@@ -1,41 +1,93 @@
 .App {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
+/* Custom Scrollbar - Light Mode */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
-.lgo{    filter: grayscale(100%);}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9cd5ee;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #83c3de;
+}
+
+/* Custom Scrollbar - Dark Mode */
+.dark-scrollbar::-webkit-scrollbar-track,
+html.dark-scrollbar ::-webkit-scrollbar-track,
+body.dark-scrollbar ::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb,
+html.dark-scrollbar ::-webkit-scrollbar-thumb,
+body.dark-scrollbar ::-webkit-scrollbar-thumb {
+  background: #505c62;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb:hover,
+html.dark-scrollbar ::-webkit-scrollbar-thumb:hover,
+body.dark-scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: #6a7a80;
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9cd5ee #f1f1f1;
+}
+
+.dark-scrollbar,
+html.dark-scrollbar,
+body.dark-scrollbar {
+  scrollbar-color: #505c62 #1f1f1f;
+}
+
+/* Navbar hover effects */
 .dv:hover .list {
   color: #42b3e4db;
   padding-left: 1rem;
-  transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.2s;
 }
- .dvDark:hover .list {
+
+.dvDark:hover .list {
   color: #add6e8;
   padding-left: 1rem;
-  transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.2s;
 }
-
-
 
 .dv:hover {
-  transition: all ease-in-out 0.1s;
+  transition: background-color ease-in-out 0.2s;
   background-color: #ffffff53;
 }
+
 .dvDark:hover {
-  transition: all ease-in-out 0.1s;
+  transition: background-color ease-in-out 0.2s;
   background-color: #ffffff53;
 }
+
 .list {
   padding-left: 1rem;
 }
 
+/* Contact section gradient */
 .contact {
-  background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
@@ -44,118 +96,93 @@
   box-shadow: 0rem -1.5rem 1rem rgba(173, 214, 232, 0.281);
 }
 
-
+/* Background images - optimized */
 .dark {
   background-image: url("../src/components/imgs/yaqubDark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
-  background-position: 200%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  will-change: opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
-/*  */
+
 .white {
   background-image: url("../src/components/imgs/Yaqub1.jpg");
-
   background-size: cover;
-
-
-  background-repeat: no-repeat; 
-position: absolute;
-
-  background-position: 200%;
-
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  will-change: opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-/* mobile */
+/* Mobile optimizations */
 @media only screen and (max-width: 600px) {
-  .white {
-    background-image: url("../src/components/imgs/Yaqub1.jpg");
-  
-    background-size: cover ;
-  
-    background-repeat: no-repeat; 
-    background-position: 50%;
-  
+  .white .hello {
+    color: #add6e8;
   }
-  .dark {
-    background-image: url("../src/components/imgs/yaqubDark.jpg");
-  
-    background-size: cover ;
-  
-    background-repeat: no-repeat; 
-    background-position: 50%;
-  }
-  .white .hello{
-    color: #9DCFE6;
-  }
-  .dark .hello{
-    color: #4a4a4adc;
-  }
-  .white .imyaqub{
-    color: #61b1d6;}
-  .dark .imyaqub{
-    color: #61b1d6ad;
 
+  .dark .hello {
+    color: #2a2a2a;
   }
-  /* .brgr{
-    background-color: #55a2c5e6;
 
-  } */
-   .ab{
-    background: #ffff;
+  .white .imYaqwb {
+    color: #548aa4;
+  }
+
+  .dark .imYaqwb {
+    color: #548aa4;
+  }
+
+  /* Add spacing between Hello and I'm Yaqwb on mobile */
+  .mobile-spacing {
+    bottom: calc(25% + 0.5rem) !important;
+  }
+
+  /* Add spacing for Front-End Developer text on mobile */
+  .mobile-frontend-spacing {
+    transform: translateY(-1.2rem) !important;
+  }
+
+  /* Add padding to the text container on mobile for better spacing */
+  .writting > div {
+    padding-bottom: 0.5rem;
   }
 }
-/* tablet */
+
+/* Tablet optimizations */
 @media only screen and (min-width: 768px) {
-
-
-  .white {
-    background-image: url("../src/components/imgs/Yaqub1.jpg");
-    background-size: cover ;
-    background-repeat: no-repeat; 
-    background-position: 50%;
-  
-  }
-  .dark {
-    background-image: url("../src/components/imgs/yaqubDark.jpg");
-  
-    background-size: cover ;
-    background-repeat: no-repeat; 
-    background-position: 50%;
-  }
-  .white .hello{
+  .white .hello {
     color: #aad3e6;
   }
-  .dark .hello{
+
+  .dark .hello {
     color: #4a4a4adc;
-
   }
 
-  .white .imyaqub{
-    color: #61b1d6;
-
+  .white .imYaqwb {
+    color: #548aa4;
   }
-  .dark .imyaqub{
-    color: #add6e8d2;
-
+  .dark .imYaqwb {
+    color: #548aa4;
   }
-  .brgr{
-    background-color: #55a2c5e6;
-
-  }
-
-
 }
-
-/* large desctop */
-@media only screen and (max-width: 1300px) {
-
-.ab{
-  background: #ffff;
-
-}
-}
-
-
-/* anm navbar */
-/* @keyframes {} */

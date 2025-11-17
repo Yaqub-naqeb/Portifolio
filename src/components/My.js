@@ -2,7 +2,7 @@ import React from 'react'
 
 const My = ({bg_name,name}) => {
   return (
-    <div className='my-[3rem]'>
+    <div className='my-[1.5rem] sm:my-[2rem] md:my-[2.5rem] lg:my-[3rem]'>
        {/* My*/}
        <div className='mb-[-3rem]'>
         <p className='text-center

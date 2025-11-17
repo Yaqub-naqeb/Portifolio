@@ -9,56 +9,80 @@ const Rectangular = () => {
   const { mode } = useTheme();
 
   return (
-    <div>
-      {/* #505c628d */}
-      <div
-        className={`flex rounded-r-md z-48 gap-4 absolute bottom-9 lg:pl-[10rem] md:pl-[7rem] pl-[3rem] py-[7px] pr-8  ${
-          mode ? "bg-[#9cd5ee64]" : "bg-[#505C62]"
-        }`}
+    <div
+      className={`flex rounded-lg gap-2 sm:gap-2.5 px-2 sm:px-2.5 py-1.5 sm:py-2 transition-all duration-300 backdrop-blur-sm hover:scale-105 ${
+        mode
+          ? "bg-[#9cd5ee64] hover:bg-[#9cd5ee80]"
+          : "bg-[#505C62] hover:bg-[#505C6290]"
+      }`}
+    >
+      <a
+        target={"_blank"}
+        aria-label="Facebook"
+        rel="noreferrer"
+        href="https://www.facebook.com/YaqwbEng"
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+          mode ? "hover:brightness-75" : "hover:brightness-125"
+        } transition-all duration-300 hover:scale-110`}
       >
-        <a
-          target={"_blank"}
-          aria-label="Facebook"
-          rel="noreferrer"
-          href="https://www.facebook.com/yaqubEng"
-          className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
-        >
-          {" "}
-          <img src={Facebook} className="w-[34px] h-[34px]" alt="Facebook" />
-        </a>
+        <img
+          src={Facebook}
+          className="w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7"
+          alt="Facebook"
+          loading="lazy"
+        />
+      </a>
 
-        <a
-          target={"_blank"}
-          aria-label="Instagram"
-          rel="noreferrer"
-          href="https://www.instagram.com/yaqub_321_/"
-          className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
-        >
-          {" "}
-          <img src={Insta} className="w-[34px] h-[34px]" alt="Instagram" />
-        </a>
+      <a
+        target={"_blank"}
+        aria-label="Instagram"
+        rel="noreferrer"
+        href="https://www.instagram.com/Yaqwb_321_/"
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+          mode ? "hover:brightness-75" : "hover:brightness-125"
+        } transition-all duration-300 hover:scale-110`}
+      >
+        <img
+          src={Insta}
+          className="w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7"
+          alt="Instagram"
+          loading="lazy"
+        />
+      </a>
 
-        <a
-          target={"_blank"}
-          rel="noreferrer"
-          aria-label="LinkedIn"
-          className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
-          href="https://www.linkedin.com/in/yaqwb-naqib-b9894b238/"
-          
-        >
-          <img src={LinkedIn} className="w-[34px] h-[34px]" alt="linkedin" />
-        </a>
+      <a
+        target={"_blank"}
+        rel="noreferrer"
+        aria-label="LinkedIn"
+        href="https://www.linkedin.com/in/Yaqwb-naqeeb-b9894b238/"
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+          mode ? "hover:brightness-75" : "hover:brightness-125"
+        } transition-all duration-300 hover:scale-110`}
+      >
+        <img
+          src={LinkedIn}
+          className="w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7"
+          alt="LinkedIn"
+          loading="lazy"
+        />
+      </a>
 
-        <a
-          href="https://github.com/Yaqub-naqeb"
-          aria-label="GitHub"
-          target={"_blank"}
-          className={` ${mode?'hover:brightness-75':'hover:brightness-125'} hover:transition-all hover:ease-in-out hover:duration-700`}
-          rel="noreferrer"
-        >
-          <img src={GitHub} className="w-[34px] h-[34px]" alt="Github" />
-        </a>
-      </div>
+      <a
+        href="https://github.com/Yaqwb-naqeb"
+        aria-label="GitHub"
+        target={"_blank"}
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+          mode ? "hover:brightness-75" : "hover:brightness-125"
+        } transition-all duration-300 hover:scale-110`}
+        rel="noreferrer"
+      >
+        <img
+          src={GitHub}
+          className="w-6 h-6 sm:w-6 sm:h-6 md:w-7 md:h-7"
+          alt="GitHub"
+          loading="lazy"
+        />
+      </a>
     </div>
   );
 };

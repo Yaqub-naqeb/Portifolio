@@ -70,6 +70,11 @@ export const SkillInfo=[{
         img: require('./imgs/skills/next.png')
     },
     {
+        id:'9.5',
+        name:'React Native',
+        img: react
+    },
+    {
         id:'10',
         name:'Redux',
         img:redux
