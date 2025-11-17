@@ -3,8 +3,12 @@ import About from '../../pages/About'
 import Home from '../../pages/Home'
 import Projects from '../../pages/Projects'
 import Skills from '../../pages/Skills'
+import Services from '../../pages/Services'
+import Experience from '../../pages/Experience'
+import Statistics from '../../pages/Statistics'
 import NewNavbar from '../navigation/NewNavbar'
 import Contacts from '../../pages/Contacts'
+import BackToTop from '../BackToTop'
 import useTheme from '../store/useTheme'
 import '../../Scroll.css'
 
@@ -27,9 +31,13 @@ const Rout = () => {
       <NewNavbar/>
       <Home/>
       <About/>
+      <Statistics/>
+      <Services/>
       <Skills/>
+      <Experience/>
       <Projects/>
       <Contacts/>
+      <BackToTop/>
     </div>
   )
 }

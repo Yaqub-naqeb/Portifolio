@@ -116,12 +116,42 @@ fixed right-0 lg:pl-5 md:pl-5
           >
             {" "}
             <HashLink
+              to={"#services"}
+              smooth
+              onClick={() => Under(false)}
+              className={`  text-5xl  absolute list text-[#fff] `}
+            >
+              Services
+            </HashLink>{" "}
+          </li>
+          <li
+            className={` ${
+              mode ? "dv" : "dvDark"
+            }    hover:scale-105 transition-all duration-200 ease-in-out z-50 w-full rounded-md flex flex-col  justify-evenly  lg:items-start md:items-start items-center  h-[3.5rem] `}
+          >
+            {" "}
+            <HashLink
               to={"#skills"}
               smooth
               onClick={() => Under(false)}
               className={`  text-5xl  absolute list text-[#fff] `}
             >
               Skills
+            </HashLink>{" "}
+          </li>
+          <li
+            className={` ${
+              mode ? "dv" : "dvDark"
+            }    hover:scale-105 transition-all duration-200 ease-in-out z-50 w-full rounded-md flex flex-col  justify-evenly  lg:items-start md:items-start items-center  h-[3.5rem] `}
+          >
+            {" "}
+            <HashLink
+              to={"#experience"}
+              smooth
+              onClick={() => Under(false)}
+              className={`  text-5xl  absolute list text-[#fff] `}
+            >
+              Experience
             </HashLink>{" "}
           </li>
           <li

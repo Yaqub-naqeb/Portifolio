@@ -10,7 +10,7 @@ const Skills_info = ({ skill }) => {
     const coloredIcons = [""];
 
     // Icons that need brightness inversion in light mode only
-    const invertInLightIcons = [ ''];
+    const invertInLightIcons = [""];
 
     if (coloredIcons.includes(skill.name)) {
       // Keep original colors for Firebase and Figma
