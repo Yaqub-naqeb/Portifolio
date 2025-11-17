@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "classnames": "^2.3.2",
     "framer-motion": "^7.3.6",
     "pure-react-carousel": "^1.29.0",
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:mobile": "HOST=0.0.0.0 react-scripts start",
+    "ip": "node get-local-ip.js",
     "build": " react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

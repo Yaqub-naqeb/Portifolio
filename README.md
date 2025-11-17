@@ -14,6 +14,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm run start:mobile`
+
+Runs the app in development mode accessible on your local network.\
+This allows you to access your portfolio on mobile devices connected to the same Wi-Fi network.
+
+**Steps to access on mobile:**
+
+1. Run `npm run start:mobile`
+2. Run `npm run ip` in another terminal to get your local IP address
+3. On your mobile device, open a browser and navigate to `http://YOUR_IP_ADDRESS:3000`
+   - Example: `http://192.168.1.173:3000`
+
+**Note:** Make sure both your computer and mobile device are on the same Wi-Fi network.
+
+### `npm run ip`
+
+Displays your local IP address for accessing the app on mobile devices.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
