@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
 import classNames from "classnames";
 
@@ -15,6 +15,19 @@ const variants = {
 const Navbar = () => {
   const { un, Under, mode } = useTheme();
 
+  // Prevent body scroll when navbar is open
+  useEffect(() => {
+    if (un) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [un]);
+
   return (
     // ${un ? 'z-40':'z-50' }
     <div
@@ -24,7 +37,7 @@ const Navbar = () => {
       <button
         aria-label="burger_button"
         onClick={() => Under(!un)}
-        className={`fixed z-40 right-4 sm:right-6 md:right-8 top-4 sm:top-6 md:top-8 rounded-lg p-2 sm:p-2.5 transition-all duration-300 backdrop-blur-sm ${
+        className={`fixed z-40 right-4 sm:right-6 md:right-8 top-4 sm:top-6 md:top-8 rounded-lg p-1.5 sm:p-2 md:p-2.5 transition-all duration-300 backdrop-blur-sm ${
           mode
             ? "bg-[#9cd5ee64] hover:bg-[#9cd5ee80]"
             : "bg-[#505C62] hover:bg-[#505C6290]"
@@ -32,7 +45,7 @@ const Navbar = () => {
       >
         <div
           className={classNames(
-            `tham tham-e-squeeze md:tham-w-8 tham-w-6 lg:tham-w-8`,
+            `tham tham-e-squeeze md:tham-w-8 tham-w-5 sm:tham-w-6 lg:tham-w-8`,
             { "tham-active": un }
           )}
         >
@@ -68,9 +81,7 @@ const Navbar = () => {
         className={`${un ? "open delay" : "close hidden"}`}
       >
         <ul
-          className={`bg-[#ADD6E8]  ${
-            mode ? "bg-[#92cae2] " : "bg-[#2d2d2ddf] "
-          }
+          className={`${mode ? "bg-[#92cae2] " : "bg-[#2d2d2ddf] "}
 overflow-hidden
 fixed right-0 lg:pl-5 md:pl-5
  h-[100vh] lg:w-[35%] md:w-[45%] w-screen 
@@ -89,7 +100,7 @@ fixed right-0 lg:pl-5 md:pl-5
               to={"#"}
               smooth
               onClick={() => Under(false)}
-              className={`  text-5xl  absolute list text-[#fff] `}
+              className={`  text-2xl sm:text-3xl md:text-4xl lg:text-5xl  absolute list text-[#fff] `}
             >
               Home
             </HashLink>{" "}
@@ -104,7 +115,7 @@ fixed right-0 lg:pl-5 md:pl-5
               to={"#about"}
               smooth
               onClick={() => Under(false)}
-              className={`  text-5xl  absolute list text-[#fff] `}
+              className={`  text-2xl sm:text-3xl md:text-4xl lg:text-5xl  absolute list text-[#fff] `}
             >
               About
             </HashLink>{" "}
@@ -119,7 +130,7 @@ fixed right-0 lg:pl-5 md:pl-5
               to={"#services"}
               smooth
               onClick={() => Under(false)}
-              className={`  text-5xl  absolute list text-[#fff] `}
+              className={`  text-2xl sm:text-3xl md:text-4xl lg:text-5xl  absolute list text-[#fff] `}
             >
               Services
             </HashLink>{" "}
@@ -134,7 +145,7 @@ fixed right-0 lg:pl-5 md:pl-5
               to={"#skills"}
               smooth
               onClick={() => Under(false)}
-              className={`  text-5xl  absolute list text-[#fff] `}
+              className={`  text-2xl sm:text-3xl md:text-4xl lg:text-5xl  absolute list text-[#fff] `}
             >
               Skills
             </HashLink>{" "}
@@ -149,7 +160,7 @@ fixed right-0 lg:pl-5 md:pl-5
               to={"#experience"}
               smooth
               onClick={() => Under(false)}
-              className={`  text-5xl  absolute list text-[#fff] `}
+              className={`  text-2xl sm:text-3xl md:text-4xl lg:text-5xl  absolute list text-[#fff] `}
             >
               Experience
             </HashLink>{" "}
@@ -164,7 +175,7 @@ fixed right-0 lg:pl-5 md:pl-5
               to={"#projects"}
               smooth
               onClick={() => Under(false)}
-              className={`  text-5xl  absolute list text-[#fff] `}
+              className={`  text-2xl sm:text-3xl md:text-4xl lg:text-5xl  absolute list text-[#fff] `}
             >
               Projects
             </HashLink>{" "}
@@ -179,7 +190,7 @@ fixed right-0 lg:pl-5 md:pl-5
               to={"#contacts"}
               smooth
               onClick={() => Under(false)}
-              className={`  text-5xl  absolute list text-[#fff] `}
+              className={`  text-2xl sm:text-3xl md:text-4xl lg:text-5xl  absolute list text-[#fff] `}
             >
               Contacts
             </HashLink>{" "}

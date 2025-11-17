@@ -20,7 +20,7 @@ const Rectangular = () => {
         target={"_blank"}
         aria-label="Facebook"
         rel="noreferrer"
-        href="https://www.facebook.com/YaqwbEng"
+        href="https://www.facebook.com/YaqubEng"
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
@@ -37,7 +37,7 @@ const Rectangular = () => {
         target={"_blank"}
         aria-label="Instagram"
         rel="noreferrer"
-        href="https://www.instagram.com/Yaqwb_321_/"
+        href="https://www.instagram.com/Yaqub_321_/"
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
@@ -54,7 +54,7 @@ const Rectangular = () => {
         target={"_blank"}
         rel="noreferrer"
         aria-label="LinkedIn"
-        href="https://www.linkedin.com/in/Yaqwb-naqeeb-b9894b238/"
+        href="https://www.linkedin.com/in/yaqwb-naqib-b9894b238/"
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
@@ -68,7 +68,7 @@ const Rectangular = () => {
       </a>
 
       <a
-        href="https://github.com/Yaqwb-naqeb"
+        href="https://github.com/Yaqub-naqeb"
         aria-label="GitHub"
         target={"_blank"}
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${

@@ -38,7 +38,7 @@ const BackToTop = () => {
           exit={{ opacity: 0, scale: 0 }}
           onClick={scrollToTop}
           aria-label="Back to top"
-          className={`fixed bottom-8 right-8 z-50 p-3 sm:p-4 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg ${
+          className={`fixed bottom-8 right-8 z-20 p-3 sm:p-4 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg ${
             mode
               ? "bg-[#83c3de] hover:bg-[#61b1d6] text-white"
               : "bg-[#ADD6E8] hover:bg-[#9cd5ee] text-[#262626]"

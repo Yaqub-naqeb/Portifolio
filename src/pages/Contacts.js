@@ -63,7 +63,7 @@ const Contacts = () => {
         const body = encodeURIComponent(
           `Email: ${formData.from_email}\n\nMessage:\n${formData.message}`
         );
-        window.location.href = `mailto:Yaqwb.009448401@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:yaqub.009448401@gmail.com?subject=${subject}&body=${body}`;
 
         // Show success message after a short delay to allow mailto to open
         setTimeout(() => {
@@ -208,10 +208,10 @@ const Contacts = () => {
                   ✗ Something went wrong. Please try again or email me directly
                   at{" "}
                   <a
-                    href="mailto:Yaqwb.009448401@gmail.com"
+                    href="mailto:yaqub.009448401@gmail.com"
                     className="underline hover:opacity-80"
                   >
-                    Yaqwb.009448401@gmail.com
+                    yaqub.009448401@gmail.com
                   </a>
                 </p>
               </div>
@@ -237,7 +237,7 @@ const Contacts = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href="https://www.facebook.com/YaqwbEng"
+            href="https://www.facebook.com/YaqubEng"
             className="text-[#9C9C9C]"
           >
             <span className="hover:text-[#000000a9] transition-all duration-300">
@@ -248,7 +248,7 @@ const Contacts = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href="https://www.instagram.com/Yaqwb_321_/"
+            href="https://www.instagram.com/Yaqub_321_/"
             className="text-[#9C9C9C]"
           >
             <span className="hover:text-[#000000a9] transition-all duration-300">
@@ -259,7 +259,7 @@ const Contacts = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href="https://www.linkedin.com/in/Yaqwb-naqeeb-b9894b238/"
+            href="https://www.linkedin.com/in/yaqwb-naqib-b9894b238/"
             className="text-[#9C9C9C]"
           >
             <span className="hover:text-[#000000a9] transition-all duration-300">
@@ -268,7 +268,7 @@ const Contacts = () => {
             |{" "}
           </a>
           <a
-            href="https://github.com/Yaqwb-naqeb"
+            href="https://github.com/Yaqub-naqeb"
             target={"_blank"}
             rel="noreferrer"
             className="text-[#9C9C9C]"

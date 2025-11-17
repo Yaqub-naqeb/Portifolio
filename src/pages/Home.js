@@ -72,11 +72,11 @@ const Home = () => {
         }}
       />
       {/* Theme toggle button - Top Left */}
-      <div className="absolute z-50 top-4 left-4 sm:top-6 sm:left-6 md:top-8 md:left-8">
+      <div className="absolute z-20 top-4 left-4 sm:top-6 sm:left-6 md:top-8 md:left-8">
         <button
           onClick={() => changeMode(!mode)}
           aria-label="Toggle theme"
-          className={`cursor-pointer rounded-lg p-2.5 sm:p-3 md:p-3.5 transition-all duration-300 hover:scale-110 backdrop-blur-sm ${
+          className={`cursor-pointer rounded-lg p-2 sm:p-2.5 md:p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm ${
             mode
               ? "bg-[#9cd5ee64] hover:bg-[#9cd5ee80]"
               : "bg-[#505C62] hover:bg-[#505C6290]"
@@ -92,7 +92,7 @@ const Home = () => {
       </div>
 
       {/* Social links - Bottom Left */}
-      <div className="absolute z-50 bottom-6 sm:bottom-8 md:bottom-12 lg:bottom-8 left-4 sm:left-6 md:left-8">
+      <div className="absolute z-20 bottom-6 sm:bottom-8 md:bottom-12 lg:bottom-8 left-4 sm:left-6 md:left-8">
         <Rectangular />
       </div>
     </div>

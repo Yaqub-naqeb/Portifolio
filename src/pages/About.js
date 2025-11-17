@@ -107,14 +107,14 @@ const About = () => {
               <p className="text-base sm:text-lg md:text-xl">
                 Shoot an email to{" "}
                 <a
-                  href="mailto:Yaqwb.009448401@gmail.com"
+                  href="mailto:yaqub.009448401@gmail.com"
                   className={`${
                     mode
                       ? "text-[#83c3de] hover:text-[#61b1d6]"
                       : "text-[#ADD6E8] hover:text-[#9cd5ee]"
                   } transition-colors duration-300 underline decoration-2 underline-offset-4 font-medium`}
                 >
-                  Yaqwb.009448401@gmail.com
+                  yaqub.009448401@gmail.com
                 </a>
               </p>
             </div>

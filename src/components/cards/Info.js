@@ -28,7 +28,7 @@ export const Info = [
     demoo: true,
     style: "hid",
     tools: [{ tool: "NextJs" }, { tool: "NodeJs" }, { tool: "Sass" }],
-    url: "https://github.com/Yaqwb-naqeb/LinkPlus",
+    url: "https://github.com/Yaqub-naqeb/LinkPlus",
     demo: "https://www.botolon.com/",
     description: [
       {
@@ -45,7 +45,7 @@ export const Info = [
     demoo: true,
     style: "flex-row-reverse hid",
     tools: [{ tool: "Laravel" }, { tool: "Bootsrap" }, { tool: "VueJs" }],
-    url: "https://github.com/Yaqwb-naqeb/LinkPlus",
+    url: "https://github.com/Yaqub-naqeb/LinkPlus",
     demo: "https://erbiliantravel.com/",
     description: [
       {
@@ -62,7 +62,7 @@ export const Info = [
     demoo: true,
     style: "",
     tools: [{ tool: "NextJs" }, { tool: "React" }, { tool: "ReduxToolkit" }],
-    url: "https://github.com/Yaqwb-naqeb/LinkPlus",
+    url: "https://github.com/Yaqub-naqeb/LinkPlus",
     demo: "https://link-plus.vercel.app/",
     description: [
       {
@@ -79,7 +79,7 @@ export const Info = [
     demoo: true,
     style: "",
     tools: [{ tool: "React" }, { tool: "ContextAPI" }, { tool: "Tailwind" }],
-    url: "https://github.com/Yaqwb-naqeb/AviBooks",
+    url: "https://github.com/Yaqub-naqeb/AviBooks",
     demo: "https://avibooks.vercel.app/",
     description: [
       {
@@ -87,23 +87,23 @@ export const Info = [
       },
     ],
   },
-  {
-    id: "6",
-    title: "Online Therapist",
-    img: require("../imgs/prjs/Screenshot 2023-05-02 210331.png"),
-    num: "06",
-    code: false,
-    demoo: true,
-    style: "hid",
-    tools: [{ tool: "Laravel" }, { tool: "Alpine JS" }, { tool: "MySql" }],
-    url: "https://github.com/Yaqwb-naqeb/-online-therapist",
-    demo: "https://github.com/Yaqwb-naqeb/-online-therapist",
-    description: [
-      {
-        p: "Online Therapist is a healthcare platform that simplifies appointment scheduling and patient-doctor communication. Built with Laravel and MySQL, the platform enables users to create accounts, manage appointments, and access personalized healthcare content in a secure environment.",
-      },
-    ],
-  },
+  // {
+  //   id: "6",
+  //   title: "Online Therapist",
+  //   img: require("../imgs/prjs/Screenshot 2023-05-02 210331.png"),
+  //   num: "06",
+  //   code: true,
+  //   demoo: false,
+  //   style: "hid",
+  //   tools: [{ tool: "Laravel" }, { tool: "Alpine JS" }, { tool: "MySql" }],
+  //   url: "https://github.com/Yaqub-naqeb/-online-therapist",
+  //   demo: "https://github.com/Yaqub-naqeb/-online-therapist",
+  //   description: [
+  //     {
+  //       p: "Online Therapist is a healthcare platform that simplifies appointment scheduling and patient-doctor communication. Built with Laravel and MySQL, the platform enables users to create accounts, manage appointments, and access personalized healthcare content in a secure environment.",
+  //     },
+  //   ],
+  // },
 ];
 
 // {
