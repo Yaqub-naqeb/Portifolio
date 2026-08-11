@@ -3,37 +3,37 @@ import useTheme from "../components/store/useTheme";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
+const stats = [
+  {
+    id: 1,
+    number: 6,
+    label: "Projects Completed",
+    suffix: "+",
+  },
+  {
+    id: 2,
+    number: 2,
+    label: "Years Experience",
+    suffix: "+",
+  },
+  {
+    id: 3,
+    number: 18,
+    label: "Technologies Mastered",
+    suffix: "+",
+  },
+  {
+    id: 4,
+    number: 100,
+    label: "Client Satisfaction",
+    suffix: "%",
+  },
+];
+
 const Statistics = () => {
   const { mode } = useTheme();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
-
-  const stats = [
-    {
-      id: 1,
-      number: 6,
-      label: "Projects Completed",
-      suffix: "+",
-    },
-    {
-      id: 2,
-      number: 2,
-      label: "Years Experience",
-      suffix: "+",
-    },
-    {
-      id: 3,
-      number: 18,
-      label: "Technologies Mastered",
-      suffix: "+",
-    },
-    {
-      id: 4,
-      number: 100,
-      label: "Client Satisfaction",
-      suffix: "%",
-    },
-  ];
 
   const [counts, setCounts] = useState(stats.map(() => 0));
 

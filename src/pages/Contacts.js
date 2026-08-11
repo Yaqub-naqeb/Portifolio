@@ -3,12 +3,20 @@ import "../App.css";
 import useTheme from "../components/store/useTheme";
 import emailjs from "@emailjs/browser";
 
+const SOCIALS = [
+  { label: "Facebook", href: "https://www.facebook.com/YaqubEng" },
+  { label: "Instagram", href: "https://www.instagram.com/Yaqub_321_/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/yaqwb-naqib-b9894b238/" },
+  { label: "GitHub", href: "https://github.com/Yaqub-naqeb" },
+];
+
 const Contacts = () => {
   const { mode } = useTheme();
   const formRef = useRef();
   const [formData, setFormData] = useState({
     from_email: "",
     message: "",
+    website: "", // honeypot
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -18,7 +26,6 @@ const Contacts = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    // Clear status when user starts typing
     if (submitStatus) setSubmitStatus(null);
   };
 
@@ -27,22 +34,19 @@ const Contacts = () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    try {
-      // EmailJS configuration - uses environment variables if available
-      // To set up EmailJS:
-      // 1. Go to https://www.emailjs.com/ and create a free account
-      // 2. Add an email service (Gmail, Outlook, etc.)
-      // 3. Create an email template with variables: {{from_email}} and {{message}}
-      // 4. Add these to your .env file:
-      //    REACT_APP_EMAILJS_SERVICE_ID=your_service_id
-      //    REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
-      //    REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+    // Silent honeypot — bots fill this; humans never see it
+    if (formData.website) {
+      setIsSubmitting(false);
+      setSubmitStatus("success");
+      setFormData({ from_email: "", message: "", website: "" });
+      return;
+    }
 
+    try {
       const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
       const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
       const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-      // Try EmailJS if configured, otherwise use mailto fallback
       if (serviceId && templateId && publicKey) {
         await emailjs.sendForm(
           serviceId,
@@ -51,25 +55,15 @@ const Contacts = () => {
           publicKey
         );
         setSubmitStatus("success");
-        setFormData({ from_email: "", message: "" });
+        setFormData({ from_email: "", message: "", website: "" });
       } else {
-        // EmailJS not configured - show helpful message
-        console.warn(
-          "EmailJS not configured. Using mailto fallback. See EMAILJS_SETUP.md for setup instructions."
-        );
-
-        // Fallback: Use mailto link (works without EmailJS setup)
         const subject = encodeURIComponent("Contact from Portfolio");
         const body = encodeURIComponent(
           `Email: ${formData.from_email}\n\nMessage:\n${formData.message}`
         );
         window.location.href = `mailto:yaqub.009448401@gmail.com?subject=${subject}&body=${body}`;
-
-        // Show success message after a short delay to allow mailto to open
-        setTimeout(() => {
-          setSubmitStatus("success");
-          setFormData({ from_email: "", message: "" });
-        }, 500);
+        // Mailto opens the user's mail client — don't claim the message was sent
+        setSubmitStatus("mailto");
       }
     } catch (error) {
       console.error("Error sending email:", error);
@@ -86,9 +80,7 @@ const Contacts = () => {
         mode ? "contact" : "bg-[#262626]"
       } relative py-12 sm:py-16 md:py-20 lg:px-[10rem] md:px-[4rem] px-4 sm:px-6`}
     >
-      {/* Contact Form Section */}
       <div className="max-w-4xl mx-auto mb-12 sm:mb-16">
-        {/* Descriptive Message */}
         <div className="text-center mb-8 sm:mb-12">
           <h2
             className={`${
@@ -107,7 +99,6 @@ const Contacts = () => {
           </p>
         </div>
 
-        {/* Contact Form */}
         <div
           className={`${
             mode
@@ -115,8 +106,21 @@ const Contacts = () => {
               : "bg-[#1f1f1f] shadow-xl shadow-black/20"
           } rounded-2xl p-6 sm:p-8 md:p-10 transition-all duration-300`}
         >
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-            {/* Email Input */}
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6" noValidate>
+            {/* Honeypot field — hidden from users */}
+            <div className="absolute -left-[9999px] opacity-0 h-0 overflow-hidden" aria-hidden="true">
+              <label htmlFor="website">Website</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                value={formData.website}
+                onChange={handleChange}
+              />
+            </div>
+
             <div>
               <label
                 htmlFor="from_email"
@@ -133,6 +137,7 @@ const Contacts = () => {
                 value={formData.from_email}
                 onChange={handleChange}
                 required
+                autoComplete="email"
                 className={`w-full px-4 py-3 rounded-lg border-2 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#ADD6E8] ${
                   mode
                     ? "bg-[#f8f8f8] border-[#e0e0e0] text-[#2a2a2a] focus:border-[#83c3de]"
@@ -142,7 +147,6 @@ const Contacts = () => {
               />
             </div>
 
-            {/* Message Input */}
             <div>
               <label
                 htmlFor="message"
@@ -168,7 +172,6 @@ const Contacts = () => {
               />
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               disabled={isSubmitting}
@@ -181,104 +184,124 @@ const Contacts = () => {
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>
 
-            {/* Status Messages */}
-            {submitStatus === "success" && (
-              <div
-                className={`p-4 rounded-lg ${
-                  mode
-                    ? "bg-green-50 text-green-700 border border-green-200"
-                    : "bg-green-900/30 text-green-400 border border-green-700/50"
-                }`}
-              >
-                <p className="text-sm sm:text-base">
-                  ✓ Message sent successfully! I'll get back to you soon.
-                </p>
-              </div>
-            )}
+            <div role="status" aria-live="polite">
+              {submitStatus === "success" && (
+                <div
+                  className={`p-4 rounded-lg ${
+                    mode
+                      ? "bg-green-50 text-green-700 border border-green-200"
+                      : "bg-green-900/30 text-green-400 border border-green-700/50"
+                  }`}
+                >
+                  <p className="text-sm sm:text-base">
+                    Message sent successfully! I'll get back to you soon.
+                  </p>
+                </div>
+              )}
 
-            {submitStatus === "error" && (
-              <div
-                className={`p-4 rounded-lg ${
-                  mode
-                    ? "bg-red-50 text-red-700 border border-red-200"
-                    : "bg-red-900/30 text-red-400 border border-red-700/50"
-                }`}
-              >
-                <p className="text-sm sm:text-base">
-                  ✗ Something went wrong. Please try again or email me directly
-                  at{" "}
-                  <a
-                    href="mailto:yaqub.009448401@gmail.com"
-                    className="underline hover:opacity-80"
-                  >
-                    yaqub.009448401@gmail.com
-                  </a>
-                </p>
-              </div>
-            )}
+              {submitStatus === "mailto" && (
+                <div
+                  className={`p-4 rounded-lg ${
+                    mode
+                      ? "bg-blue-50 text-blue-700 border border-blue-200"
+                      : "bg-blue-900/30 text-blue-300 border border-blue-700/50"
+                  }`}
+                >
+                  <p className="text-sm sm:text-base">
+                    Your email app should open with the message ready — hit send
+                    there to finish. Or email me directly at{" "}
+                    <a
+                      href="mailto:yaqub.009448401@gmail.com"
+                      className="underline hover:opacity-80"
+                    >
+                      yaqub.009448401@gmail.com
+                    </a>
+                    .
+                  </p>
+                </div>
+              )}
+
+              {submitStatus === "error" && (
+                <div
+                  className={`p-4 rounded-lg ${
+                    mode
+                      ? "bg-red-50 text-red-700 border border-red-200"
+                      : "bg-red-900/30 text-red-400 border border-red-700/50"
+                  }`}
+                >
+                  <p className="text-sm sm:text-base">
+                    Something went wrong. Please try again or email me directly
+                    at{" "}
+                    <a
+                      href="mailto:yaqub.009448401@gmail.com"
+                      className="underline hover:opacity-80"
+                    >
+                      yaqub.009448401@gmail.com
+                    </a>
+                  </p>
+                </div>
+              )}
+            </div>
           </form>
         </div>
       </div>
 
-      {/* Footer Section */}
-      <div className="flex gap-3 justify-center lg:justify-between md:justify-between align-middle flex-wrap pt-8 border-t border-[#404040]">
-        {/* copy right  */}
-        <div
-          className={`${
-            mode
-              ? "text-[#9C9C9C] hover:text-[#000000a9]"
-              : "text-[#9C9C9C] hover:text-[#ffffff]"
-          } transition-colors duration-300 text-sm sm:text-base order-2 sm:order-1`}
-        >
-          &copy; {new Date().getFullYear()} Yaqwb Naqeb
+      <footer className="max-w-4xl mx-auto pt-8 border-t border-[#404040] space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p
+              className={`${
+                mode ? "text-[#2a2a2a]" : "text-[#ADD6E8]"
+              } font-semibold text-lg sm:text-xl`}
+            >
+              Yaqwb Naqeb
+            </p>
+            <p
+              className={`${
+                mode ? "text-[#4a4a4a]" : "text-[#9C9C9C]"
+              } text-sm sm:text-base`}
+            >
+              Frontend Developer (React · Next.js · React Router) — Iraq /
+              Kurdistan
+            </p>
+            <a
+              href="mailto:yaqub.009448401@gmail.com"
+              className={`${
+                mode
+                  ? "text-[#83c3de] hover:text-[#61b1d6]"
+                  : "text-[#ADD6E8] hover:text-[#9cd5ee]"
+              } text-sm sm:text-base transition-colors duration-300 underline underline-offset-4`}
+            >
+              yaqub.009448401@gmail.com
+            </a>
+          </div>
+
+          <nav aria-label="Social links" className="flex flex-wrap items-center gap-x-3 gap-y-2">
+            {SOCIALS.map((social, i) => (
+              <React.Fragment key={social.label}>
+                {i > 0 && (
+                  <span className="text-[#9C9C9C]" aria-hidden="true">
+                    |
+                  </span>
+                )}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={social.href}
+                  className="text-[#9C9C9C] hover:text-[#42b3e4] transition-colors duration-300"
+                >
+                  {social.label}
+                </a>
+              </React.Fragment>
+            ))}
+          </nav>
         </div>
-        {/* Socials */}
-        <div>
-          <a
-            target={"_blank"}
-            rel="noreferrer"
-            href="https://www.facebook.com/YaqubEng"
-            className="text-[#9C9C9C]"
-          >
-            <span className="hover:text-[#000000a9] transition-all duration-300">
-              Facebook
-            </span>{" "}
-            |{" "}
-          </a>
-          <a
-            target={"_blank"}
-            rel="noreferrer"
-            href="https://www.instagram.com/Yaqub_321_/"
-            className="text-[#9C9C9C]"
-          >
-            <span className="hover:text-[#000000a9] transition-all duration-300">
-              Instagram
-            </span>{" "}
-            |{" "}
-          </a>
-          <a
-            target={"_blank"}
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/yaqwb-naqib-b9894b238/"
-            className="text-[#9C9C9C]"
-          >
-            <span className="hover:text-[#000000a9] transition-all duration-300">
-              LinkedIn
-            </span>{" "}
-            |{" "}
-          </a>
-          <a
-            href="https://github.com/Yaqub-naqeb"
-            target={"_blank"}
-            rel="noreferrer"
-            className="text-[#9C9C9C]"
-          >
-            <span className="hover:text-[#000000a9] transition-all duration-300">
-              GitHub
-            </span>{" "}
-          </a>
-        </div>
-      </div>
+
+        <p className="text-[#9C9C9C] text-xs sm:text-sm">
+          &copy; {new Date().getFullYear()} Yaqwb Naqeb. Built with React,
+          Tailwind CSS &amp; Framer Motion.
+        </p>
+      </footer>
     </div>
   );
 };

@@ -9,29 +9,38 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Software Engineering Degree",
+      title: "B.Sc. Software Engineering",
       company: "University of Koya",
       period: "Graduated",
       description:
-        "Completed a comprehensive Software Engineering program, gaining expertise in software development, web technologies, and modern programming practices.",
+        "Completed a Software Engineering degree with a strong foundation in programming, web technologies, and modern software development practices — the base for everything that followed.",
       type: "education",
     },
     {
       id: 2,
-      title: "Frontend Developer",
-      company: "Freelance & Projects",
-      period: "2023 - Present",
+      title: "Frontend Developer Intern",
+      company: "Jiasaz for IT Services & Solutions",
+      period: "Jun 2023 – Sep 2023",
       description:
-        "Building modern, responsive web applications using React, Next.js, and various frontend technologies. Working on diverse projects including e-commerce platforms, travel websites, and business applications.",
+        "First professional role — worked on real client projects with the Jiasaz team, including the ErbilianWay travel site frontend. Strengthened problem-solving, teamwork, and delivery under real-world product constraints.",
       type: "work",
     },
     {
       id: 3,
-      title: "Web Development Focus",
-      company: "Self-Learning & Practice",
-      period: "2022 - Present",
+      title: "Frontend Developer",
+      company: "Botolon",
+      period: "Nov 2023 – Apr 2024",
       description:
-        "Dedicated to mastering frontend development through continuous learning, building projects, and staying updated with the latest web technologies and best practices.",
+        "Contributed to Botolon’s chatbot platform for business–customer automation on Meta networks (Facebook, Instagram, Messenger). Focused on clean, responsive UI so teams could manage conversations and engage customers with ease.",
+      type: "work",
+    },
+    {
+      id: 4,
+      title: "Frontend Developer",
+      company: "iZone",
+      period: "Apr 2024 – Present",
+      description:
+        "Building and maintaining the frontend for iZone’s Apple products platform in Iraq. Shipping responsive, high-performance interfaces with React Router and Tailwind — from product browsing and pricing to a polished experience across devices.",
       type: "work",
     },
   ];
@@ -101,10 +110,10 @@ const Experience = () => {
 
                 {/* Content card */}
                 <div
-                  className={`rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 ${
+                  className={`rounded-2xl p-6 sm:p-8 transition-shadow duration-300 ${
                     mode
-                      ? "bg-gradient-to-br from-[#F0F7FB] to-[#E8F4F8] border border-[#E0EFF5] shadow-md hover:shadow-xl hover:shadow-[#9cd5ee]/20"
-                      : "bg-gradient-to-br from-[#2d2d2d] to-[#1f1f1f] border border-[#3a3a3a] shadow-md hover:shadow-xl hover:shadow-[#505C62]/30"
+                      ? "bg-[#F8FBFD] border border-[#E0EFF5] shadow-sm hover:shadow-md"
+                      : "bg-[#242424] border border-[#3a3a3a] shadow-sm hover:shadow-md"
                   }`}
                 >
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">

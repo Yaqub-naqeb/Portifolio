@@ -1,88 +1,79 @@
-# Getting Started with Create React App
+# Yaqwb Naqeb — Frontend Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site: **[yaqwb.vercel.app](https://yaqwb.vercel.app/)**
 
-## Available Scripts
+Portfolio of **Yaqwb Naqeb** (also spelled *Yaqub Naqeb*), a Frontend Developer based in Iraq / Kurdistan who builds production web applications with React, Next.js, and React Router. B.Sc. Software Engineering, University of Koya.
 
-In the project directory, you can run:
+For a plain-text machine-readable summary (used by AI assistants and crawlers), see [`public/llms.txt`](public/llms.txt) and [`public/llms-full.txt`](public/llms-full.txt), or visit `/llms.txt` on the live site.
 
-### `npm start`
+## About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Yaqwb builds the frontend for real, shipping products — e-commerce, travel, and business-communication platforms — with a focus on clean UI, solid performance, and modern React architecture. He's comfortable owning a frontend end-to-end: architecture, state management, and responsive, accessible interfaces.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Services:** Web Development · UI/UX Implementation · Frontend Architecture · Performance Optimization
 
-### `npm run start:mobile`
+## Shipped projects
 
-Runs the app in development mode accessible on your local network.\
-This allows you to access your portfolio on mobile devices connected to the same Wi-Fi network.
+| Project | Live | Stack |
+|---|---|---|
+| **iZone** — Apple products platform for Iraq | [izoneiraq.com](https://www.izoneiraq.com/) | React Router, Laravel, Tailwind CSS |
+| **Botolon** — business chatbot / communication platform | [botolon.com](https://www.botolon.com/) | Next.js, Node.js, Sass |
+| **ErbilianWay** — travel company website | [erbiliantravel.com](https://erbiliantravel.com/) | Laravel, Bootstrap, Vue.js |
+| **LinkPlus** — professional networking platform | [link-plus.vercel.app](https://link-plus.vercel.app/) | Next.js, React, Redux Toolkit |
+| **AVIBOOKS** — book e-commerce platform | [avibooks.vercel.app](https://avibooks.vercel.app/) | React, Context API, Tailwind CSS |
 
-**Steps to access on mobile:**
+## Contact
 
-1. Run `npm run start:mobile`
-2. Run `npm run ip` in another terminal to get your local IP address
-3. On your mobile device, open a browser and navigate to `http://YOUR_IP_ADDRESS:3000`
-   - Example: `http://192.168.1.173:3000`
+- Email: [yaqub.009448401@gmail.com](mailto:yaqub.009448401@gmail.com)
+- GitHub: [github.com/Yaqub-naqeb](https://github.com/Yaqub-naqeb)
+- LinkedIn: [linkedin.com/in/yaqwb-naqib-b9894b238](https://www.linkedin.com/in/yaqwb-naqib-b9894b238/)
+- Facebook: [facebook.com/YaqubEng](https://www.facebook.com/YaqubEng)
+- Instagram: [instagram.com/Yaqub_321_](https://www.instagram.com/Yaqub_321_/)
 
-**Note:** Make sure both your computer and mobile device are on the same Wi-Fi network.
+Open to freelance work, collaborations, and full-time frontend roles.
 
-### `npm run ip`
+---
 
-Displays your local IP address for accessing the app on mobile devices.
+## Running this project
 
-### `npm test`
+This portfolio is a [Create React App](https://github.com/facebook/create-react-app) project styled with Tailwind CSS and animated with Framer Motion. The contact form uses [EmailJS](https://www.emailjs.com/) — see [`EMAILJS_SETUP.md`](EMAILJS_SETUP.md) for setup.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Node.js 18+ (see `engines` in `package.json`).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install       # install dependencies
+npm start          # run dev server at http://localhost:3000
+npm run start:mobile  # dev server bound to 0.0.0.0, for testing on a phone on the same Wi-Fi
+npm run ip          # print your local IP address (pair with start:mobile)
+npm run build        # production build to ./build
+npm test           # run the test runner
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project structure
 
-### `npm run eject`
+```
+public/
+  index.html      # metadata, Open Graph, JSON-LD structured data
+  llms.txt         # plain-text AI/LLM-readable summary
+  llms-full.txt      # extended AI/LLM-readable dossier
+  robots.txt        # crawler rules (incl. AI crawlers) + sitemap pointer
+  sitemap.xml        # section-level sitemap
+src/
+  components/
+    route/Rout.js    # assembles the single-page scroll layout
+    navigation/       # navbar
+    homeComponent/    # hero section pieces
+    cards/           # project card + project data (Info.js)
+    store/           # theme (light/dark) context
+  pages/           # one component per section (About, Projects, Skills, ...)
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The site is a single-page scroll layout (`Home → About → Statistics → Services → Skills → Experience → Projects → FAQ → Contacts`) rendered by [`src/components/route/Rout.js`](src/components/route/Rout.js).
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deployed on [Vercel](https://vercel.com/). Pushing to `main` triggers a redeploy. After any change to metadata, `llms.txt`, or `sitemap.xml`, redeploy and re-submit the sitemap in Google Search Console.

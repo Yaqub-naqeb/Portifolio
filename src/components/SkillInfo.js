@@ -10,7 +10,6 @@ import github from './svg/github.svg'
 import tailwind from './svg/tailwind.svg'
 import bootsrap from './imgs/skills/bootstrap.png'
 import sql from './imgs/skills/sql-server.png'
-import mysql from './imgs/skills/mysql.png';
 
 
 export const SkillInfo=[{
@@ -31,7 +30,7 @@ export const SkillInfo=[{
 
 {
     id:'3',
-    name:'Bootsrap',
+    name:'Bootstrap',
     img: bootsrap},
 
  
@@ -41,7 +40,7 @@ export const SkillInfo=[{
     img: sass},
     {
         id:'5',
-        name:'TailwindCss',
+        name:'Tailwind CSS',
         img: tailwind
     },
 
@@ -66,7 +65,7 @@ export const SkillInfo=[{
     },
     {
         id:'9',
-        name:'NextJs',
+        name:'Next.js',
         img: require('./imgs/skills/next.png')
     },
     {
@@ -103,12 +102,12 @@ export const SkillInfo=[{
     },
     {
         id:'15',
-        name:'Sql',
+        name:'SQL',
         img:sql
     },
     {
         id:'16',
-        name:'MySql',
+        name:'MySQL',
         img: require('./imgs/skills/mysql (1).png')
     },
     {
@@ -118,8 +117,8 @@ export const SkillInfo=[{
     },
     {
         id:'18',
-        name:'RemixJs',
+        name:'React Router',
         rounded:true,
-        img: require('./imgs/skills/remix.png')
+        img: react
     },
 ];

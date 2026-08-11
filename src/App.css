@@ -7,6 +7,38 @@
   scroll-behavior: smooth;
 }
 
+/* Skip to content — keyboard accessibility */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #83c3de;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 2px solid #2a2a2a;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Custom Scrollbar - Light Mode */
 ::-webkit-scrollbar {
   width: 10px;
@@ -60,30 +92,66 @@ body.dark-scrollbar {
 }
 
 /* Navbar hover effects */
+.dv,
+.dvDark {
+  position: relative;
+  cursor: pointer;
+  transition:
+    background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dv::before,
+.dvDark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 3px;
+  height: 0;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dv::before {
+  background-color: #42b3e4;
+}
+
+.dvDark::before {
+  background-color: #add6e8;
+}
+
+.list {
+  padding-left: 1.25rem;
+  display: inline-block;
+  transition:
+    color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    letter-spacing 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dv:hover,
+.dvDark:hover {
+  background-color: #ffffff40;
+  transform: translateX(0.35rem);
+}
+
+.dv:hover::before,
+.dvDark:hover::before {
+  height: 55%;
+}
+
 .dv:hover .list {
   color: #42b3e4db;
-  padding-left: 1rem;
-  transition: all ease-in-out 0.2s;
+  transform: translateX(0.4rem);
+  letter-spacing: 0.02em;
 }
 
 .dvDark:hover .list {
   color: #add6e8;
-  padding-left: 1rem;
-  transition: all ease-in-out 0.2s;
-}
-
-.dv:hover {
-  transition: background-color ease-in-out 0.2s;
-  background-color: #ffffff53;
-}
-
-.dvDark:hover {
-  transition: background-color ease-in-out 0.2s;
-  background-color: #ffffff53;
-}
-
-.list {
-  padding-left: 1rem;
+  transform: translateX(0.4rem);
+  letter-spacing: 0.02em;
 }
 
 /* Contact section gradient */
@@ -98,7 +166,7 @@ body.dark-scrollbar {
 
 /* Background images - optimized */
 .dark {
-  background-image: url("../src/components/imgs/yaqubDark.jpg");
+  background-image: url("./components/imgs/yaqubDark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -110,14 +178,13 @@ body.dark-scrollbar {
   width: 100%;
   height: 100%;
   z-index: 0;
-  will-change: opacity;
   transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
 .white {
-  background-image: url("../src/components/imgs/Yaqub1.jpg");
+  background-image: url("./components/imgs/Yaqub1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,7 +196,6 @@ body.dark-scrollbar {
   width: 100%;
   height: 100%;
   z-index: 0;
-  will-change: opacity;
   transform: translateZ(0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -186,3 +252,4 @@ body.dark-scrollbar {
     color: #548aa4;
   }
 }
+

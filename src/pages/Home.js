@@ -9,53 +9,35 @@ const Home = () => {
   const [bgLoaded, setBgLoaded] = useState(false);
 
   useEffect(() => {
-    // Preload background images with high priority - start immediately
-    const whiteImg = new Image();
-    const darkImg = new Image();
+    // Only fetch the active theme's image eagerly, so it doesn't compete
+    // for bandwidth with the one the user can't even see yet.
+    const activeSrc = mode
+      ? require("../components/imgs/Yaqub1.jpg")
+      : require("../components/imgs/yaqubDark.jpg");
 
-    // Set loading strategy for high priority
-    whiteImg.loading = "eager";
-    darkImg.loading = "eager";
-    whiteImg.decoding = "sync"; // Synchronous for faster rendering
-    darkImg.decoding = "sync";
+    const activeImg = new Image();
+    activeImg.decoding = "async";
+    activeImg.onload = () => setBgLoaded(true);
+    activeImg.src = activeSrc;
+    if (activeImg.complete) setBgLoaded(true);
 
-    // Get image sources
-    const whiteImgSrc = require("../components/imgs/Yaqub1.jpg");
-    const darkImgSrc = require("../components/imgs/yaqubDark.jpg");
+    // Quietly warm the cache for the other theme once the browser is idle,
+    // so toggling later feels instant without slowing down first paint.
+    const idleRequest = window.requestIdleCallback || ((cb) => setTimeout(cb, 500));
+    const idleCancel = window.cancelIdleCallback || clearTimeout;
+    const idleId = idleRequest(() => {
+      const otherSrc = mode
+        ? require("../components/imgs/yaqubDark.jpg")
+        : require("../components/imgs/Yaqub1.jpg");
+      new Image().src = otherSrc;
+    });
 
-    // Start loading immediately - critical for first paint
-    whiteImg.src = whiteImgSrc;
-    darkImg.src = darkImgSrc;
-
-    // Check if images are already cached/loaded
-    if (whiteImg.complete && darkImg.complete) {
-      setBgLoaded(true);
-      return;
-    }
-
-    let loadedCount = 0;
-    const handleLoad = () => {
-      loadedCount++;
-      if (loadedCount === 2) {
-        setBgLoaded(true);
-      }
-    };
-
-    whiteImg.onload = handleLoad;
-    darkImg.onload = handleLoad;
-
-    // Shorter fallback timeout for faster initial render
-    const timeoutId = setTimeout(() => {
-      setBgLoaded(true);
-    }, 800);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
+    return () => idleCancel(idleId);
+  }, [mode]);
 
   return (
     <div
+      id="home"
       className={`min-h-screen relative w-full overflow-hidden flex flex-col items-start justify-center ${
         mode ? "" : "bg-[#262626]"
       }`}
@@ -65,7 +47,7 @@ const Home = () => {
         className={`absolute inset-0 ${
           mode ? "white" : "dark"
         } transition-opacity duration-500 ${
-          bgLoaded ? "opacity-100" : "opacity-80"
+          bgLoaded ? "opacity-100" : "opacity-0"
         }`}
         style={{
           willChange: "opacity",
@@ -74,8 +56,9 @@ const Home = () => {
       {/* Theme toggle button - Top Left */}
       <div className="absolute z-20 top-4 left-4 sm:top-6 sm:left-6 md:top-8 md:left-8">
         <button
+          type="button"
           onClick={() => changeMode(!mode)}
-          aria-label="Toggle theme"
+          aria-label={mode ? "Switch to dark mode" : "Switch to light mode"}
           className={`cursor-pointer rounded-lg p-2 sm:p-2.5 md:p-3 transition-all duration-300 hover:scale-110 backdrop-blur-sm ${
             mode
               ? "bg-[#9cd5ee64] hover:bg-[#9cd5ee80]"

@@ -20,11 +20,11 @@ const Card = ({ info, id }) => {
 
       {/* Project Card */}
       <div
-        className={`flex flex-col lg:flex-row w-full max-w-6xl p-3 sm:p-4 md:p-6 lg:p-8 transition-all duration-300 ease-out rounded-xl sm:rounded-2xl ${
+        className={`flex flex-col lg:flex-row w-full max-w-6xl p-3 sm:p-4 md:p-6 lg:p-8 transition-shadow duration-300 rounded-xl sm:rounded-2xl ${
           mode
-            ? "bg-gradient-to-br from-[#f8f9fa] to-[#f0f1f2] border border-[#e5e7eb] shadow-md hover:shadow-xl hover:shadow-[#9cd5ee]/20"
-            : "bg-gradient-to-br from-[#2d2d2d] to-[#1f1f1f] border border-[#3a3a3a] shadow-md hover:shadow-xl hover:shadow-[#505C62]/30"
-        } gap-3 sm:gap-4 md:gap-6 lg:gap-10 items-center justify-between mb-4 sm:mb-6 md:mb-8 hover:scale-[1.01] hover:-translate-y-1 ${
+            ? "bg-white border border-[#e5e7eb] shadow-sm hover:shadow-md"
+            : "bg-[#1f1f1f] border border-[#3a3a3a] shadow-sm hover:shadow-md"
+        } gap-3 sm:gap-4 md:gap-6 lg:gap-10 items-center justify-between mb-4 sm:mb-6 md:mb-8 ${
           info.style === "flex-row-reverse" ? "lg:flex-row-reverse" : ""
         }`}
       >
@@ -36,6 +36,7 @@ const Card = ({ info, id }) => {
               className="w-full lg:w-[35rem] rounded-lg sm:rounded-xl object-cover"
               alt={`${info.title} project screenshot`}
               loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -86,7 +87,7 @@ const Card = ({ info, id }) => {
             {info.demo && (
               <a
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 href={info.demo}
                 aria-label={`View ${info.title} demo`}
                 className={`flex items-center gap-2 border-2 rounded-full px-4 py-2 sm:px-6 sm:py-3 transition-all duration-300 hover:scale-105 font-medium ${
@@ -118,7 +119,7 @@ const Card = ({ info, id }) => {
               <a
                 target="_blank"
                 href={info.url}
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label={`View ${info.title} source code`}
                 className={`flex items-center gap-2 border-2 rounded-full px-4 py-2 sm:px-6 sm:py-3 transition-all duration-300 hover:scale-105 font-medium ${
                   mode

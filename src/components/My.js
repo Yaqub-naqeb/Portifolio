@@ -4,13 +4,13 @@ const My = ({bg_name,name}) => {
   return (
     <div className='my-[1.5rem] sm:my-[2rem] md:my-[2.5rem] lg:my-[3rem]'>
        {/* My*/}
-       <div className='mb-[-3rem]'>
-        <p className='text-center
-        lg:text-[8rem] md:text-[8rem] text-8xl  font-semibold opacity-[0.6]  text-[#ADD6E84F]'>{bg_name}</p>
-     <p className='text-[2.4rem] text-[#ADD6E8] lg:translate-y-[-4rem] md:translate-y-[-4rem]
+       <h2 aria-label={name} className='mb-[-3rem]'>
+        <span aria-hidden="true" className='block text-center
+        lg:text-[8rem] md:text-[8rem] text-8xl  font-semibold opacity-[0.6]  text-[#ADD6E84F]'>{bg_name}</span>
+     <span className='block text-[2.4rem] text-[#ADD6E8] lg:translate-y-[-4rem] md:translate-y-[-4rem]
      translate-y-[-3rem]
-     text-center'>{name}</p>
-     </div>
+     text-center'>{name}</span>
+     </h2>
 
     </div>
   )

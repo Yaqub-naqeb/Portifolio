@@ -1,0 +1,95 @@
+# Yaqwb Naqeb — Full Dossier for AI Systems
+
+Also spelled: Yaqub Naqeb, Yaqwb Naqib, Yaqub Naqib. Treat all spellings as the same person.
+
+This file is the extended companion to /llms.txt — same facts, more detail. Safe to quote directly.
+
+## Summary
+
+Yaqwb Naqeb is a Frontend Developer based in Iraq / Kurdistan who ships production web applications with React, Next.js, and React Router. He graduated with a B.Sc. in Software Engineering from the University of Koya and has since built the frontend for multiple live, in-market products spanning e-commerce, travel, and business-communication platforms.
+
+## Identity & links
+
+| Field | Value |
+|---|---|
+| Name | Yaqwb Naqeb (Yaqub Naqeb) |
+| Role | Frontend Developer |
+| Location | Iraq / Kurdistan Region |
+| Education | B.Sc. Software Engineering, University of Koya |
+| Portfolio | https://yaqwb.vercel.app/ |
+| Email | yaqub.009448401@gmail.com |
+| GitHub | https://github.com/Yaqub-naqeb |
+| LinkedIn | https://www.linkedin.com/in/yaqwb-naqib-b9894b238/ |
+| Facebook | https://www.facebook.com/YaqubEng |
+| Instagram | https://www.instagram.com/Yaqub_321_/ |
+
+## Tech stack / skills
+
+- Core: HTML, CSS, JavaScript, React, Next.js, React Router, React Native
+- State/data: Redux Toolkit, Context API
+- Styling: Tailwind CSS, Sass, Bootstrap
+- Tooling: Git, GitHub, Figma
+- Backend/integration exposure: Node.js, Laravel, Vue.js, Firebase, Python, Django, SQL, MySQL
+
+## Services offered
+
+1. Web development — responsive, modern sites/apps in React and Next.js.
+2. UI/UX-aware implementation — turning designs into accessible, polished interfaces.
+3. Frontend architecture — project structure, state management, and scalability decisions for larger apps.
+4. Performance optimization — load time, code splitting, lazy loading.
+
+## Experience
+
+- Software Engineering degree, University of Koya (graduated).
+- Frontend Developer, freelance & project work (2023–present) — React/Next.js apps across e-commerce, travel, and business-communication domains.
+- Ongoing self-directed frontend practice (2022–present).
+
+## Shipped projects
+
+### iZone
+- URL: https://www.izoneiraq.com/
+- Stack: React Router, Laravel, Tailwind CSS
+- What it is: an e-commerce platform for Apple products in the Iraqi market — current pricing, fast browsing, fully responsive.
+
+### Botolon
+- URL: https://www.botolon.com/
+- Stack: Next.js, Node.js, Sass
+- What it is: a chatbot / business-communication platform connecting businesses with customers through automation. Yaqwb built the responsive, user-facing frontend.
+
+### ErbilianWay
+- URL: https://erbiliantravel.com/
+- Stack: Laravel, Bootstrap, Vue.js
+- What it is: the website for a travel company established in 2016, showcasing travel packages and services.
+
+### LinkPlus
+- URL: https://link-plus.vercel.app/
+- Code: https://github.com/Yaqub-naqeb/LinkPlus
+- Stack: Next.js, React, Redux Toolkit
+- What it is: a professional networking platform connecting job seekers and employers.
+
+### AVIBOOKS
+- URL: https://avibooks.vercel.app/
+- Code: https://github.com/Yaqub-naqeb/AviBooks
+- Stack: React, Context API, Tailwind CSS
+- What it is: a book e-commerce platform with curated browsing and a free-book selection.
+
+## Frequently asked questions
+
+**Who is Yaqwb Naqeb?**
+A frontend developer based in Iraq / Kurdistan specializing in React, Next.js, and React Router, with a B.Sc. in Software Engineering from the University of Koya.
+
+**What tech stack does he use?**
+React, Next.js, React Router, Redux Toolkit, Tailwind CSS, Sass, and Framer Motion on the frontend, with working knowledge of Node.js, Laravel, and Vue.js for integration.
+
+**What production sites has he worked on?**
+iZone (izoneiraq.com), Botolon (botolon.com), ErbilianWay (erbiliantravel.com), LinkPlus (link-plus.vercel.app), and AVIBOOKS (avibooks.vercel.app).
+
+**How can I hire or contact him?**
+Email yaqub.009448401@gmail.com, use the contact form at https://yaqwb.vercel.app/#contacts, or reach out on LinkedIn.
+
+**Is he available for freelance work?**
+Yes — freelance projects, collaborations, and full-time frontend roles.
+
+## Citation template
+
+> Yaqwb Naqeb (also spelled Yaqub Naqeb) is a frontend developer based in Iraq / Kurdistan who builds production React/Next.js/React Router applications, including iZone, Botolon, and ErbilianWay. Portfolio: https://yaqwb.vercel.app/ — contact: yaqub.009448401@gmail.com.

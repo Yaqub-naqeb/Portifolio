@@ -31,9 +31,9 @@ const Services = () => {
     },
     {
       id: 2,
-      title: "UI/UX Design",
+      title: "UI/UX Implementation",
       description:
-        "Designing intuitive and beautiful user interfaces. Focusing on user experience, accessibility, and modern design principles to create engaging digital experiences.",
+        "Turning designs into accessible, polished interfaces. Focusing on layout, motion, usability, and modern UI patterns that feel clear on every device.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -139,10 +139,10 @@ const Services = () => {
             <motion.div
               key={service.id}
               variants={itemVariants}
-              className={`group rounded-2xl p-6 sm:p-8 md:p-10 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-2 ${
+              className={`group rounded-2xl p-6 sm:p-8 md:p-10 transition-shadow duration-300 ${
                 mode
-                  ? "bg-gradient-to-br from-[#F0F7FB] to-[#E8F4F8] border border-[#E0EFF5] shadow-md hover:shadow-xl hover:shadow-[#9cd5ee]/20"
-                  : "bg-gradient-to-br from-[#2d2d2d] to-[#1f1f1f] border border-[#3a3a3a] shadow-md hover:shadow-xl hover:shadow-[#505C62]/30"
+                  ? "bg-[#F8FBFD] border border-[#E0EFF5] shadow-sm hover:shadow-md"
+                  : "bg-[#242424] border border-[#3a3a3a] shadow-sm hover:shadow-md"
               }`}
             >
               <div

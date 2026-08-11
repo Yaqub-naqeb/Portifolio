@@ -67,8 +67,9 @@ const About = () => {
                 className={`${
                   mode ? "" : "brightness-95"
                 } w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.01]`}
-                alt="Yaqwb Naqeb"
+                alt="Yaqwb Naqeb, Frontend Developer"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -82,17 +83,26 @@ const About = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="flex-1 max-w-2xl w-full space-y-6 sm:space-y-8"
         >
-          <h2 className="text-[#ADD6E8] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center lg:text-left leading-tight">
-            Hello!
-          </h2>
+          <h3 className="text-[#ADD6E8] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center lg:text-left leading-tight">
+            Hi, I'm Yaqwb.
+          </h3>
 
           <div className="space-y-5">
             <p className="text-[#ADD6E8] leading-8 sm:leading-9 text-base sm:text-lg md:text-xl">
-              I recently graduated from the University of Koya with a degree in
-              Software Engineering. I'm a Frontend Developer who loves web
-              development. After a year of exploring different areas in
-              software, I found my passion in creating websites. I'm now
-              comfortable with it and always excited to learn new things.
+              I'm a Frontend Developer based in Iraq / Kurdistan, with a
+              B.Sc. in Software Engineering from the University of Koya. I
+              build production web applications with React, Next.js, and
+              React Router — turning ideas into fast, responsive interfaces that
+              real users rely on.
+            </p>
+            <p className="text-[#ADD6E8] leading-8 sm:leading-9 text-base sm:text-lg md:text-xl">
+              I've built the frontend for products across e-commerce,
+              travel, and business communication — including{" "}
+              <span className="font-semibold">iZone</span>,{" "}
+              <span className="font-semibold">Botolon</span>, and{" "}
+              <span className="font-semibold">ErbilianWay</span>. I care
+              about clean architecture, accessible UI, and shipping work
+              that holds up in production, not just in a demo.
             </p>
           </div>
 

@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Yaqwb Naqeb",
+  "name": "Yaqwb Naqeb — Frontend Developer Portfolio",
+  "description": "Frontend Developer (React, Next.js, React Router) building production web products in Iraq / Kurdistan.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#9cd5ee",
+  "background_color": "#262626"
 }
