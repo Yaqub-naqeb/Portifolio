@@ -246,61 +246,41 @@ const Contacts = () => {
         </div>
       </div>
 
-      <footer className="max-w-4xl mx-auto pt-8 border-t border-[#404040] space-y-5">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div>
-            <p
-              className={`${
-                mode ? "text-[#2a2a2a]" : "text-[#ADD6E8]"
-              } font-semibold text-lg sm:text-xl`}
-            >
-              Yaqwb Naqeb
-            </p>
-            <p
-              className={`${
-                mode ? "text-[#4a4a4a]" : "text-[#9C9C9C]"
-              } text-sm sm:text-base`}
-            >
-              Frontend Developer (React · Next.js · React Router) — Iraq /
-              Kurdistan
-            </p>
-            <a
-              href="mailto:yaqub.009448401@gmail.com"
-              className={`${
-                mode
-                  ? "text-[#83c3de] hover:text-[#61b1d6]"
-                  : "text-[#ADD6E8] hover:text-[#9cd5ee]"
-              } text-sm sm:text-base transition-colors duration-300 underline underline-offset-4`}
-            >
-              yaqub.009448401@gmail.com
-            </a>
-          </div>
+      <footer
+        className={`max-w-4xl mx-auto pt-8 mt-4 border-t ${
+          mode ? "border-[#e5e7eb]" : "border-[#3a3a3a]"
+        }`}
+      >
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:items-center">
+          <p
+            className={`${
+              mode ? "text-[#6b7280]" : "text-[#9C9C9C]"
+            } text-sm`}
+          >
+            © {new Date().getFullYear()} Yaqwb Naqeb
+          </p>
 
-          <nav aria-label="Social links" className="flex flex-wrap items-center gap-x-3 gap-y-2">
-            {SOCIALS.map((social, i) => (
-              <React.Fragment key={social.label}>
-                {i > 0 && (
-                  <span className="text-[#9C9C9C]" aria-hidden="true">
-                    |
-                  </span>
-                )}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={social.href}
-                  className="text-[#9C9C9C] hover:text-[#42b3e4] transition-colors duration-300"
-                >
-                  {social.label}
-                </a>
-              </React.Fragment>
+          <nav
+            aria-label="Social links"
+            className="flex items-center gap-5"
+          >
+            {SOCIALS.map((social) => (
+              <a
+                key={social.label}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={social.href}
+                className={`${
+                  mode
+                    ? "text-[#6b7280] hover:text-[#2a2a2a]"
+                    : "text-[#9C9C9C] hover:text-[#ADD6E8]"
+                } text-sm transition-colors duration-300`}
+              >
+                {social.label}
+              </a>
             ))}
           </nav>
         </div>
-
-        <p className="text-[#9C9C9C] text-xs sm:text-sm">
-          &copy; {new Date().getFullYear()} Yaqwb Naqeb. Built with React,
-          Tailwind CSS &amp; Framer Motion.
-        </p>
       </footer>
     </div>
   );

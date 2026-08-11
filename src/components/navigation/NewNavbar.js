@@ -1,6 +1,5 @@
 import React, { useEffect, useId, useRef } from "react";
 import { HashLink } from "react-router-hash-link";
-import classNames from "classnames";
 
 import "../../App.css";
 
@@ -78,10 +77,9 @@ const Navbar = () => {
         }`}
       >
         <div
-          className={classNames(
-            `tham tham-e-squeeze md:tham-w-8 tham-w-5 sm:tham-w-6 lg:tham-w-8`,
-            { "tham-active": un }
-          )}
+          className={`tham tham-e-squeeze md:tham-w-8 tham-w-5 sm:tham-w-6 lg:tham-w-8${
+            un ? " tham-active" : ""
+          }`}
         >
           <div className="tham-box">
             <div

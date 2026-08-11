@@ -61,7 +61,7 @@ public/
   llms.txt         # plain-text AI/LLM-readable summary
   llms-full.txt      # extended AI/LLM-readable dossier
   robots.txt        # crawler rules (incl. AI crawlers) + sitemap pointer
-  sitemap.xml        # section-level sitemap
+  sitemap.xml        # sitemap
 src/
   components/
     route/Rout.js    # assembles the single-page scroll layout
@@ -72,7 +72,7 @@ src/
   pages/           # one component per section (About, Projects, Skills, ...)
 ```
 
-The site is a single-page scroll layout (`Home → About → Statistics → Services → Skills → Experience → Projects → FAQ → Contacts`) rendered by [`src/components/route/Rout.js`](src/components/route/Rout.js).
+The site is a single-page scroll layout (`Home → About → Services → Skills → Experience → Projects → Contacts`) rendered by [`src/components/route/Rout.js`](src/components/route/Rout.js).
 
 ### Deployment
 

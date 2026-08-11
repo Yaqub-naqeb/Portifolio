@@ -9,7 +9,6 @@ import NewNavbar from "../navigation/NewNavbar";
 import Contacts from "../../pages/Contacts";
 import BackToTop from "../BackToTop";
 import useTheme from "../store/useTheme";
-import "../../Scroll.css";
 
 const Rout = () => {
   const { mode } = useTheme();
