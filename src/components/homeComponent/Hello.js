@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import useTheme from "../store/useTheme";
-import pdf from "../../components/Yaqwb.pdf";
+import pdf from "../../components/YaqubNaqibFrontendDeveloperCV.pdf";
 
 const Hello = () => {
   const { mode } = useTheme();
@@ -37,7 +37,7 @@ const Hello = () => {
 
       <a
         href={pdf}
-        download="Yaqwb-Naqeb.pdf"
+        download="Yaqub-Naqib-Frontend-Developer-CV.pdf"
         className={`rounded inline-block ${
           mode
             ? "bg-[#83c3de] hover:bg-[#9ed3ea]"
