@@ -1,0 +1,20 @@
+/* TEAM */
+Name: Yaqub Naqib
+Role: Frontend Developer — React / TypeScript
+Location: Erbil, Kurdistan Region, Iraq
+Site: https://yaqwb.vercel.app/
+Email: yaqub.009448401@gmail.com
+Phone: +964 750 829 9544
+GitHub: https://github.com/Yaqub-naqeb
+LinkedIn: https://www.linkedin.com/in/yaqub-naqib-b9894b238/
+From: Iraq
+
+/* SITE */
+Last update: 2026-08-17
+Language: English
+Standards: HTML5, CSS3, JSON-LD, llms.txt
+Components: React, Tailwind CSS, Framer Motion
+Software: Visual Studio Code, Cursor
+Doctype: HTML5
+LLM files: /llm.txt, /llms.txt, /llms-full.txt
+CV: /YaqubNaqibFrontendDeveloperCV.md

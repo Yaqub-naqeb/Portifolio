@@ -1,7 +1,36 @@
 # https://www.robotstxt.org/robotstxt.html
-# yaqwb.vercel.app — Yaqwb Naqeb, Frontend Developer portfolio
+# https://yaqwb.vercel.app — Yaqub Naqib, Frontend Developer (React / TypeScript)
 
 User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /llm.txt
+Allow: /llms-full.txt
+Allow: /humans.txt
+Allow: /sitemap.xml
+Allow: /YaqubNaqibFrontendDeveloperCV.md
+Allow: /YaqubNaqibFrontendDeveloperCV.pdf
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
 Allow: /
 
 # AI / LLM crawlers — explicitly welcomed so assistants can read and cite this site
@@ -29,6 +58,12 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Gemini-Deep-Research
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
@@ -41,13 +76,58 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: Amazonbot
+Allow: /
+
 User-agent: Bytespider
 Allow: /
 
 User-agent: CCBot
 Allow: /
 
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
 User-agent: meta-externalagent
 Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+# Machine-readable identity for language models
+# https://llmstxt.org
+# /llm.txt  — short identity card
+# /llms.txt — structured summary
+# /llms-full.txt — full dossier matching the CV
 
 Sitemap: https://yaqwb.vercel.app/sitemap.xml

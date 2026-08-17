@@ -9,11 +9,13 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "B.Sc. Software Engineering",
-      company: "University of Koya",
-      period: "Graduated",
-      description:
-        "Completed a Software Engineering degree with a strong foundation in programming, web technologies, and modern software development practices — the base for everything that followed.",
+      title: "BSc Software Engineering",
+      company: "Koya University",
+      period: "Nov 2020 – May 2024",
+      meta: "Erbil, Iraq",
+      highlights: [
+        "Completed a Software Engineering degree with a foundation in programming, web technologies and modern software development practices.",
+      ],
       type: "education",
     },
     {
@@ -21,26 +23,40 @@ const Experience = () => {
       title: "Frontend Developer Intern",
       company: "Jiasaz for IT Services & Solutions",
       period: "Jun 2023 – Sep 2023",
-      description:
+      highlights: [
         "First professional role — worked on real client projects with the Jiasaz team, including the ErbilianWay travel site frontend. Strengthened problem-solving, teamwork, and delivery under real-world product constraints.",
+      ],
       type: "work",
     },
     {
       id: 3,
       title: "Frontend Developer",
       company: "Botolon",
-      period: "Nov 2023 – Apr 2024",
-      description:
-        "Contributed to Botolon’s chatbot platform for business–customer automation on Meta networks (Facebook, Instagram, Messenger). Focused on clean, responsive UI so teams could manage conversations and engage customers with ease.",
+      companyUrl: "https://www.botolon.com/",
+      period: "Nov 2023 – Apr 2025",
+      meta: "Contract, Remote · Erbil, Iraq",
+      highlights: [
+        "Engineered the web client for a chatbot automation platform serving 50+ business accounts, built with Next.js, Sass and the Meta Graph API.",
+        "Implemented a visual conversation-flow builder and analytics dashboard with drag-and-drop state management for multi-step automation sequences.",
+        "Established a shared component and layout library standardising forms, tables and modals across the product.",
+        "Sustained sub-100ms interaction latency under live message volume via list virtualisation, React memoisation and debounced API polling.",
+      ],
       type: "work",
     },
     {
       id: 4,
       title: "Frontend Developer",
-      company: "iZone",
-      period: "Apr 2024 – Present",
-      description:
-        "Building and maintaining the frontend for iZone’s Apple products platform in Iraq. Shipping responsive, high-performance interfaces with React Router and Tailwind — from product browsing and pricing to a polished experience across devices.",
+      company: "iZone Iraq",
+      companyUrl: "https://www.izoneiraq.com/",
+      period: "Mar 2025 – Present",
+      meta: "Full-time, On-site · Erbil, Iraq",
+      highlights: [
+        "Own the TypeScript frontend for a multi-brand commerce platform (iZone, OneStore, Apple Zone, Mantiqa, Strap Iraq) serving 15,000+ monthly users, built with React Router v7, server-side loaders and a Tailwind CSS design system shared across all five brands.",
+        "Ship English, Arabic and Kurdish with full RTL support and currency-aware catalogue pricing against a Laravel API, so one codebase serves every regional storefront without duplicated UI.",
+        "Reduced Largest Contentful Paint on catalogue and product routes from 3.8s to 1.4s with route-level code splitting, below-the-fold lazy loading and product-image preloading.",
+        "Built checkout and payments end-to-end: Mapbox address capture, wallet top-up and First Iraqi Bank QR payments with status polling, session recovery and full error-state coverage.",
+        "Delivered Digital Cards, IMEI device lookup, live FX rates and community Q&A on the same platform, gated by server-driven feature flags.",
+      ],
       type: "work",
     },
   ];
@@ -85,7 +101,6 @@ const Experience = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="relative"
         >
-          {/* Timeline line */}
           <div
             className={`absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 ${
               mode ? "bg-[#9cd5ee]" : "bg-[#505C62]"
@@ -93,13 +108,12 @@ const Experience = () => {
           />
 
           <div className="space-y-12 sm:space-y-16">
-            {experiences.map((exp, index) => (
-              <motion.div
+            {experiences.map((exp) => (
+              <motion.article
                 key={exp.id}
                 variants={itemVariants}
                 className="relative pl-12 sm:pl-20"
               >
-                {/* Timeline dot */}
                 <div
                   className={`absolute left-2 sm:left-6 top-2 w-4 h-4 sm:w-5 sm:h-5 rounded-full border-4 ${
                     mode
@@ -108,7 +122,6 @@ const Experience = () => {
                   } z-10`}
                 />
 
-                {/* Content card */}
                 <div
                   className={`rounded-2xl p-6 sm:p-8 transition-shadow duration-300 ${
                     mode
@@ -116,7 +129,7 @@ const Experience = () => {
                       : "bg-[#242424] border border-[#3a3a3a] shadow-sm hover:shadow-md"
                   }`}
                 >
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 gap-2">
                     <div>
                       <h3
                         className={`text-xl sm:text-2xl md:text-3xl font-bold mb-2 ${
@@ -130,11 +143,31 @@ const Experience = () => {
                           mode ? "text-[#83c3de]" : "text-[#ADD6E8]"
                         }`}
                       >
-                        {exp.company}
+                        {exp.companyUrl ? (
+                          <a
+                            href={exp.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:underline underline-offset-4"
+                          >
+                            {exp.company}
+                          </a>
+                        ) : (
+                          exp.company
+                        )}
                       </p>
+                      {exp.meta && (
+                        <p
+                          className={`text-sm sm:text-base mt-1 ${
+                            mode ? "text-[#6b7280]" : "text-[#9C9C9C]"
+                          }`}
+                        >
+                          {exp.meta}
+                        </p>
+                      )}
                     </div>
                     <span
-                      className={`px-4 py-2 rounded-full text-sm sm:text-base font-medium ${
+                      className={`px-4 py-2 rounded-full text-sm sm:text-base font-medium whitespace-nowrap self-start ${
                         exp.type === "work"
                           ? mode
                             ? "bg-[#E9EEFA] text-[#306CC4]"
@@ -147,15 +180,27 @@ const Experience = () => {
                       {exp.period}
                     </span>
                   </div>
-                  <p
-                    className={`text-base sm:text-lg leading-relaxed ${
-                      mode ? "text-[#4a4a4a]" : "text-[#d0d0d0]"
-                    }`}
-                  >
-                    {exp.description}
-                  </p>
+                  {exp.highlights.length === 1 ? (
+                    <p
+                      className={`text-base sm:text-lg leading-relaxed ${
+                        mode ? "text-[#4a4a4a]" : "text-[#d0d0d0]"
+                      }`}
+                    >
+                      {exp.highlights[0]}
+                    </p>
+                  ) : (
+                    <ul
+                      className={`text-base sm:text-lg leading-relaxed space-y-2 list-disc pl-5 ${
+                        mode ? "text-[#4a4a4a]" : "text-[#d0d0d0]"
+                      }`}
+                    >
+                      {exp.highlights.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-              </motion.div>
+              </motion.article>
             ))}
           </div>
         </motion.div>
@@ -165,4 +210,3 @@ const Experience = () => {
 };
 
 export default Experience;
-

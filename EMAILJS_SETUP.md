@@ -82,7 +82,7 @@ REACT_APP_EMAILJS_PUBLIC_KEY=abcdefghijklmnop
 
 1. Go back to your Email Template in EmailJS dashboard
 2. In the template settings, set:
-   - **To Email:** Your email address (Yaqwb.009448401@gmail.com)
+   - **To Email:** Your email address (yaqub.009448401@gmail.com)
    - **From Name:** Portfolio Contact Form
    - **Reply To:** {{from_email}} (this allows you to reply directly to the sender)
 

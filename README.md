@@ -1,32 +1,36 @@
-# Yaqwb Naqeb — Frontend Developer Portfolio
+# Yaqub Naqib — Frontend Developer Portfolio
 
 Live site: **[yaqwb.vercel.app](https://yaqwb.vercel.app/)**
 
-Portfolio of **Yaqwb Naqeb** (also spelled *Yaqub Naqeb*), a Frontend Developer based in Iraq / Kurdistan who builds production web applications with React, Next.js, and React Router. B.Sc. Software Engineering, University of Koya.
+Portfolio of **Yaqub Naqib** (also spelled *Yaqwb Naqeb*), a Frontend Developer in Erbil, Kurdistan Region, Iraq. 3+ years shipping production e-commerce and SaaS with React, TypeScript and React Router v7. BSc Software Engineering, Koya University.
 
-For a plain-text machine-readable summary (used by AI assistants and crawlers), see [`public/llms.txt`](public/llms.txt) and [`public/llms-full.txt`](public/llms-full.txt), or visit `/llms.txt` on the live site.
+Machine-readable files for crawlers and assistants:
+
+- [`/llm.txt`](https://yaqwb.vercel.app/llm.txt) — short identity card
+- [`/llms.txt`](https://yaqwb.vercel.app/llms.txt) — structured summary ([llmstxt.org](https://llmstxt.org))
+- [`/llms-full.txt`](https://yaqwb.vercel.app/llms-full.txt) — full dossier
+- [`/YaqubNaqibFrontendDeveloperCV.md`](https://yaqwb.vercel.app/YaqubNaqibFrontendDeveloperCV.md) — CV
 
 ## About
 
-Yaqwb builds the frontend for real, shipping products — e-commerce, travel, and business-communication platforms — with a focus on clean UI, solid performance, and modern React architecture. He's comfortable owning a frontend end-to-end: architecture, state management, and responsive, accessible interfaces.
+Yaqub owns the TypeScript frontend at **iZone Iraq** (15,000+ monthly users across five storefronts) and previously built the web client for **Botolon**. Selected work also includes **ErbilianWay**.
 
 **Services:** Web Development · UI/UX Implementation · Frontend Architecture · Performance Optimization
 
-## Shipped projects
+## Shipped work
 
 | Project | Live | Stack |
 |---|---|---|
-| **iZone** — Apple products platform for Iraq | [izoneiraq.com](https://www.izoneiraq.com/) | React Router, Laravel, Tailwind CSS |
-| **Botolon** — business chatbot / communication platform | [botolon.com](https://www.botolon.com/) | Next.js, Node.js, Sass |
-| **ErbilianWay** — travel company website | [erbiliantravel.com](https://erbiliantravel.com/) | Laravel, Bootstrap, Vue.js |
-| **LinkPlus** — professional networking platform | [link-plus.vercel.app](https://link-plus.vercel.app/) | Next.js, React, Redux Toolkit |
-| **AVIBOOKS** — book e-commerce platform | [avibooks.vercel.app](https://avibooks.vercel.app/) | React, Context API, Tailwind CSS |
+| **iZone Iraq** — multi-brand commerce (15,000+ monthly users) | [izoneiraq.com](https://www.izoneiraq.com/) | TypeScript, React Router v7, Tailwind, Laravel |
+| **Botolon** — chatbot platform (50+ business accounts) | [botolon.com](https://www.botolon.com/) | Next.js, Sass, Meta Graph API |
+| **ErbilianWay** — travel booking | [erbiliantravel.com](https://erbiliantravel.com/) | Vue.js, Bootstrap, Laravel |
 
 ## Contact
 
 - Email: [yaqub.009448401@gmail.com](mailto:yaqub.009448401@gmail.com)
+- Phone: [+964 750 829 9544](tel:+9647508299544)
 - GitHub: [github.com/Yaqub-naqeb](https://github.com/Yaqub-naqeb)
-- LinkedIn: [linkedin.com/in/yaqwb-naqib-b9894b238](https://www.linkedin.com/in/yaqwb-naqib-b9894b238/)
+- LinkedIn: [linkedin.com/in/yaqub-naqib-b9894b238](https://www.linkedin.com/in/yaqub-naqib-b9894b238/)
 - Facebook: [facebook.com/YaqubEng](https://www.facebook.com/YaqubEng)
 - Instagram: [instagram.com/Yaqub_321_](https://www.instagram.com/Yaqub_321_/)
 
@@ -57,12 +61,15 @@ npm test           # run the test runner
 
 ```
 public/
-  index.html      # metadata, Open Graph, JSON-LD structured data
-  llms.txt         # plain-text AI/LLM-readable summary
-  llms-full.txt      # extended AI/LLM-readable dossier
-  robots.txt        # crawler rules (incl. AI crawlers) + sitemap pointer
-  sitemap.xml        # sitemap
+  index.html      # metadata, Open Graph, JSON-LD, noscript CV for crawlers
+  llm.txt          # short AI identity card
+  llms.txt         # structured AI summary
+  llms-full.txt    # extended AI dossier
+  robots.txt       # crawler rules (search + AI) + sitemap
+  sitemap.xml      # homepage, LLM files, CV
+  humans.txt       # human-readable credits
 src/
+  data/profile.js  # name, links, contact — single source of truth
   components/
     route/Rout.js    # assembles the single-page scroll layout
     navigation/       # navbar

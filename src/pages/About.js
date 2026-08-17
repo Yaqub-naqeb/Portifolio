@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import xom from "../components/imgs/2023_05_09_18_00_IMG_8569.jfif";
 import My from "../components/My";
 import useTheme from "../components/store/useTheme";
+import { PROFILE } from "../data/profile";
 
 const About = () => {
   const { mode } = useTheme();
@@ -67,7 +68,7 @@ const About = () => {
                 className={`${
                   mode ? "" : "brightness-95"
                 } w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.01]`}
-                alt="Yaqwb Naqeb, Frontend Developer"
+                alt="Yaqub Naqib, Frontend Developer"
                 loading="lazy"
                 decoding="async"
               />
@@ -84,25 +85,24 @@ const About = () => {
           className="flex-1 max-w-2xl w-full space-y-6 sm:space-y-8"
         >
           <h3 className="text-[#ADD6E8] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center lg:text-left leading-tight">
-            Hi, I'm Yaqwb.
+            Hi, I'm Yaqub.
           </h3>
 
           <div className="space-y-5">
             <p className="text-[#ADD6E8] leading-8 sm:leading-9 text-base sm:text-lg md:text-xl">
-              I'm a Frontend Developer based in Iraq / Kurdistan, with a
-              B.Sc. in Software Engineering from the University of Koya. I
-              build production web applications with React, Next.js, and
-              React Router — turning ideas into fast, responsive interfaces that
-              real users rely on.
+              I'm a frontend developer based in Erbil. I specialize in React,
+              TypeScript, and React Router v7 — building e-commerce and SaaS
+              that hold up in production: trilingual RTL interfaces, Laravel
+              APIs, and payment integrations.
             </p>
             <p className="text-[#ADD6E8] leading-8 sm:leading-9 text-base sm:text-lg md:text-xl">
-              I've built the frontend for products across e-commerce,
-              travel, and business communication — including{" "}
-              <span className="font-semibold">iZone</span>,{" "}
-              <span className="font-semibold">Botolon</span>, and{" "}
-              <span className="font-semibold">ErbilianWay</span>. I care
-              about clean architecture, accessible UI, and shipping work
-              that holds up in production, not just in a demo.
+              I currently own the frontend at{" "}
+              <span className="font-semibold">iZone Iraq</span>, serving 15k+
+              monthly users across five storefronts. Before that I built{" "}
+              <span className="font-semibold">Botolon</span> and{" "}
+              <span className="font-semibold">ErbilianWay</span>. I care about
+              clean architecture, accessible UI, and shipping work people can
+              rely on.
             </p>
           </div>
 
@@ -117,14 +117,14 @@ const About = () => {
               <p className="text-base sm:text-lg md:text-xl">
                 Shoot an email to{" "}
                 <a
-                  href="mailto:yaqub.009448401@gmail.com"
+                  href={`mailto:${PROFILE.email}`}
                   className={`${
                     mode
                       ? "text-[#83c3de] hover:text-[#61b1d6]"
                       : "text-[#ADD6E8] hover:text-[#9cd5ee]"
                   } transition-colors duration-300 underline decoration-2 underline-offset-4 font-medium`}
                 >
-                  yaqub.009448401@gmail.com
+                  {PROFILE.email}
                 </a>
               </p>
             </div>

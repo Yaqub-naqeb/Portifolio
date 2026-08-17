@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import useTheme from "../store/useTheme";
-import pdf from "../../components/YaqubNaqibFrontendDeveloperCV.pdf";
+import { PROFILE } from "../../data/profile";
 
 const Hello = () => {
   const { mode } = useTheme();
@@ -27,17 +27,21 @@ const Hello = () => {
           transition={{ duration: 1 }}
           className={`absolute bottom-1/3 md:bottom-1/4 text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] imYaqwb mobile-spacing font-normal text-[#548aa4]`}
         >
-          I'm Yaqwb
+          I'm {PROFILE.firstName}
+          <span className="sr-only">
+            {" "}
+            {PROFILE.lastName}, {PROFILE.headline} in {PROFILE.location}
+          </span>
         </motion.h1>
 
         <motion.p className="text-[#9C9C9C] text-[0.9rem] sm:text-[1.2rem] md:text-[1.5rem] translate-y-[-1.5rem] sm:translate-y-[-1.8rem] mobile-frontend-spacing">
-          Front-End Developer
+          {PROFILE.role}
         </motion.p>
       </div>
 
       <a
-        href={pdf}
-        download="Yaqub-Naqib-Frontend-Developer-CV.pdf"
+        href={PROFILE.cvPath}
+        download={PROFILE.cvDownloadName}
         className={`rounded inline-block ${
           mode
             ? "bg-[#83c3de] hover:bg-[#9ed3ea]"

@@ -2,13 +2,7 @@ import React, { useState, useRef } from "react";
 import "../App.css";
 import useTheme from "../components/store/useTheme";
 import emailjs from "@emailjs/browser";
-
-const SOCIALS = [
-  { label: "Facebook", href: "https://www.facebook.com/YaqubEng" },
-  { label: "Instagram", href: "https://www.instagram.com/Yaqub_321_/" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/yaqwb-naqib-b9894b238/" },
-  { label: "GitHub", href: "https://github.com/Yaqub-naqeb" },
-];
+import { PROFILE, SOCIALS } from "../data/profile";
 
 const Contacts = () => {
   const { mode } = useTheme();
@@ -61,7 +55,7 @@ const Contacts = () => {
         const body = encodeURIComponent(
           `Email: ${formData.from_email}\n\nMessage:\n${formData.message}`
         );
-        window.location.href = `mailto:yaqub.009448401@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:${PROFILE.email}?subject=${subject}&body=${body}`;
         // Mailto opens the user's mail client — don't claim the message was sent
         setSubmitStatus("mailto");
       }
@@ -94,9 +88,28 @@ const Contacts = () => {
               mode ? "text-[#4a4a4a]" : "text-[#9C9C9C]"
             } text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto`}
           >
-            I'm a frontend developer building modern websites that help
-            businesses succeed. Let's bring your ideas to life!
+            Frontend Developer in Erbil — React, TypeScript, React Router v7.
+            Open to freelance work, collaborations, and full-time roles.
           </p>
+          <address
+            className={`${
+              mode ? "text-[#4a4a4a]" : "text-[#9C9C9C]"
+            } not-italic text-sm sm:text-base mt-4 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-2 sm:gap-x-5 sm:gap-y-2`}
+          >
+            <a
+              href={`mailto:${PROFILE.email}`}
+              className="underline underline-offset-4 hover:opacity-80"
+            >
+              {PROFILE.email}
+            </a>
+            <a
+              href={PROFILE.phoneHref}
+              className="underline underline-offset-4 hover:opacity-80"
+            >
+              {PROFILE.phone}
+            </a>
+            <span>{PROFILE.location}</span>
+          </address>
         </div>
 
         <div
@@ -211,10 +224,10 @@ const Contacts = () => {
                     Your email app should open with the message ready — hit send
                     there to finish. Or email me directly at{" "}
                     <a
-                      href="mailto:yaqub.009448401@gmail.com"
+                      href={`mailto:${PROFILE.email}`}
                       className="underline hover:opacity-80"
                     >
-                      yaqub.009448401@gmail.com
+                      {PROFILE.email}
                     </a>
                     .
                   </p>
@@ -233,10 +246,10 @@ const Contacts = () => {
                     Something went wrong. Please try again or email me directly
                     at{" "}
                     <a
-                      href="mailto:yaqub.009448401@gmail.com"
+                      href={`mailto:${PROFILE.email}`}
                       className="underline hover:opacity-80"
                     >
-                      yaqub.009448401@gmail.com
+                      {PROFILE.email}
                     </a>
                   </p>
                 </div>
@@ -257,7 +270,7 @@ const Contacts = () => {
               mode ? "text-[#6b7280]" : "text-[#9C9C9C]"
             } text-sm`}
           >
-            © {new Date().getFullYear()} Yaqwb Naqeb
+            © {new Date().getFullYear()} {PROFILE.name}
           </p>
 
           <nav

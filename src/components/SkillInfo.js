@@ -2,6 +2,7 @@ import html from './svg/html.svg'
 import css from './svg/css.svg'
 import sass from './imgs/skills/5968550.png'
 import javaScript from './svg/js.svg'
+import typescript from './svg/typescript.svg'
 import react from './svg/reactsvg.svg'
 import redux from './svg/redaaxxx.svg'
 import git from './svg/gitfinal.svg'
@@ -49,6 +50,11 @@ export const SkillInfo=[{
         id:'6',
         name:'JavaScript',
         img: javaScript
+    },
+    {
+        id:'6.5',
+        name:'TypeScript',
+        img: typescript
     },
     {
         id:'7',

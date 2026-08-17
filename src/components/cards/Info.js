@@ -1,20 +1,21 @@
 export const Info = [
   {
     id: "1",
-    title: "iZone",
+    title: "iZone Iraq",
     img: require("../imgs/prjs/Screenshot 2024-07-07 at 11.52.00 PM.png"),
     num: "01",
     code: false,
     style: "hid",
     tools: [
-      { tool: "React Router" },
-      { tool: "Laravel" },
+      { tool: "TypeScript" },
+      { tool: "React Router v7" },
       { tool: "Tailwind CSS" },
+      { tool: "Laravel" },
     ],
     demo: "https://www.izoneiraq.com/",
     description: [
       {
-        p: `iZone is a modern platform for Apple products in Iraq. Built with React Router and Tailwind CSS, it offers the newest product prices, smooth browsing, fast performance, and a fully responsive experience across all devices. The platform makes it easy to explore and buy the latest Apple products with many helpful features.`,
+        p: `Multi-brand commerce platform (iZone, OneStore, Apple Zone, Mantiqa, Strap Iraq) serving 15,000+ monthly users. I own the TypeScript frontend — React Router v7 with SSR loaders, a shared Tailwind design system, English/Arabic/Kurdish RTL, Laravel API integration, checkout and First Iraqi Bank QR payments, and LCP reduced from 3.8s to 1.4s.`,
       },
     ],
   },
@@ -25,11 +26,15 @@ export const Info = [
     num: "02",
     code: false,
     style: "hid",
-    tools: [{ tool: "Next.js" }, { tool: "Node.js" }, { tool: "Sass" }],
+    tools: [
+      { tool: "Next.js" },
+      { tool: "Sass" },
+      { tool: "Meta Graph API" },
+    ],
     demo: "https://www.botolon.com/",
     description: [
       {
-        p: "Botolon is an innovative chatbot platform that connects businesses with customers through intelligent automation. As a frontend developer, I contributed to building a responsive, user-friendly interface that enables seamless communication and enhances customer engagement.",
+        p: "Web client for a chatbot automation platform serving 50+ business accounts. I built a visual conversation-flow builder, analytics dashboard, and shared component library, and kept interaction latency under 100ms with list virtualisation, memoisation and debounced polling against the Meta Graph API.",
       },
     ],
   },
@@ -40,43 +45,11 @@ export const Info = [
     num: "03",
     code: false,
     style: "flex-row-reverse hid",
-    tools: [{ tool: "Laravel" }, { tool: "Bootstrap" }, { tool: "Vue.js" }],
+    tools: [{ tool: "Vue.js" }, { tool: "Bootstrap" }, { tool: "Laravel" }],
     demo: "https://erbiliantravel.com/",
     description: [
       {
-        p: "Erbilian Way is a leading travel company established in 2016, specializing in premium travel services. I developed the frontend of their website, creating an engaging and informative platform that showcases their extensive travel offerings and enhances customer experience.",
-      },
-    ],
-  },
-  // {
-  //   id: "4",
-  //   title: "LinkPlus",
-  //   img: require("../imgs/prjs/Screenshot (12).png"),
-  //   num: "04",
-  //   code: true,
-  //   style: "",
-  //   tools: [{ tool: "Next.js" }, { tool: "React" }, { tool: "Redux Toolkit" }],
-  //   url: "https://github.com/Yaqub-naqeb/LinkPlus",
-  //   demo: "https://link-plus.vercel.app/",
-  //   description: [
-  //     {
-  //       p: "LinkPlus is a professional networking platform that connects professionals and businesses. Built with Next.js and Redux Toolkit, it provides a modern interface for job seekers and employers to network, share opportunities, and build meaningful professional connections.",
-  //     },
-  //   ],
-  // },
-  {
-    id: "4",
-    title: "AVIBOOKS",
-    img: require("../imgs/prjs/Screenshot (39).png"),
-    num: "04",
-    code: true,
-    style: "",
-    tools: [{ tool: "React" }, { tool: "Context API" }, { tool: "Tailwind CSS" }],
-    url: "https://github.com/Yaqub-naqeb/AviBooks",
-    demo: "https://avibooks.vercel.app/",
-    description: [
-      {
-        p: "AVIBOOKS is an e-commerce platform for book enthusiasts, offering a curated selection of books with an intuitive browsing experience. The platform features a clean design, easy navigation, and includes a selection of free books to enhance user engagement.",
+        p: "Travel booking platform for an Erbil tour operator. I built the responsive frontend and booking-enquiry flow against a Laravel API so visitors can explore trips and send enquiries from any device.",
       },
     ],
   },

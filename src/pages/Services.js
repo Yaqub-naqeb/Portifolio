@@ -11,7 +11,7 @@ const Services = () => {
       id: 1,
       title: "Web Development",
       description:
-        "Building responsive, modern websites using React, Next.js, and the latest web technologies. Creating fast, scalable, and user-friendly web applications.",
+        "Building production storefronts and SaaS with React, TypeScript, React Router v7 and Next.js — SSR loaders, RTL, payments and APIs that hold up on real traffic.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const Services = () => {
       id: 4,
       title: "Performance Optimization",
       description:
-        "Optimizing websites for speed and performance. Implementing best practices for loading times, code splitting, lazy loading, and overall user experience improvements.",
+        "Cutting load time on real catalogue and product routes — route-level code splitting, lazy loading, image preloading. At iZone, LCP dropped from 3.8s to 1.4s.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"

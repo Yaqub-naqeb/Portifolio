@@ -4,6 +4,7 @@ import Insta from "../../components/imgs/instagram.png";
 import LinkedIn from "../../components/imgs/linkedin (1).png";
 import GitHub from "../../components/imgs/github.png";
 import useTheme from "../store/useTheme";
+import { PROFILE } from "../../data/profile";
 
 const Rectangular = () => {
   const { mode } = useTheme();
@@ -20,7 +21,7 @@ const Rectangular = () => {
         target={"_blank"}
         aria-label="Facebook"
         rel="noreferrer"
-        href="https://www.facebook.com/YaqubEng"
+        href={PROFILE.facebook}
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
@@ -37,7 +38,7 @@ const Rectangular = () => {
         target={"_blank"}
         aria-label="Instagram"
         rel="noreferrer"
-        href="https://www.instagram.com/Yaqub_321_/"
+        href={PROFILE.instagram}
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
@@ -54,7 +55,7 @@ const Rectangular = () => {
         target={"_blank"}
         rel="noreferrer"
         aria-label="LinkedIn"
-        href="https://www.linkedin.com/in/yaqwb-naqib-b9894b238/"
+        href={PROFILE.linkedin}
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
@@ -68,7 +69,7 @@ const Rectangular = () => {
       </a>
 
       <a
-        href="https://github.com/Yaqub-naqeb"
+        href={PROFILE.github}
         aria-label="GitHub"
         target={"_blank"}
         className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
