@@ -1,4 +1,4 @@
-# https://yaqwb.vercel.app — Yaqub Naqeb, frontend developer in Erbil
+# https://yaqwb.vercel.app — Yaqub Naqib, frontend developer in Erbil
 
 User-agent: *
 Allow: /

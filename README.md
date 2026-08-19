@@ -1,8 +1,8 @@
-# Yaqub Naqeb — Frontend Developer Portfolio
+# Yaqub Naqib — Frontend Developer Portfolio
 
 Live site: **[yaqwb.vercel.app](https://yaqwb.vercel.app/)**
 
-Portfolio of **Yaqub Naqeb**, a frontend developer in Erbil, Kurdistan Region, Iraq. Production web apps with React, TypeScript, Remix, and Next.js. BSc Software Engineering, Koya University.
+Portfolio of **Yaqub Naqib**, a frontend developer in Erbil, Kurdistan Region, Iraq. Production web apps with React, TypeScript, Remix, and Next.js. BSc Software Engineering, Koya University.
 
 ## About
 
@@ -26,16 +26,17 @@ Yaqub owns the TypeScript frontend at **iZone Iraq** and previously built **Boto
 
 ## Running this project
 
-Create React App + Tailwind CSS + Framer Motion. Contact form: [EmailJS](https://www.emailjs.com/) — see [`EMAILJS_SETUP.md`](EMAILJS_SETUP.md).
+Next.js App Router (statically generated homepage) + Tailwind CSS + Framer Motion on interactive islands. Contact form: [EmailJS](https://www.emailjs.com/) — see [`EMAILJS_SETUP.md`](EMAILJS_SETUP.md).
 
 Node.js 18+.
 
 ```bash
 npm install
-npm start          # http://localhost:3000
+npm run dev        # http://localhost:3000
 npm run build
+npm start          # production server
 ```
 
 Single-page layout: Home → About → Services → Skills → Experience → Projects → Contacts.
 
-Crawler files: [`public/llms.txt`](public/llms.txt), [`public/robots.txt`](public/robots.txt), [`public/sitemap.xml`](public/sitemap.xml).
+Crawler files: [`public/llms.txt`](public/llms.txt), `/robots.txt`, `/sitemap.xml`.

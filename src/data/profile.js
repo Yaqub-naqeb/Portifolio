@@ -1,11 +1,11 @@
 export const PROFILE = {
-  name: "Yaqub Naqeb",
+  name: "Yaqub Naqib",
   firstName: "Yaqub",
-  lastName: "Naqeb",
+  lastName: "Naqib",
   role: "Frontend Developer",
   headline: "Frontend Developer in Erbil",
   summary:
-    "Yaqub Naqeb is a frontend developer based in Erbil, Kurdistan Region, Iraq. He builds production web applications with React, TypeScript, Remix, and Next.js.",
+    "Yaqub Naqib is a frontend developer based in Erbil, Kurdistan Region, Iraq. He builds production web applications with React, TypeScript, Remix, and Next.js.",
   location: "Erbil, Kurdistan Region, Iraq",
   email: "yaqub.nq@gmail.com",
   phone: "+964 750 829 9544",
@@ -16,7 +16,7 @@ export const PROFILE = {
   facebook: "https://www.facebook.com/YaqubEng",
   instagram: "https://www.instagram.com/Yaqub_321_/",
   cvPath: "/YaqubNaqibFrontendDeveloperCV.pdf",
-  cvDownloadName: "Yaqub-Naqeb-Frontend-Developer-CV.pdf",
+  cvDownloadName: "Yaqub-Naqib-Frontend-Developer-CV.pdf",
   education: {
     degree: "BSc Software Engineering",
     school: "Koya University",

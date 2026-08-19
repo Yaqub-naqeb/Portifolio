@@ -61,16 +61,16 @@ This email was sent from your portfolio contact form.
 2. Add these three lines with your actual values:
 
 ```env
-REACT_APP_EMAILJS_SERVICE_ID=your_service_id_here
-REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id_here
-REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key_here
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
 ```
 
 **Example:**
 ```env
-REACT_APP_EMAILJS_SERVICE_ID=service_abc123
-REACT_APP_EMAILJS_TEMPLATE_ID=template_xyz789
-REACT_APP_EMAILJS_PUBLIC_KEY=abcdefghijklmnop
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_abc123
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_xyz789
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=abcdefghijklmnop
 ```
 
 3. **Important:** 
@@ -90,7 +90,7 @@ REACT_APP_EMAILJS_PUBLIC_KEY=abcdefghijklmnop
 
 1. Restart your development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 2. Go to your contact form and submit a test message

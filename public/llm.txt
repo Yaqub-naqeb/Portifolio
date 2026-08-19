@@ -1,6 +1,6 @@
-# Yaqub Naqeb
+# Yaqub Naqib
 
-Yaqub Naqeb is a frontend developer in Erbil, Kurdistan Region, Iraq.
+Yaqub Naqib is a frontend developer in Erbil, Kurdistan Region, Iraq.
 React, TypeScript, Remix, Next.js.
 
 https://yaqwb.vercel.app/

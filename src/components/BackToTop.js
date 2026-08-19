@@ -1,25 +1,18 @@
-import React, { useState, useEffect } from "react";
-import useTheme from "./store/useTheme";
+"use client";
+
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const BackToTop = () => {
-  const { mode } = useTheme();
+export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.pageYOffset > 300);
     };
 
     window.addEventListener("scroll", toggleVisibility, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
@@ -38,11 +31,7 @@ const BackToTop = () => {
           exit={{ opacity: 0, scale: 0 }}
           onClick={scrollToTop}
           aria-label="Back to top"
-          className={`fixed bottom-8 right-8 z-20 p-3 sm:p-4 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg ${
-            mode
-              ? "bg-[#83c3de] hover:bg-[#61b1d6] text-white"
-              : "bg-[#ADD6E8] hover:bg-[#9cd5ee] text-[#262626]"
-          }`}
+          className="fixed bottom-8 right-8 z-20 p-3 sm:p-4 rounded-full transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg bg-[#83c3de] hover:bg-[#61b1d6] text-white dark:bg-[#ADD6E8] dark:hover:bg-[#9cd5ee] dark:text-[#262626]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +40,7 @@ const BackToTop = () => {
             strokeWidth={2.5}
             stroke="currentColor"
             className="w-6 h-6 sm:w-7 sm:h-7"
+            aria-hidden="true"
           >
             <path
               strokeLinecap="round"
@@ -62,7 +52,4 @@ const BackToTop = () => {
       )}
     </AnimatePresence>
   );
-};
-
-export default BackToTop;
-
+}

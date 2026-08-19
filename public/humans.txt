@@ -1,5 +1,5 @@
 /* TEAM */
-Name: Yaqub Naqeb
+Name: Yaqub Naqib
 Role: Frontend Developer
 Location: Erbil, Kurdistan Region, Iraq
 Site: https://yaqwb.vercel.app/

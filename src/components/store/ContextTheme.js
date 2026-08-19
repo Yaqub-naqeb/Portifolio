@@ -1,19 +1,25 @@
-import React, { createContext, useEffect, useReducer } from "react";
+"use client";
+
+import { createContext, useEffect, useReducer } from "react";
 
 export const themeContext = createContext();
 
-const STORAGE_KEY = "yaqwb-theme-mode";
+export const THEME_STORAGE_KEY = "yaqwb-theme-mode";
 
-const getInitialMode = () => {
-  if (typeof window === "undefined") return false;
+const isLightFromDom = () =>
+  typeof document === "undefined" ||
+  !document.documentElement.classList.contains("dark");
+
+const applyTheme = (isLight) => {
+  document.documentElement.classList.toggle("dark", !isLight);
+  document.documentElement.classList.toggle("dark-scrollbar", !isLight);
+  document.body.classList.toggle("dark-scrollbar", !isLight);
+  document.documentElement.style.colorScheme = isLight ? "light" : "dark";
   try {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (stored === "light") return true;
-    if (stored === "dark") return false;
+    window.localStorage.setItem(THEME_STORAGE_KEY, isLight ? "light" : "dark");
   } catch {
-    // ignore storage errors
+    // ignore
   }
-  return window.matchMedia("(prefers-color-scheme: light)").matches;
 };
 
 const themeReducer = (state, action) => {
@@ -27,22 +33,19 @@ const themeReducer = (state, action) => {
   }
 };
 
-export function ContextTheme(props) {
+export function ThemeProvider({ children }) {
   const [state, dispatch] = useReducer(themeReducer, {
-    mode: getInitialMode(),
+    mode: true,
     un: false,
   });
 
   useEffect(() => {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, state.mode ? "light" : "dark");
-    } catch {
-      // ignore storage errors
-    }
-  }, [state.mode]);
+    dispatch({ type: "CHANGE_MODE", payload: isLightFromDom() });
+  }, []);
 
-  const changeMode = (mode) => {
-    dispatch({ type: "CHANGE_MODE", payload: mode });
+  const changeMode = (isLight) => {
+    applyTheme(isLight);
+    dispatch({ type: "CHANGE_MODE", payload: isLight });
   };
 
   const Under = (un) => {
@@ -51,7 +54,7 @@ export function ContextTheme(props) {
 
   return (
     <themeContext.Provider value={{ ...state, changeMode, Under }}>
-      {props.children}
+      {children}
     </themeContext.Provider>
   );
 }

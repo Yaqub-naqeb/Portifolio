@@ -1,8 +1,8 @@
-# Yaqub Naqeb
+# Yaqub Naqib
 
 > Frontend developer based in Erbil, Kurdistan Region, Iraq. Builds production web applications with React, TypeScript, Remix, and Next.js.
 
-- Name: Yaqub Naqeb
+- Name: Yaqub Naqib
 - Role: Frontend Developer
 - Location: Erbil, Kurdistan Region, Iraq
 - Portfolio: https://yaqwb.vercel.app/

@@ -1,19 +1,17 @@
-import React, { useEffect, useId, useRef } from "react";
-import { HashLink } from "react-router-hash-link";
+"use client";
 
-import "../../App.css";
-
-import { motion, AnimatePresence } from "framer-motion";
-import useTheme from "../../components/store/useTheme";
+import { useEffect, useId, useRef } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import useTheme from "@/components/store/useTheme";
 
 const NAV_LINKS = [
-  { to: "#home", label: "Home" },
-  { to: "#about", label: "About" },
-  { to: "#services", label: "Services" },
-  { to: "#skills", label: "Skills" },
-  { to: "#experience", label: "Experience" },
-  { to: "#projects", label: "Projects" },
-  { to: "#contacts", label: "Contacts" },
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#services", label: "Services" },
+  { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contacts", label: "Contact" },
 ];
 
 const panelVariants = {
@@ -29,17 +27,13 @@ const panelVariants = {
   },
 };
 
-const Navbar = () => {
-  const { un, Under, mode } = useTheme();
+export default function Navbar() {
+  const { un, Under } = useTheme();
   const menuId = useId();
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    if (un) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = un ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
@@ -48,8 +42,8 @@ const Navbar = () => {
   useEffect(() => {
     if (!un) return;
 
-    const onKeyDown = (e) => {
-      if (e.key === "Escape") {
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") {
         Under(false);
         buttonRef.current?.focus();
       }
@@ -60,9 +54,7 @@ const Navbar = () => {
   }, [un, Under]);
 
   return (
-    <div
-      className={`fixed right-0 ${un ? "w-[90vw]" : "w-fit"} h-[100vh] z-30`}
-    >
+    <header>
       <button
         ref={buttonRef}
         type="button"
@@ -70,27 +62,17 @@ const Navbar = () => {
         aria-expanded={un}
         aria-controls={menuId}
         onClick={() => Under(!un)}
-        className={`fixed z-40 right-4 sm:right-6 md:right-8 top-4 sm:top-6 md:top-8 rounded-lg p-1.5 sm:p-2 md:p-2.5 transition-all duration-300 backdrop-blur-sm ${
-          mode
-            ? "bg-[#9cd5ee64] hover:bg-[#9cd5ee80]"
-            : "bg-[#505C62] hover:bg-[#505C6290]"
-        }`}
+        className="fixed z-40 right-4 sm:right-6 md:right-8 top-4 sm:top-6 md:top-8 rounded-lg p-2 sm:p-2.5 md:p-3 min-w-11 min-h-11 flex items-center justify-center transition-colors duration-300 backdrop-blur-sm bg-[#9cd5ee64] hover:bg-[#9cd5ee80] dark:bg-[#505C62] dark:hover:bg-[#505C6290]"
       >
         <div
-          className={`tham tham-e-squeeze md:tham-w-8 tham-w-5 sm:tham-w-6 lg:tham-w-8${
+          className={`tham tham-e-squeeze tham-w-5 sm:tham-w-6 md:tham-w-8${
             un ? " tham-active" : ""
           }`}
         >
           <div className="tham-box">
             <div
               className={`tham-inner ${
-                mode
-                  ? un
-                    ? "bg-[#fffb]"
-                    : "bg-[#55a2c5e6]"
-                  : un
-                    ? "bg-[#fffb]"
-                    : "bg-[#add6e8c5]"
+                un ? "bg-[#fffb]" : "bg-[#55a2c5e6] dark:bg-[#add6e8c5]"
               }`}
             />
           </div>
@@ -99,57 +81,44 @@ const Navbar = () => {
 
       <AnimatePresence>
         {un && (
-          <>
+          <div className="fixed inset-0 z-30">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className={`${
-                mode
-                  ? "bg-[#e4e4e480] backdrop-blur-[0.1rem]"
-                  : "bg-[#53525247] backdrop-blur-[0.2rem]"
-              } top-0 right-0 h-[100vh] w-[100vw] absolute`}
+              className="absolute inset-0 bg-[#e4e4e480] backdrop-blur-[0.1rem] dark:bg-[#53525247] dark:backdrop-blur-[0.2rem]"
               onClick={() => Under(false)}
               aria-hidden="true"
             />
             <motion.nav
               id={menuId}
-              role="navigation"
               aria-label="Primary"
               initial="closed"
               animate="open"
               exit="closed"
               variants={panelVariants}
+              className="absolute inset-y-0 right-0 h-full w-full md:w-[45%] lg:w-[35%]"
             >
-              <ul
-                className={`${
-                  mode ? "bg-[#92cae2] " : "bg-[#2d2d2ddf] "
-                } overflow-hidden fixed right-0 lg:pl-5 md:pl-5 h-[100vh] lg:w-[35%] md:w-[45%] w-screen flex flex-col py-[8rem] gap-[2rem]`}
-              >
-                {NAV_LINKS.map(({ to, label }) => (
+              <ul className="h-full w-full overflow-y-auto bg-[#92cae2] dark:bg-[#2d2d2ddf] flex flex-col justify-center md:justify-start py-24 md:py-[8rem] gap-6 md:gap-8 px-6 md:pl-5">
+                {NAV_LINKS.map(({ href, label }) => (
                   <li
                     key={label}
-                    className={`${
-                      mode ? "dv" : "dvDark"
-                    } z-50 w-full rounded-md flex flex-col justify-evenly lg:items-start md:items-start items-center h-[3.5rem]`}
+                    className="dv w-full rounded-md flex items-center justify-center md:justify-start min-h-14"
                   >
-                    <HashLink
-                      to={to}
-                      smooth
+                    <a
+                      href={href}
                       onClick={() => Under(false)}
-                      className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl absolute list text-[#fff]"
+                      className="list relative text-3xl sm:text-4xl lg:text-5xl text-white py-2 w-full text-center md:text-left md:pl-5"
                     >
                       {label}
-                    </HashLink>
+                    </a>
                   </li>
                 ))}
               </ul>
             </motion.nav>
-          </>
+          </div>
         )}
       </AnimatePresence>
-    </div>
+    </header>
   );
-};
-
-export default Navbar;
+}

@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Skip to content — keyboard accessibility */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #83c3de;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 2px solid #2a2a2a;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom Scrollbar - Light Mode */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9cd5ee;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #83c3de;
+}
+
+/* Custom Scrollbar - Dark Mode */
+.dark-scrollbar::-webkit-scrollbar-track,
+html.dark-scrollbar ::-webkit-scrollbar-track,
+body.dark-scrollbar ::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb,
+html.dark-scrollbar ::-webkit-scrollbar-thumb,
+body.dark-scrollbar ::-webkit-scrollbar-thumb {
+  background: #505c62;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb:hover,
+html.dark-scrollbar ::-webkit-scrollbar-thumb:hover,
+body.dark-scrollbar ::-webkit-scrollbar-thumb:hover {
+  background: #6a7a80;
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9cd5ee #f1f1f1;
+}
+
+.dark-scrollbar,
+html.dark-scrollbar,
+body.dark-scrollbar {
+  scrollbar-color: #505c62 #1f1f1f;
+}
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Navbar hover effects */
+.dv {
+  position: relative;
+  cursor: pointer;
+  transition:
+    background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dv::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 3px;
+  height: 0;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  background-color: #42b3e4;
+}
+
+html.dark .dv::before {
+  background-color: #add6e8;
+}
+
+.list {
+  display: inline-block;
+  transition:
+    color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    letter-spacing 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dv:hover {
+  background-color: #ffffff40;
+  transform: translateX(0.35rem);
+}
+
+.dv:hover::before {
+  height: 55%;
+}
+
+.dv:hover .list {
+  color: #42b3e4db;
+  transform: translateX(0.4rem);
+  letter-spacing: 0.02em;
+}
+
+html.dark .dv:hover .list {
+  color: #add6e8;
+}
+
+/* Contact section gradient */
+.contact {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(173, 214, 232, 0.286) 0%
+  );
+  box-shadow: 0rem -1.5rem 1rem rgba(173, 214, 232, 0.281);
+}
+
+html.dark .contact {
+  background: #262626;
+  box-shadow: none;
+}
+
+/* Hero backgrounds — class names avoid colliding with Tailwind `dark:` */
+.hero-dark {
+  background-image: url("/images/hero-dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.hero-light {
+  background-image: url("/images/hero-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Skill icons: black in light mode, white in dark mode */
+.skill-icon {
+  filter: brightness(0) saturate(100%);
+}
+
+html.dark .skill-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Mobile optimizations */
+@media only screen and (max-width: 600px) {
+  .hero-light .hello {
+    color: #add6e8;
+  }
+
+  .hero-dark .hello {
+    color: #2a2a2a;
+  }
+
+  .hero-light .imYaqwb {
+    color: #548aa4;
+  }
+
+  .hero-dark .imYaqwb {
+    color: #548aa4;
+  }
+
+  .mobile-spacing {
+    bottom: calc(25% + 0.5rem) !important;
+  }
+
+  .mobile-frontend-spacing {
+    transform: translateY(-1.2rem) !important;
+  }
+
+  .writting > div {
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Tablet optimizations */
+@media only screen and (min-width: 768px) {
+  .hero-light .hello {
+    color: #aad3e6;
+  }
+
+  .hero-dark .hello {
+    color: #4a4a4adc;
+  }
+
+  .hero-light .imYaqwb {
+    color: #548aa4;
+  }
+
+  .hero-dark .imYaqwb {
+    color: #548aa4;
+  }
+}
