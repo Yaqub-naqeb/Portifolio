@@ -2,7 +2,7 @@
 
 Live site: **[yaqwb.vercel.app](https://yaqwb.vercel.app/)**
 
-Portfolio of **Yaqub Naqib**, a frontend developer in Erbil, Kurdistan Region, Iraq. Production web apps with React, TypeScript, Remix, and Next.js. BSc Software Engineering, Koya University.
+Portfolio of **Yaqub Naqib**, a frontend developer in Erbil, Kurdistan Region, Iraq. Open to freelance work, collaborations, and full-time roles.
 
 ## About
 

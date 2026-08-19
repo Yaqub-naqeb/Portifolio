@@ -1,17 +1,15 @@
 "use client";
 
-import useTheme from "@/components/store/useTheme";
+import useTheme from "@/components/theme/useTheme";
 
 export default function ThemeToggleButton() {
-  const { mode, changeMode } = useTheme();
+  const { isLight, toggleTheme } = useTheme();
 
   return (
     <button
       type="button"
-      onClick={() =>
-        changeMode(document.documentElement.classList.contains("dark"))
-      }
-      aria-label={mode ? "Switch to dark mode" : "Switch to light mode"}
+      onClick={toggleTheme}
+      aria-label={isLight ? "Switch to dark mode" : "Switch to light mode"}
       className="cursor-pointer rounded-lg p-2 sm:p-2.5 md:p-3 min-w-11 min-h-11 flex items-center justify-center transition-all duration-300 hover:scale-110 backdrop-blur-sm bg-[#9cd5ee64] hover:bg-[#9cd5ee80] dark:bg-[#505C62] dark:hover:bg-[#505C6290]"
     >
       <span className="flex items-center justify-center">

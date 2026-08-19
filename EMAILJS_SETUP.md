@@ -57,8 +57,7 @@ This email was sent from your portfolio contact form.
 
 ## Step 5: Configure Your Project
 
-1. In your project root folder, create a file named `.env` (if it doesn't exist)
-2. Add these three lines with your actual values:
+1. In your project root, copy `.env.example` to `.env` and add your EmailJS values:
 
 ```env
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
@@ -73,7 +72,7 @@ NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_xyz789
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=abcdefghijklmnop
 ```
 
-3. **Important:** 
+2. **Important:** 
    - Replace `your_service_id_here`, `your_template_id_here`, and `your_public_key_here` with your actual values
    - Do NOT use quotes around the values
    - Make sure there are no spaces around the `=` sign

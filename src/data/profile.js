@@ -5,7 +5,7 @@ export const PROFILE = {
   role: "Frontend Developer",
   headline: "Frontend Developer in Erbil",
   summary:
-    "Yaqub Naqib is a frontend developer based in Erbil, Kurdistan Region, Iraq. He builds production web applications with React, TypeScript, Remix, and Next.js.",
+    "I am a frontend developer based in Erbil, Kurdistan Region, Iraq. Open to freelance work, collaborations, and full-time roles.",
   location: "Erbil, Kurdistan Region, Iraq",
   email: "yaqub.nq@gmail.com",
   phone: "+964 750 829 9544",

@@ -1,6 +1,0 @@
-# https://yaqwb.vercel.app — Yaqub Naqib, frontend developer in Erbil
-
-User-agent: *
-Allow: /
-
-Sitemap: https://yaqwb.vercel.app/sitemap.xml

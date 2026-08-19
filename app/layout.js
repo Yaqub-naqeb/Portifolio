@@ -1,7 +1,7 @@
 import { Poppins } from "next/font/google";
 import { jsonLd } from "@/data/jsonLd";
 import { PROFILE } from "@/data/profile";
-import { ThemeProvider } from "@/components/store/ContextTheme";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -32,7 +32,7 @@ export const metadata = {
     siteName: PROFILE.name,
     locale: "en_US",
     title: `${PROFILE.name} | ${PROFILE.headline}`,
-    description: `${PROFILE.role} in ${PROFILE.location}. React, TypeScript, Remix, and Next.js.`,
+    description: PROFILE.summary,
     images: [
       {
         url: "/og-image.jpg",
@@ -47,7 +47,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${PROFILE.name} | ${PROFILE.headline}`,
-    description: `${PROFILE.role} in ${PROFILE.location}. React, TypeScript, Remix, and Next.js.`,
+    description: PROFILE.summary,
     images: ["/og-image.jpg"],
   },
   icons: {

@@ -1,4 +1,4 @@
-import My from "@/components/My";
+import SectionHeading from "@/components/heading/SectionHeading";
 import { EXPERIENCES } from "@/data/content";
 
 export default function Experience() {
@@ -7,7 +7,7 @@ export default function Experience() {
       id="experience"
       className="min-h-screen py-12 sm:py-16 md:py-20 relative bg-gradient-to-b from-[#F8FCFD] to-[#ffff] dark:bg-[#262626] dark:bg-none"
     >
-      <My name="Experience" bg_name="My Journey" />
+      <SectionHeading title="Experience" background="My Journey" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">

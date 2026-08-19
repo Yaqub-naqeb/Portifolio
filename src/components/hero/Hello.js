@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export default function HelloWord() {
+export default function Hello() {
   const reduceMotion = useReducedMotion();
 
   return (

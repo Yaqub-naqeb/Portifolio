@@ -13,10 +13,7 @@ export const jsonLd = {
       givenName: PROFILE.firstName,
       familyName: PROFILE.lastName,
       jobTitle: PROFILE.role,
-      description: PROFILE.summary.replace(
-        "builds production web applications with",
-        "specializes in"
-      ),
+      description: PROFILE.summary,
       url: PROFILE.portfolio,
       image: {
         "@type": "ImageObject",
@@ -52,11 +49,9 @@ export const jsonLd = {
         "Mapbox",
       ],
       sameAs: [PROFILE.github, PROFILE.linkedin, PROFILE.facebook, PROFILE.instagram],
-      workExample: [
-        { "@id": `${site}/#project-izone` },
-        { "@id": `${site}/#project-botolon` },
-        { "@id": `${site}/#project-erbilianway` },
-      ],
+      workExample: PROJECTS.map((project) => ({
+        "@id": `${site}/#${project.htmlId}`,
+      })),
     },
     {
       "@type": "WebSite",
@@ -81,47 +76,22 @@ export const jsonLd = {
       "@type": "ItemList",
       "@id": `${site}/#projects`,
       name: `Projects by ${PROFILE.name}`,
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@type": "SoftwareApplication",
-            "@id": `${site}/#project-izone`,
-            name: PROJECTS[0].title,
-            url: PROJECTS[0].demo,
-            applicationCategory: "BusinessApplication",
-            description: PROJECTS[0].description[0].p,
-            creator: { "@id": `${site}/#person` },
-          },
+      itemListElement: PROJECTS.map((project, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "SoftwareApplication",
+          "@id": `${site}/#${project.htmlId}`,
+          name: project.title,
+          url: project.demo,
+          applicationCategory:
+            project.id === "erbilianway"
+              ? "TravelApplication"
+              : "BusinessApplication",
+          description: project.description[0].p,
+          creator: { "@id": `${site}/#person` },
         },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@type": "SoftwareApplication",
-            "@id": `${site}/#project-botolon`,
-            name: PROJECTS[1].title,
-            url: PROJECTS[1].demo,
-            applicationCategory: "BusinessApplication",
-            description: PROJECTS[1].description[0].p,
-            creator: { "@id": `${site}/#person` },
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@type": "SoftwareApplication",
-            "@id": `${site}/#project-erbilianway`,
-            name: PROJECTS[2].title,
-            url: PROJECTS[2].demo,
-            applicationCategory: "TravelApplication",
-            description: PROJECTS[2].description[0].p,
-            creator: { "@id": `${site}/#person` },
-          },
-        },
-      ],
+      })),
     },
   ],
 };

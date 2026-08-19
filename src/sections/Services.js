@@ -1,4 +1,4 @@
-import My from "@/components/My";
+import SectionHeading from "@/components/heading/SectionHeading";
 
 const services = [
   {
@@ -101,7 +101,7 @@ export default function Services() {
       id="services"
       className="min-h-screen py-12 sm:py-16 md:py-20 relative bg-white dark:bg-[#262626]"
     >
-      <My name="Services" bg_name="What I Do" />
+      <SectionHeading title="Services" background="What I Do" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">

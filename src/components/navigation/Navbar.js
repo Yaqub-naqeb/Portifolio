@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useId, useRef } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import useTheme from "@/components/store/useTheme";
 
 const NAV_LINKS = [
   { href: "#home", label: "Home" },
@@ -28,51 +27,51 @@ const panelVariants = {
 };
 
 export default function Navbar() {
-  const { un, Under } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
   const menuId = useId();
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    document.body.style.overflow = un ? "hidden" : "";
+    document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [un]);
+  }, [menuOpen]);
 
   useEffect(() => {
-    if (!un) return;
+    if (!menuOpen) return;
 
     const onKeyDown = (event) => {
       if (event.key === "Escape") {
-        Under(false);
+        setMenuOpen(false);
         buttonRef.current?.focus();
       }
     };
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [un, Under]);
+  }, [menuOpen]);
 
   return (
     <header>
       <button
         ref={buttonRef}
         type="button"
-        aria-label={un ? "Close menu" : "Open menu"}
-        aria-expanded={un}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
         aria-controls={menuId}
-        onClick={() => Under(!un)}
+        onClick={() => setMenuOpen((open) => !open)}
         className="fixed z-40 right-4 sm:right-6 md:right-8 top-4 sm:top-6 md:top-8 rounded-lg p-2 sm:p-2.5 md:p-3 min-w-11 min-h-11 flex items-center justify-center transition-colors duration-300 backdrop-blur-sm bg-[#9cd5ee64] hover:bg-[#9cd5ee80] dark:bg-[#505C62] dark:hover:bg-[#505C6290]"
       >
         <div
           className={`tham tham-e-squeeze tham-w-5 sm:tham-w-6 md:tham-w-8${
-            un ? " tham-active" : ""
+            menuOpen ? " tham-active" : ""
           }`}
         >
           <div className="tham-box">
             <div
               className={`tham-inner ${
-                un ? "bg-[#fffb]" : "bg-[#55a2c5e6] dark:bg-[#add6e8c5]"
+                menuOpen ? "bg-[#fffb]" : "bg-[#55a2c5e6] dark:bg-[#add6e8c5]"
               }`}
             />
           </div>
@@ -80,14 +79,14 @@ export default function Navbar() {
       </button>
 
       <AnimatePresence>
-        {un && (
+        {menuOpen && (
           <div className="fixed inset-0 z-30">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="absolute inset-0 bg-[#e4e4e480] backdrop-blur-[0.1rem] dark:bg-[#53525247] dark:backdrop-blur-[0.2rem]"
-              onClick={() => Under(false)}
+              onClick={() => setMenuOpen(false)}
               aria-hidden="true"
             />
             <motion.nav
@@ -107,7 +106,7 @@ export default function Navbar() {
                   >
                     <a
                       href={href}
-                      onClick={() => Under(false)}
+                      onClick={() => setMenuOpen(false)}
                       className="list relative text-3xl sm:text-4xl lg:text-5xl text-white py-2 w-full text-center md:text-left md:pl-5"
                     >
                       {label}

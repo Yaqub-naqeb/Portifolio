@@ -1,5 +1,5 @@
 import Image from "next/image";
-import My from "@/components/My";
+import SectionHeading from "@/components/heading/SectionHeading";
 import { PROFILE } from "@/data/profile";
 
 export default function About() {
@@ -8,7 +8,7 @@ export default function About() {
       id="about"
       className="relative min-h-screen py-12 sm:py-16 md:py-20 w-full overflow-hidden bg-gradient-to-b from-[#F8FCFD] to-[#ffff] dark:bg-[#262626] dark:bg-none"
     >
-      <My name="Me" bg_name="About" label="About" />
+      <SectionHeading title="Me" background="About" label="About" />
 
       <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
         <div className="flex-shrink-0 w-full sm:w-auto flex justify-center">

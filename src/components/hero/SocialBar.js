@@ -23,7 +23,7 @@ const SOCIAL_ICONS = [
   },
 ];
 
-export default function Rectangular() {
+export default function SocialBar() {
   return (
     <div className="flex rounded-lg gap-2 sm:gap-2.5 px-2 sm:px-2.5 py-1.5 sm:py-2 transition-all duration-300 backdrop-blur-sm hover:scale-105 bg-[#9cd5ee64] hover:bg-[#9cd5ee80] dark:bg-[#505C62] dark:hover:bg-[#505C6290]">
       {SOCIAL_ICONS.map((social) => (

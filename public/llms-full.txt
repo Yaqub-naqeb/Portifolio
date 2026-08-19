@@ -1,6 +1,6 @@
 # Yaqub Naqib
 
-Yaqub Naqib is a frontend developer based in Erbil, Kurdistan Region, Iraq. He has 3+ years shipping production e-commerce and SaaS with React, TypeScript, Remix, and Next.js. BSc Software Engineering, Koya University (Nov 2020 – May 2024).
+Yaqub Naqib is a frontend developer based in Erbil, Kurdistan Region, Iraq. Open to freelance work, collaborations, and full-time roles.
 
 ## Identity
 
@@ -42,4 +42,4 @@ Client work including the ErbilianWay travel site frontend.
 
 ## Citation
 
-Yaqub Naqib is a frontend developer based in Erbil, Kurdistan Region, Iraq, specializing in React, TypeScript, Remix, and Next.js. Portfolio: https://yaqwb.vercel.app/
+Yaqub Naqib is a frontend developer based in Erbil, Kurdistan Region, Iraq. Open to freelance work, collaborations, and full-time roles. Portfolio: https://yaqwb.vercel.app/

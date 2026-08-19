@@ -1,7 +1,7 @@
 import { PROFILE } from "@/data/profile";
-import HelloWord from "@/components/homeComponent/HelloWord";
-import ThemeToggleButton from "@/components/homeComponent/ThemeToggleButton";
-import Rectangular from "@/components/homeComponent/Rectangular";
+import Hello from "@/components/hero/Hello";
+import ThemeToggleButton from "@/components/hero/ThemeToggleButton";
+import SocialBar from "@/components/hero/SocialBar";
 
 export default function Hero() {
   return (
@@ -20,12 +20,12 @@ export default function Hero() {
       <div className="relative z-10 w-full flex flex-col items-center justify-end lg:justify-center min-h-screen pb-24 sm:pb-28 md:pb-32 lg:pb-0 lg:-translate-y-8 lg:px-20 lg:items-start px-4 sm:px-6">
         <div className="writting flex flex-col items-center">
           <div className="flex flex-col items-center relative font-normal">
-            <HelloWord />
+            <Hello />
             <h1
               id="site-heading"
               className="absolute bottom-1/3 md:bottom-1/4 text-[1.15rem] min-[360px]:text-[1.35rem] sm:text-[1.85rem] md:text-[2.35rem] imYaqwb mobile-spacing font-normal text-[#548aa4] whitespace-nowrap"
             >
-              {PROFILE.name}
+              I&apos;m {PROFILE.firstName}
             </h1>
             <p className="text-[#9C9C9C] text-[0.85rem] sm:text-[1.1rem] md:text-[1.35rem] translate-y-[-1.5rem] sm:translate-y-[-1.8rem] mobile-frontend-spacing">
               {PROFILE.headline}
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute z-20 bottom-6 sm:bottom-8 md:bottom-12 lg:bottom-8 left-4 sm:left-6 md:left-8">
-        <Rectangular />
+        <SocialBar />
       </div>
     </section>
   );
