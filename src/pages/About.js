@@ -42,7 +42,7 @@ const About = () => {
           : "bg-[#262626] bg-gradient-to-b from-[#262626] to-[#262626]"
       }`}
     >
-      <My name={"Me"} bg_name={"About"} />
+      <My name={"Me"} bg_name={"About"} label="About" />
 
       {/* Content */}
       <div className="flex flex-col lg:flex-row-reverse items-center justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
@@ -68,7 +68,7 @@ const About = () => {
                 className={`${
                   mode ? "" : "brightness-95"
                 } w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.01]`}
-                alt="Yaqub Naqib, Frontend Developer"
+                alt="Yaqub Naqeb, frontend developer in Erbil"
                 loading="lazy"
                 decoding="async"
               />
@@ -84,25 +84,48 @@ const About = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="flex-1 max-w-2xl w-full space-y-6 sm:space-y-8"
         >
-          <h3 className="text-[#ADD6E8] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center lg:text-left leading-tight">
+          <p className="text-[#ADD6E8] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center lg:text-left leading-tight">
             Hi, I'm Yaqub.
-          </h3>
+          </p>
 
           <div className="space-y-5">
             <p className="text-[#ADD6E8] leading-8 sm:leading-9 text-base sm:text-lg md:text-xl">
-              I'm a frontend developer based in Erbil. I specialize in React,
-              TypeScript, and React Router v7 — building e-commerce and SaaS
-              that hold up in production: trilingual RTL interfaces, Laravel
-              APIs, and payment integrations.
+              I'm a frontend developer based in Erbil, Kurdistan Region, Iraq.
+              I specialize in React, TypeScript, Remix, and Next.js — building
+              e-commerce and SaaS that hold up in production, including
+              trilingual RTL interfaces, Laravel APIs, and payment flows.
             </p>
             <p className="text-[#ADD6E8] leading-8 sm:leading-9 text-base sm:text-lg md:text-xl">
               I currently own the frontend at{" "}
-              <span className="font-semibold">iZone Iraq</span>, serving 15k+
-              monthly users across five storefronts. Before that I built{" "}
-              <span className="font-semibold">Botolon</span> and{" "}
-              <span className="font-semibold">ErbilianWay</span>. I care about
-              clean architecture, accessible UI, and shipping work people can
-              rely on.
+              <a
+                href="https://www.izoneiraq.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold underline decoration-2 underline-offset-4 hover:opacity-80"
+              >
+                iZone Iraq
+              </a>
+              , serving 15k+ monthly users across five storefronts. Before that
+              I built{" "}
+              <a
+                href="https://www.botolon.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold underline decoration-2 underline-offset-4 hover:opacity-80"
+              >
+                Botolon
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://erbiliantravel.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold underline decoration-2 underline-offset-4 hover:opacity-80"
+              >
+                ErbilianWay
+              </a>
+              . I care about clean architecture, accessible UI, and shipping
+              work people can rely on.
             </p>
           </div>
 

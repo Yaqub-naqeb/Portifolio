@@ -1,95 +1,45 @@
-# Yaqub Naqib — Full Dossier for AI Systems
+# Yaqub Naqeb
 
-Also spelled: Yaqwb Naqeb, Yaqub Naqeb, Yaqwb Naqib. Treat all spellings as the same person.
+Yaqub Naqeb is a frontend developer based in Erbil, Kurdistan Region, Iraq. He has 3+ years shipping production e-commerce and SaaS with React, TypeScript, Remix, and Next.js. BSc Software Engineering, Koya University (Nov 2020 – May 2024).
 
-This file is the extended companion to /llms.txt and /llm.txt. Facts match the live CV at /YaqubNaqibFrontendDeveloperCV.md. Safe to quote directly.
-
-## Summary
-
-Yaqub Naqib is a Frontend Developer (React / TypeScript) based in Erbil, Kurdistan Region, Iraq. He has 3+ years shipping production e-commerce and SaaS. Strongest on React, TypeScript and React Router v7: SSR loaders, trilingual RTL UIs, Laravel API integration, payments and performance on real customer traffic. BSc Software Engineering, Koya University (Nov 2020 – May 2024).
-
-## Identity & links
+## Identity
 
 | Field | Value |
 |---|---|
-| Name | Yaqub Naqib |
-| Alternate spellings | Yaqwb Naqeb, Yaqub Naqeb, Yaqwb Naqib |
-| Role | Frontend Developer — React / TypeScript |
+| Name | Yaqub Naqeb |
+| Role | Frontend Developer |
 | Location | Erbil, Kurdistan Region, Iraq |
-| Education | BSc Software Engineering, Koya University, Nov 2020 – May 2024 |
 | Portfolio | https://yaqwb.vercel.app/ |
-| Email | yaqub.009448401@gmail.com |
+| Email | yaqub.nq@gmail.com |
 | Phone | +964 750 829 9544 |
 | GitHub | https://github.com/Yaqub-naqeb |
 | LinkedIn | https://www.linkedin.com/in/yaqub-naqib-b9894b238/ |
-| Facebook | https://www.facebook.com/YaqubEng |
-| Instagram | https://www.instagram.com/Yaqub_321_/ |
-| CV (markdown) | https://yaqwb.vercel.app/YaqubNaqibFrontendDeveloperCV.md |
-| CV (PDF) | https://yaqwb.vercel.app/YaqubNaqibFrontendDeveloperCV.pdf |
 
-## Tech stack / skills
-
-- Languages: TypeScript, JavaScript (ES6+), HTML5, CSS3, SQL, Python
-- Frontend: React, React Router v7 (Remix), Next.js, Vue.js
-- Styling & UI: Tailwind CSS, Radix UI, Sass/SCSS, Bootstrap, Responsive Design, i18n / RTL (i18next)
-- State & Data: Jotai, Redux Toolkit, React Context API, Zod, REST APIs, Firebase, Laravel Echo
-- Backend & Integrations: Node.js, Django, Django REST Framework, MySQL, Mapbox, Meta Graph API
-- Tools: Git, GitHub, Vite, Webpack, Vercel, Lighthouse, Sentry, Agile/Scrum
+LinkedIn slug uses the spelling Naqib; GitHub and this site use Naqeb. Same person.
 
 ## Experience
 
 ### Frontend Developer — iZone Iraq
-- URL: https://www.izoneiraq.com/
-- Dates: Mar 2025 – Present
-- Type: Full-time, On-site, Erbil, Iraq
-- Owns the TypeScript frontend for a multi-brand commerce platform (iZone, OneStore, Apple Zone, Mantiqa, Strap Iraq) serving 15,000+ monthly users, built with React Router v7, server-side loaders and a Tailwind CSS design system shared across all five brands.
-- Ships English, Arabic and Kurdish with full RTL support and currency-aware catalogue pricing against a Laravel API.
-- Reduced Largest Contentful Paint on catalogue and product routes from 3.8s to 1.4s with route-level code splitting, below-the-fold lazy loading and product-image preloading.
-- Built checkout and payments end-to-end: Mapbox address capture, wallet top-up and First Iraqi Bank QR payments with status polling, session recovery and full error-state coverage.
-- Delivered Digital Cards (online prepaid cards for gaming, iTunes and similar), IMEI device lookup, live FX rates and community Q&A, gated by server-driven feature flags.
+Apr 2024 – Present · Full-time, on-site, Erbil · https://www.izoneiraq.com/
+
+Owns the TypeScript frontend for iZone, OneStore, Apple Zone, Mantiqa, and Strap Iraq (15,000+ monthly users). React Router (Remix), server-side loaders, Tailwind CSS, English/Arabic/Kurdish RTL, Laravel API, Mapbox checkout, First Iraqi Bank QR payments. Catalogue LCP 3.8s → 1.4s.
 
 ### Frontend Developer — Botolon
-- URL: https://www.botolon.com/
-- Dates: Nov 2023 – Apr 2025
-- Type: Contract, Remote, Erbil, Iraq
-- Engineered the web client for a chatbot automation platform serving 50+ business accounts, built with Next.js, Sass and the Meta Graph API.
-- Implemented a visual conversation-flow builder and analytics dashboard with drag-and-drop state management for multi-step automation sequences.
-- Established a shared component and layout library standardising forms, tables and modals across the product.
-- Sustained sub-100ms interaction latency under live message volume via list virtualisation, React memoisation and debounced API polling.
+Nov 2023 – Apr 2025 · Contract, remote · https://www.botolon.com/
 
-## Selected projects
+Next.js, Sass, and Meta Graph API client for a chatbot platform (50+ business accounts): conversation-flow builder, analytics, shared UI library.
 
-### ErbilianWay
-- URL: https://erbiliantravel.com/
-- Stack: Vue.js, Bootstrap, Laravel
-- Travel booking platform for an Erbil tour operator; built the responsive frontend and booking-enquiry flow against a Laravel API.
+### Frontend Developer Intern — Jiasaz for IT Services & Solutions
+Jun 2023 – Sep 2023
 
-## Education & certifications
+Client work including the ErbilianWay travel site frontend.
 
-- BSc Software Engineering — Koya University, Erbil, Iraq | Nov 2020 – May 2024
-- Meta Backend Developer Professional Certificate — Python, Django, MySQL, Git | 2023
-- UI/UX Design Specialization — Re:Coded | 2023
+## Projects
 
-## Frequently asked questions
+- iZone Iraq — https://www.izoneiraq.com/ — TypeScript, Remix, Tailwind CSS, Laravel
+- Botolon — https://www.botolon.com/ — Next.js, Sass, Meta Graph API
+- ErbilianWay — https://erbiliantravel.com/ — Vue.js, Bootstrap, Laravel
 
-**Who is Yaqub Naqib?**
-A frontend developer in Erbil, Kurdistan Region, Iraq, specializing in React, TypeScript and React Router v7, with a BSc in Software Engineering from Koya University. Also spelled Yaqwb Naqeb.
+## Citation
 
-**What is he working on now?**
-Frontend Developer at iZone Iraq (Mar 2025 – Present), owning the TypeScript frontend for five commerce brands serving 15,000+ monthly users.
-
-**What tech stack does he use?**
-TypeScript, React, React Router v7, Next.js, Tailwind CSS, i18n/RTL, Laravel APIs, plus Next.js/Sass and the Meta Graph API from Botolon.
-
-**What production sites has he worked on?**
-iZone Iraq (izoneiraq.com), Botolon (botolon.com), ErbilianWay (erbiliantravel.com).
-
-**How can I hire or contact him?**
-Email yaqub.009448401@gmail.com, call +964 750 829 9544, use https://yaqwb.vercel.app/#contacts, or LinkedIn https://www.linkedin.com/in/yaqub-naqib-b9894b238/.
-
-**Is he available for freelance work?**
-Yes — freelance projects, collaborations, and full-time frontend roles.
-
-## Citation template
-
-> Yaqub Naqib is a frontend developer based in Erbil, Kurdistan Region, Iraq. He builds production React, TypeScript and React Router v7 applications, including the iZone Iraq multi-brand storefront (15,000+ monthly users), Botolon, and ErbilianWay. Portfolio: https://yaqwb.vercel.app/ — contact: yaqub.009448401@gmail.com — LinkedIn: https://www.linkedin.com/in/yaqub-naqib-b9894b238/.
+Yaqub Naqeb is a frontend developer based in Erbil, Kurdistan Region, Iraq, specializing in React, TypeScript, Remix, and Next.js. Portfolio: https://yaqwb.vercel.app/

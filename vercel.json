@@ -5,7 +5,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "<https://yaqwb.vercel.app/llms.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"llms.txt\", <https://yaqwb.vercel.app/llm.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"llm.txt\", <https://yaqwb.vercel.app/llms-full.txt>; rel=\"describedby\"; type=\"text/plain\", <https://yaqwb.vercel.app/YaqubNaqibFrontendDeveloperCV.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"CV\""
+          "value": "<https://yaqwb.vercel.app/llms.txt>; rel=\"alternate\"; type=\"text/plain\"; title=\"llms.txt\""
         },
         {
           "key": "X-Robots-Tag",
@@ -17,34 +17,6 @@
       "source": "/llms.txt",
       "headers": [
         { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
-      ]
-    },
-    {
-      "source": "/llm.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
-      ]
-    },
-    {
-      "source": "/llms-full.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
-      ]
-    },
-    {
-      "source": "/humans.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=86400" }
-      ]
-    },
-    {
-      "source": "/YaqubNaqibFrontendDeveloperCV.md",
-      "headers": [
-        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
         { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
       ]
     }

@@ -68,8 +68,9 @@ const Contacts = () => {
   };
 
   return (
-    <div
+    <section
       id="contacts"
+      aria-labelledby="contact-heading"
       className={`${
         mode ? "contact" : "bg-[#262626]"
       } relative py-12 sm:py-16 md:py-20 lg:px-[10rem] md:px-[4rem] px-4 sm:px-6`}
@@ -77,6 +78,7 @@ const Contacts = () => {
       <div className="max-w-4xl mx-auto mb-12 sm:mb-16">
         <div className="text-center mb-8 sm:mb-12">
           <h2
+            id="contact-heading"
             className={`${
               mode ? "text-[#2a2a2a]" : "text-[#ADD6E8]"
             } text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 sm:mb-6`}
@@ -88,8 +90,8 @@ const Contacts = () => {
               mode ? "text-[#4a4a4a]" : "text-[#9C9C9C]"
             } text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto`}
           >
-            Frontend Developer in Erbil — React, TypeScript, React Router v7.
-            Open to freelance work, collaborations, and full-time roles.
+            Yaqub Naqeb is a frontend developer in Erbil, Kurdistan Region,
+            Iraq. Open to freelance work, collaborations, and full-time roles.
           </p>
           <address
             className={`${
@@ -287,7 +289,7 @@ const Contacts = () => {
                   mode
                     ? "text-[#6b7280] hover:text-[#2a2a2a]"
                     : "text-[#9C9C9C] hover:text-[#ADD6E8]"
-                } text-sm transition-colors duration-300`}
+                } text-sm transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 rounded-sm`}
               >
                 {social.label}
               </a>
@@ -295,7 +297,7 @@ const Contacts = () => {
           </nav>
         </div>
       </footer>
-    </div>
+    </section>
   );
 };
 

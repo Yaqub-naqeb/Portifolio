@@ -25,7 +25,7 @@ const Rout = () => {
 
   return (
     <div className={`${mode ? "sp" : "rsh bg-[#262626]"}`}>
-      <a href="#home" className="skip-link">
+      <a href="#main-content" className="skip-link">
         Skip to content
       </a>
       <NewNavbar />

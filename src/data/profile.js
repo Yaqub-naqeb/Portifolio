@@ -1,14 +1,13 @@
 export const PROFILE = {
-  name: "Yaqub Naqib",
+  name: "Yaqub Naqeb",
   firstName: "Yaqub",
-  lastName: "Naqib",
-  alternateNames: ["Yaqwb Naqeb", "Yaqub Naqeb", "Yaqwb Naqib"],
+  lastName: "Naqeb",
   role: "Frontend Developer",
-  headline: "Frontend Developer — React / TypeScript",
+  headline: "Frontend Developer in Erbil",
   summary:
-    "Frontend Developer with 3+ years shipping production e-commerce and SaaS. Strongest on React, TypeScript and React Router v7: SSR loaders, trilingual RTL UIs, Laravel API integration, payments and performance on real customer traffic.",
+    "Yaqub Naqeb is a frontend developer based in Erbil, Kurdistan Region, Iraq. He builds production web applications with React, TypeScript, Remix, and Next.js.",
   location: "Erbil, Kurdistan Region, Iraq",
-  email: "yaqub.009448401@gmail.com",
+  email: "yaqub.nq@gmail.com",
   phone: "+964 750 829 9544",
   phoneHref: "tel:+9647508299544",
   portfolio: "https://yaqwb.vercel.app/",
@@ -17,7 +16,7 @@ export const PROFILE = {
   facebook: "https://www.facebook.com/YaqubEng",
   instagram: "https://www.instagram.com/Yaqub_321_/",
   cvPath: "/YaqubNaqibFrontendDeveloperCV.pdf",
-  cvDownloadName: "Yaqub-Naqib-Frontend-Developer-CV.pdf",
+  cvDownloadName: "Yaqub-Naqeb-Frontend-Developer-CV.pdf",
   education: {
     degree: "BSc Software Engineering",
     school: "Koya University",
@@ -27,8 +26,8 @@ export const PROFILE = {
 };
 
 export const SOCIALS = [
-  { label: "Facebook", href: PROFILE.facebook },
-  { label: "Instagram", href: PROFILE.instagram },
   { label: "LinkedIn", href: PROFILE.linkedin },
   { label: "GitHub", href: PROFILE.github },
+  { label: "Facebook", href: PROFILE.facebook },
+  { label: "Instagram", href: PROFILE.instagram },
 ];

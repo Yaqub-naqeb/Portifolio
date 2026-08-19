@@ -36,8 +36,9 @@ const Home = () => {
   }, [mode]);
 
   return (
-    <div
+    <section
       id="home"
+      aria-labelledby="site-heading"
       className={`min-h-screen relative w-full overflow-hidden flex flex-col items-start justify-center ${
         mode ? "" : "bg-[#262626]"
       }`}
@@ -78,7 +79,7 @@ const Home = () => {
       <div className="absolute z-20 bottom-6 sm:bottom-8 md:bottom-12 lg:bottom-8 left-4 sm:left-6 md:left-8">
         <Rectangular />
       </div>
-    </div>
+    </section>
   );
 };
 

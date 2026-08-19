@@ -22,7 +22,7 @@ const Rectangular = () => {
         aria-label="Facebook"
         rel="noreferrer"
         href={PROFILE.facebook}
-        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
       >
@@ -39,7 +39,7 @@ const Rectangular = () => {
         aria-label="Instagram"
         rel="noreferrer"
         href={PROFILE.instagram}
-        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
       >
@@ -56,7 +56,7 @@ const Rectangular = () => {
         rel="noreferrer"
         aria-label="LinkedIn"
         href={PROFILE.linkedin}
-        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
       >
@@ -72,7 +72,7 @@ const Rectangular = () => {
         href={PROFILE.github}
         aria-label="GitHub"
         target={"_blank"}
-        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 ${
+        className={`flex items-center justify-center min-w-[40px] min-h-[36px] p-1 sm:p-1.5 rounded-md active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
           mode ? "hover:brightness-75" : "hover:brightness-125"
         } transition-all duration-300 hover:scale-110`}
         rel="noreferrer"

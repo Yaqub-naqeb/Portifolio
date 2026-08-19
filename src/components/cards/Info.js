@@ -8,14 +8,14 @@ export const Info = [
     style: "hid",
     tools: [
       { tool: "TypeScript" },
-      { tool: "React Router v7" },
+      { tool: "Remix" },
       { tool: "Tailwind CSS" },
       { tool: "Laravel" },
     ],
     demo: "https://www.izoneiraq.com/",
     description: [
       {
-        p: `Multi-brand commerce platform (iZone, OneStore, Apple Zone, Mantiqa, Strap Iraq) serving 15,000+ monthly users. I own the TypeScript frontend — React Router v7 with SSR loaders, a shared Tailwind design system, English/Arabic/Kurdish RTL, Laravel API integration, checkout and First Iraqi Bank QR payments, and LCP reduced from 3.8s to 1.4s.`,
+        p: `Multi-brand commerce platform (iZone, OneStore, Apple Zone, Mantiqa, Strap Iraq) serving 15,000+ monthly users. I own the TypeScript frontend — React Router (Remix) with server-side loaders, a shared Tailwind CSS design system, English/Arabic/Kurdish RTL, Laravel API integration, checkout and First Iraqi Bank QR payments, and Mapbox address capture. Catalogue LCP went from 3.8s to 1.4s.`,
       },
     ],
   },

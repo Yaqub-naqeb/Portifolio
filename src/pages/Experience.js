@@ -48,10 +48,10 @@ const Experience = () => {
       title: "Frontend Developer",
       company: "iZone Iraq",
       companyUrl: "https://www.izoneiraq.com/",
-      period: "Mar 2025 – Present",
+      period: "Apr 2024 – Present",
       meta: "Full-time, On-site · Erbil, Iraq",
       highlights: [
-        "Own the TypeScript frontend for a multi-brand commerce platform (iZone, OneStore, Apple Zone, Mantiqa, Strap Iraq) serving 15,000+ monthly users, built with React Router v7, server-side loaders and a Tailwind CSS design system shared across all five brands.",
+        "Own the TypeScript frontend for a multi-brand commerce platform (iZone, OneStore, Apple Zone, Mantiqa, Strap Iraq) serving 15,000+ monthly users, built with React Router (Remix), server-side loaders and a Tailwind CSS design system shared across all five brands.",
         "Ship English, Arabic and Kurdish with full RTL support and currency-aware catalogue pricing against a Laravel API, so one codebase serves every regional storefront without duplicated UI.",
         "Reduced Largest Contentful Paint on catalogue and product routes from 3.8s to 1.4s with route-level code splitting, below-the-fold lazy loading and product-image preloading.",
         "Built checkout and payments end-to-end: Mapbox address capture, wallet top-up and First Iraqi Bank QR payments with status polling, session recovery and full error-state coverage.",

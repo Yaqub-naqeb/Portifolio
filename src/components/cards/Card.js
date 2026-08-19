@@ -44,13 +44,13 @@ const Card = ({ info, id }) => {
         {/* Project Description */}
         <div className="flex flex-col text-left self-start flex-1 space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
           <div>
-            <h2
+            <h3
               className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 ${
                 mode ? "text-[#1a1a1a]" : "text-white"
               }`}
             >
               {info.title}
-            </h2>
+            </h3>
 
             <div
               className={`leading-5 sm:leading-6 md:leading-7 lg:leading-8 ${
@@ -89,8 +89,8 @@ const Card = ({ info, id }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 href={info.demo}
-                aria-label={`View ${info.title} demo`}
-                className={`flex items-center gap-2 border-2 rounded-full px-4 py-2 sm:px-6 sm:py-3 transition-all duration-300 hover:scale-105 font-medium ${
+                aria-label={`Open the live ${info.title} website`}
+                className={`flex items-center gap-2 border-2 rounded-full px-4 py-2 sm:px-6 sm:py-3 transition-all duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ADD6E8] font-medium ${
                   mode
                     ? "border-[#ADD6E8] text-[#4d4d4d] hover:bg-[#ADD6E8] hover:text-white"
                     : "border-[#ADD6E8] text-white hover:bg-[#ADD6E8] hover:text-[#1a1a1a]"
@@ -110,7 +110,7 @@ const Card = ({ info, id }) => {
                     d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
                   />
                 </svg>
-                <span className="text-xs sm:text-sm md:text-base">Demo</span>
+                <span className="text-xs sm:text-sm md:text-base">Live site</span>
               </a>
             )}
 
@@ -120,8 +120,8 @@ const Card = ({ info, id }) => {
                 target="_blank"
                 href={info.url}
                 rel="noopener noreferrer"
-                aria-label={`View ${info.title} source code`}
-                className={`flex items-center gap-2 border-2 rounded-full px-4 py-2 sm:px-6 sm:py-3 transition-all duration-300 hover:scale-105 font-medium ${
+                aria-label={`View ${info.title} source code on GitHub`}
+                className={`flex items-center gap-2 border-2 rounded-full px-4 py-2 sm:px-6 sm:py-3 transition-all duration-300 hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ADD6E8] font-medium ${
                   mode
                     ? "border-[#ADD6E8] text-[#4d4d4d] hover:bg-[#ADD6E8] hover:text-white"
                     : "border-[#ADD6E8] text-white hover:bg-[#ADD6E8] hover:text-[#1a1a1a]"

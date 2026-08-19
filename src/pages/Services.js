@@ -11,7 +11,7 @@ const Services = () => {
       id: 1,
       title: "Web Development",
       description:
-        "Building production storefronts and SaaS with React, TypeScript, React Router v7 and Next.js — SSR loaders, RTL, payments and APIs that hold up on real traffic.",
+        "Building production storefronts and SaaS with React, TypeScript, Remix, and Next.js — SSR loaders, RTL, payments and APIs that hold up on real traffic.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
